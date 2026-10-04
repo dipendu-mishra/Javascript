@@ -1,0 +1,177 @@
+BODY {
+	FONT-SIZE: 0.7em; MARGIN: 5px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; bgcolor: #FFFFFF
+}
+A:link {
+	COLOR: #006699
+}
+A:visited {
+	COLOR: #66aecc
+}
+A:hover {
+	COLOR: #006699; BACKGROUND-COLOR: #ddeeff
+}
+A:unknown {
+	COLOR: #006699; BACKGROUND-COLOR: #ddeeff
+}
+H4 A {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+.index A {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+H4 A:visited {
+	COLOR: #006699
+}
+.index A:visited {
+	COLOR: #006699
+}
+H1 {
+	MARGIN-TOP: 1pt; FONT-WEIGHT: bold; FONT-SIZE: 130%; MARGIN-BOTTOM: 0.7em; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+LI.kadov-h1 {
+	FONT-SIZE: 130%
+}
+H2 {
+	MARGIN-TOP: 1.4em; FONT-WEIGHT: bold; FONT-SIZE: 120%; MARGIN-BOTTOM: 0.7em; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+LI.kadov-h2 {
+	FONT-SIZE: 120%
+}
+H3 {
+	MARGIN-TOP: 1.2em; FONT-WEIGHT: bold; FONT-SIZE: 110%; MARGIN-BOTTOM: 0.7em; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+LI.kadov-h3 {
+	FONT-SIZE: 110%
+}
+H4 {
+	MARGIN-TOP: 1.2em; FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN-BOTTOM: 0.6em; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+LI.kadov-h4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%
+}
+HR {
+	MARGIN-TOP: 0em; MARGIN-BOTTOM: 0em; COLOR: #000000; HEIGHT: 1px
+}
+P {
+	MARGIN-TOP: 0.6em; FONT-SIZE: 8pt; MARGIN-BOTTOM: 0.6em; TEXT-INDENT: 0px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+TABLE {
+	MARGIN-TOP: 0.6em; FONT-SIZE: 100%; MARGIN-BOTTOM: 0.6em
+}
+LI.kadov-p {
+	FONT-SIZE: 8pt; TEXT-INDENT: 0px; TEXT-ALIGN: left
+}
+P.index {
+	MARGIN-BOTTOM: 1pt; TEXT-ALIGN: center
+}
+LI.kadov-p-Cindex {
+	TEXT-ALIGN: center
+}
+TABLE.index {
+	MARGIN-TOP: 0em
+}
+OL P {
+	MARGIN-TOP: 0.7em; MARGIN-BOTTOM: 0px
+}
+UL P {
+	MARGIN-TOP: 0.7em; MARGIN-BOTTOM: 0px
+}
+OL LI.kadov-p {
+	
+}
+UL LI.kadov-p {
+	
+}
+OL {
+	MARGIN-TOP: 0.5em; FONT-SIZE: 100%; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 4.5em; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+UL {
+	MARGIN-TOP: 0.5em; FONT-SIZE: 100%; MARGIN-BOTTOM: 0em; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+OL UL {
+	MARGIN-TOP: 0.5em; LIST-STYLE-TYPE: square
+}
+UL UL {
+	MARGIN-TOP: 0.5em; LIST-STYLE-TYPE: square
+}
+OL OL {
+	MARGIN-TOP: 0.5em; LIST-STYLE-TYPE: lower-alpha
+}
+LI {
+	MARGIN-BOTTOM: 0.7em; MARGIN-LEFT: 1pt
+}
+.caption {
+	MARGIN-TOP: 0.9em; FONT-STYLE: italic
+}
+LI.kadov-Ccaption {
+	FONT-STYLE: italic
+}
+LI .caption {
+	MARGIN-TOP: 0.7em; FONT-STYLE: italic
+}
+LI LI.kadov-Ccaption {
+	FONT-STYLE: italic
+}
+TH {
+	FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #006699; TEXT-ALIGN: left
+}
+IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN: 0px 5px 0px 0px; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.nav {
+	MARGIN-TOP: 1pt; MARGIN-BOTTOM: 1pt
+}
+LI.kadov-Cnav {
+	
+}
+.nav IMG {
+	MARGIN: 0px
+}
+DIV.procedure {
+	DISPLAY: none
+}
+.Footnote {
+	VERTICAL-ALIGN: super
+}
+LI.kadov-CFootnote {
+	
+}
+P.Preformatted {
+	MARGIN-TOP: 1pt; FONT-SIZE: 100%; MARGIN-BOTTOM: 1pt; LINE-HEIGHT: normal; FONT-FAMILY: "Courier New"  , Courier, mono; WHITE-SPACE: nowrap
+}
+LI.kadov-P-CPreformatted {
+	FONT-SIZE: 100%; LINE-HEIGHT: normal; FONT-FAMILY: "Courier New"  , Courier, mono; WHITE-SPACE: nowrap
+}
+OL P.Preformatted {
+	MARGIN-TOP: 0px; FONT-SIZE: 100%; MARGIN-BOTTOM: 0px; LINE-HEIGHT: normal; FONT-FAMILY: "Courier New"  , Courier, mono; WHITE-SPACE: nowrap
+}
+OL LI.kadov-P-CPreformatted {
+	FONT-SIZE: 100%; LINE-HEIGHT: normal; FONT-FAMILY: "Courier New"  , Courier, mono; WHITE-SPACE: nowrap
+}
+UL P.Preformatted {
+	MARGIN-TOP: 0px; FONT-SIZE: 100%; MARGIN-BOTTOM: 0px; LINE-HEIGHT: normal; FONT-FAMILY: "Courier New"  , Courier, mono; WHITE-SPACE: nowrap
+}
+UL LI.kadov-P-CPreformatted {
+	FONT-SIZE: 100%; LINE-HEIGHT: normal; FONT-FAMILY: "Courier New"  , Courier, mono; WHITE-SPACE: nowrap
+}
+SPAN.Labels {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-STYLE: italic
+}
+SPAN.UserInput {
+	FONT-WEIGHT: bold; FONT-STYLE: normal
+}
+SPAN.Code {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-FAMILY: "Courier New"  , monospace; BACKGROUND-COLOR: #e5e5e5
+}
+A.expandspot {
+	COLOR: #008000; FONT-STYLE: italic; TEXT-DECORATION: none
+}
+A.dropspot {
+	COLOR: #008000; FONT-STYLE: italic; TEXT-DECORATION: none
+}
+A.glossterm {
+	FONT-WEIGHT: normal; COLOR: #3c4070; FONT-STYLE: normal; BACKGROUND-COLOR: #d5f1ff; TEXT-DECORATION: none
+}
+SPAN.glosstext {
+	FONT-WEIGHT: normal; FONT-STYLE: italic; BACKGROUND-COLOR: #d5f1ff
+}

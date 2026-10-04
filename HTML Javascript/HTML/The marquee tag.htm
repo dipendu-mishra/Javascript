@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0044)http://www.scit.wlv.ac.uk/encyc/marquee.html -->
+<HTML><HEAD><TITLE>The marquee tag</TITLE><LINK 
+href="The marquee tag_files/notes.css" type=text/css rel=stylesheet>
+<META http-equiv=Content-type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY>
+<H1>HTML Encyclopaedia</H1>
+<H2>The marquee tag</H2>
+<P><B>Note</B>. This tag is not part of HTML 3.2 and is only supported by 
+Microsoft Internet Explorer so if you are viewing this page using any other 
+browser you won't see anything very interesting. 
+<P>The &lt;marquee&gt; tag is used to introduce text that scrolls horizontally 
+within a display box. The usual warnings about the distracting and annoying 
+nature of continuously running animations apply. Here's a simple example 
+<P align=center><FONT color=red size=+3>
+<MARQUEE width="75%">Hello, World</MARQUEE></FONT></P>And here's the HTML <PRE>&lt;p align=center&gt;
+&lt;font size=+3 color=red&gt;
+&lt;marquee width=75%&gt;
+Hello, World
+&lt;/marquee&gt;
+&lt;/font&gt;
+&lt;/p&gt;
+</PRE>
+<P>IE3, apparently, does not honour any other tags that appear within a marquee 
+so it is impossible to animate multi-coloured text or images this way. This 
+restriction has been relaxed in IE4. 
+<P>The tag, which is a container tag, has no fewer than 11 attributes. 
+<P>
+<OL>
+  <LI><B>align</B>
+  <P>This tag can take one of the values <I>top</I>, <I>middle</I> and 
+  <I>bottom</I>. It controls the positioning of the marquee display box relative 
+  to the current text in exactly the same manner as the <A 
+  href="http://www.scit.wlv.ac.uk/encyc/img.html">&lt;img&gt;</A> tag's 
+  <I>align</I> attribute. </P>
+  <LI><B>behavior</B>
+  <P>This tag controls the behaviour of the displayed text. There are three 
+  possible values. Text scrolling starts as soon as the page is downloaded, not 
+  when the user firsts scrolls the marquee into view. 
+  <P>
+  <TABLE width="80%" border=5>
+    <TBODY>
+    <TR>
+      <TH>value
+      <TH>effect
+      <TH width="40%">example 
+    <TR>
+      <TD>scroll
+      <TD>text scrolls across display and re-appears from the other end when 
+        it has disappeared from one end. This is the default behaviour. 
+      <TD bgColor=white>
+        <MARQUEE bgColor=aqua>Hello World</MARQUEE>
+    <TR>
+      <TD>slide
+      <TD>This is similar to <I>scroll</I> except that when the sliding text 
+        reaches the far end of the box, it disappears and restarts at the 
+        starting end of the box. If the display is not looping then the text 
+        remains positioned at the far end of the box. 
+      <TD bgColor=white>
+        <MARQUEE behavior=slide bgColor=aqua>Hello World</MARQUEE>
+    <TR>
+      <TD>alternate
+      <TD>text "bounces" between the ends of the box 
+      <TD bgColor=white>
+        <MARQUEE behavior=alternate bgColor=aqua>Hello 
+  World</MARQUEE></TR></TBODY></TABLE></P>
+  <LI><B>bgcolor</B>
+  <P>This tag controls the background colour of the display box, in the example 
+  above the display box background colour was set to <I>aqua</I> whereas the 
+  table cell background colour was set to <I>white</I> </P>
+  <LI><B>direction</B>
+  <P>This attribute controls the direction of scrolling. Permissible values are 
+  <I>left</I> and <I>right</I> specifying the end of the box that the scroll 
+  starts from. Here's some examples. 
+  <P>
+  <TABLE width="80%" border=5>
+    <TBODY>
+    <TR>
+      <TH>value
+      <TH>effect
+      <TH width="40%">example 
+    <TR>
+      <TD>right
+      <TD>starts at right hand end 
+      <TD>
+        <MARQUEE direction=right>Hello, World</MARQUEE>
+    <TR>
+      <TD>left
+      <TD>starts at left hand end 
+      <TD>
+        <MARQUEE>Hello, World</MARQUEE></TR></TBODY></TABLE>
+  <P>It appears that the value of this attribute does not affect the behaviour 
+  of the marquee if the value of the <I>behavior</I> attribute is 
+  <I>alternate</I> </P></LI></OL>
+<P>The following four attributes are used in exactly the same way as they are 
+used with the <A href="http://www.scit.wlv.ac.uk/encyc/img.html">&lt;img&gt;</A> 
+tag. </P>
+<OL start=5>
+  <LI><B>height</B>
+  <P>This controls the height of the display box. </P>
+  <LI><B>width</B>
+  <P>This controls the width of the display box. </P>
+  <LI><B>hspace</B>
+  <P>This controls the horizontal space around the display box. </P>
+  <LI><B>vspace</B>
+  <P>This controls the vertical space around the display box. </P>
+  <LI><B>loop</B>
+  <P>The value of this attribute controls the number of display cycles. The 
+  values <I>-1</I> and <I>infinite</I> both mean continue indefinitely. </P>
+  <LI><B>scrollamount</B>
+  <P>This controls the amount of movement (in pixels) between the successive 
+  displays that give the impression of animation. </P>
+  <LI><B>scrolldelay</B>
+  <P>This controls the delay (in milliseconds) between the successive displays 
+  that give the impression of animation. 
+  <P>Here are some examples 
+  <P>
+  <TABLE width="80%" border=5>
+    <TBODY>
+    <TR>
+      <TH>scrollamount
+      <TH>scrolldelay
+      <TH width="40%">example 
+    <TR>
+      <TD align=right>5
+      <TD align=right>5 
+      <TD>
+        <MARQUEE scrollAmount=5 scrollDelay=5>Hello, World</MARQUEE>
+    <TR>
+      <TD align=right>5
+      <TD align=right>500 
+      <TD>
+        <MARQUEE scrollAmount=5 scrollDelay=500>Hello, World</MARQUEE>
+    <TR>
+      <TD align=right>50
+      <TD align=right>5 
+      <TD>
+        <MARQUEE scrollAmount=50 scrollDelay=5>Hello, World</MARQUEE>
+    <TR>
+      <TD align=right>50
+      <TD align=right>500 
+      <TD>
+        <MARQUEE scrollAmount=50 scrollDelay=500>Hello, 
+  World</MARQUEE></TR></TBODY></TABLE></P></LI></OL>
+<P>The final example should be enough to illustrate the distracting effects of 
+too much animation. </P></BODY></HTML>

@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0057)http://htmlhelp.com/reference/html40/frames/frameset.html -->
+<HTML lang=en><HEAD><TITLE>FRAMESET - Frameset</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+rev=Made href="mailto:liam@htmlhelp.com"><LINK href="../" rel=Start><LINK 
+href="/glossary/glossary.html" rel=Glossary><LINK href="/copyright.html" 
+rel=Copyright><LINK href="FRAMESET - Frameset_files/style.css" type=text/css 
+rel=StyleSheet><LINK media=aural href="FRAMESET - Frameset_files/aural.css" 
+type=text/css rel=StyleSheet>
+<META content="Liam Quinn" name=author>
+<META content="A description of HTML 4's FRAMESET element for framesets." 
+name=description>
+<META 
+content="FRAMESET, frameset element, frames, HyperText Markup Language, HTML, HTML4, HTML 4, HTML 4.01, HTML 4.0, Web Design Group, WDG, <frameset> tag, <FRAMESET> tag" 
+name=keywords>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY><!--top_ad_placeholder-->
+<H2><IMG height=83 alt="The Web Design Group" 
+src="FRAMESET - Frameset_files/wdglogo1.gif" width=250></H2>
+<H1>FRAMESET - Frameset</H1>
+<TABLE>
+  <TBODY>
+  <TR vAlign=top>
+    <TH>Syntax</TH>
+    <TD><STRONG class=required>&lt;FRAMESET&gt;</STRONG>...<STRONG 
+      class=required>&lt;/FRAMESET&gt;</STRONG></TD></TR>
+  <TR vAlign=top>
+    <TH>Attribute Specifications</TH>
+    <TD>
+      <UL>
+        <LI>ROWS=<VAR><A 
+        href="http://htmlhelp.com/reference/html40/values.html#multilengths">MultiLengths</A></VAR> 
+        (row lengths) 
+        <LI>COLS=<VAR><A 
+        href="http://htmlhelp.com/reference/html40/values.html#multilengths">MultiLengths</A></VAR> 
+        (column lengths) 
+        <LI>ONLOAD=<VAR><A 
+        href="http://htmlhelp.com/reference/html40/values.html#script">Script</A></VAR> 
+        (all frames have been loaded) 
+        <LI>ONUNLOAD=<VAR><A 
+        href="http://htmlhelp.com/reference/html40/values.html#script">Script</A></VAR> 
+        (all frames have been removed) 
+        <LI><A href="http://htmlhelp.com/reference/html40/attrs.html#core">core 
+        attributes</A> </LI></UL></TD></TR>
+  <TR vAlign=top>
+    <TH>Contents</TH>
+    <TD>One or more FRAMESET and <A 
+      href="http://htmlhelp.com/reference/html40/frames/frame.html">FRAME</A> 
+      elements, as well as an optional <A 
+      href="http://htmlhelp.com/reference/html40/frames/noframes.html">NOFRAMES</A></TD></TR>
+  <TR vAlign=top>
+    <TH>Contained in</TH>
+    <TD><A 
+    href="http://htmlhelp.com/reference/html40/html/html.html">HTML</A></TD></TR></TBODY></TABLE>
+<P>The <STRONG class=html>FRAMESET</STRONG> element is a <EM>frame 
+container</EM> for dividing a window into rectangular subspaces called 
+<EM>frames</EM>. In a <A 
+href="http://htmlhelp.com/reference/html40/html/doctype.html#frameset">Frameset</A> 
+document, the outermost <STRONG class=html>FRAMESET</STRONG> element takes the 
+place of <STRONG class=html><A 
+href="http://htmlhelp.com/reference/html40/html/body.html">BODY</A></STRONG> and 
+immediately follows the <STRONG class=html><A 
+href="http://htmlhelp.com/reference/html40/head/head.html">HEAD</A></STRONG>.</P>
+<P>The <STRONG class=html>FRAMESET</STRONG> element contains one or more <STRONG 
+class=html>FRAMESET</STRONG> or <STRONG class=html><A 
+href="http://htmlhelp.com/reference/html40/frames/frame.html">FRAME</A></STRONG> 
+elements, along with an optional <STRONG class=html><A 
+href="http://htmlhelp.com/reference/html40/frames/noframes.html">NOFRAMES</A></STRONG> 
+element to provide alternate content for browsers that do not support frames or 
+have frames disabled. A meaningful <STRONG class=html>NOFRAMES</STRONG> element 
+should always be provided and should at the very least contain links to the main 
+frame or frames.</P>
+<P>The <STRONG class=html>ROWS</STRONG> and <STRONG class=html>COLS</STRONG> 
+attributes define the dimensions of each frame in the set. Each attribute takes 
+a comma-separated list of lengths, specified in pixels, as a percentage, or as a 
+relative length. A relative length is expressed as <STRONG 
+class=html><VAR>i</VAR>*</STRONG> where <STRONG class=html><VAR>i</VAR></STRONG> 
+is an integer. For example, a frameset defined with <STRONG 
+class=html>ROWS="3*,*"</STRONG> (<STRONG class=html>*</STRONG> is equivalent to 
+<STRONG class=html>1*</STRONG>) will have its first row allotted three times the 
+height of the second row.</P>
+<P>The values specified for the <STRONG class=html>ROWS</STRONG> attribute give 
+the height of each row, from top to bottom. The <STRONG class=html>COLS</STRONG> 
+attribute gives the width of each column from left to right. If <STRONG 
+class=html>ROWS</STRONG> or <STRONG class=html>COLS</STRONG> is omitted, the 
+implied value for the attribute is <STRONG class=html>100%</STRONG>. If both 
+attributes are specified, a grid is defined and filled left-to-right then 
+top-to-bottom.</P>
+<P>The following example sets up a grid with two rows and three columns:</P><PRE class=example><CODE class=html><STRONG>&lt;FRAMESET ROWS="70%,30%" COLS="33%,33%,34%"&gt;</STRONG>
+  &lt;FRAME NAME="Photo1" SRC="Row1_Column1.html"&gt;
+  &lt;FRAME NAME="Photo2" SRC="Row1_Column2.html"&gt;
+  &lt;FRAME NAME="Photo3" SRC="Row1_Column3.html"&gt;
+  &lt;FRAME NAME="Caption1" SRC="Row2_Column1.html"&gt;
+  &lt;FRAME NAME="Caption2" SRC="Row2_Column2.html"&gt;
+  &lt;FRAME NAME="Caption3" SRC="Row2_Column3.html"&gt;
+  &lt;NOFRAMES&gt;
+    &lt;BODY&gt;
+      &lt;H1&gt;Table of Contents&lt;/H1&gt;
+        &lt;UL&gt;
+          &lt;LI&gt;
+            &lt;A HREF="Row1_Column1.html"&gt;Photo 1&lt;/A&gt;
+            (&lt;A HREF="Row2_Column1.html"&gt;Caption&lt;/A&gt;)
+          &lt;/LI&gt;
+          &lt;LI&gt;
+            &lt;A HREF="Row1_Column2.html"&gt;Photo 2&lt;/A&gt;
+            (&lt;A HREF="Row2_Column2.html"&gt;Caption&lt;/A&gt;)
+          &lt;/LI&gt;
+          &lt;LI&gt;
+            &lt;A HREF="Row1_Column3.html"&gt;Photo 3&lt;/A&gt;
+            (&lt;A HREF="Row2_Column3.html"&gt;Caption&lt;/A&gt;)
+          &lt;/LI&gt;
+      &lt;/UL&gt;
+    &lt;/BODY&gt;
+  &lt;/NOFRAMES&gt;
+<STRONG>&lt;/FRAMESET&gt;</STRONG></CODE></PRE>
+<P>The next example features nested <STRONG class=html>FRAMESET</STRONG> 
+elements to define two frames in the first row and one frame in the second 
+row:</P><PRE class=example><CODE class=html><STRONG>&lt;FRAMESET ROWS="*,100"&gt;</STRONG>
+  <STRONG>&lt;FRAMESET COLS="40%,*"&gt;</STRONG>
+    &lt;FRAME NAME="Menu" SRC="nav.html" TITLE="Menu"&gt;
+    &lt;FRAME NAME="Content" SRC="main.html" TITLE="Content"&gt;
+  <STRONG>&lt;/FRAMESET&gt;</STRONG>
+  &lt;FRAME NAME="Ad" SRC="ad.html" TITLE="Advertisement"&gt;
+  &lt;NOFRAMES&gt;
+    &lt;BODY&gt;
+      &lt;H1&gt;Table of Contents&lt;/H1&gt;
+      &lt;UL&gt;
+        &lt;LI&gt;
+          &lt;A HREF="reference/html40/"&gt;HTML 4 Reference&lt;/A&gt;
+        &lt;/LI&gt;
+        &lt;LI&gt;
+          &lt;A HREF="reference/wilbur/"&gt;HTML 3.2 Reference&lt;/A&gt;
+        &lt;/LI&gt;
+        &lt;LI&gt;
+          &lt;A HREF="reference/css/"&gt;CSS Guide&lt;/A&gt;
+        &lt;/LI&gt;
+      &lt;/UL&gt;
+      &lt;P&gt;
+        &lt;IMG SRC="ad.gif" ALT="Ad: Does your bank charge too much?"&gt;
+      &lt;/P&gt;
+    &lt;/BODY&gt;
+  &lt;/NOFRAMES&gt;
+<STRONG>&lt;/FRAMESET&gt;</STRONG></CODE></PRE>
+<P class=note>When pixel lengths are used, they should always be combined with a 
+relative length to handle various window sizes. Pixel lengths should only be 
+used when the frame consists primarily of images or other objects with a fixed 
+size in pixels. Due to their ability to adapt to different window sizes, 
+percentages and relative lengths are generally preferred.</P>
+<P>The <STRONG class=html>FRAMESET</STRONG> element also accepts <STRONG 
+class=html>ONLOAD</STRONG> and <STRONG class=html>ONUNLOAD</STRONG> attributes 
+to specify client-side scripting actions to perform when the frames have all 
+been loaded or removed.</P>
+<H2>More Information</H2>
+<UL>
+  <LI><A 
+  href="http://www.w3.org/TR/html4/present/frames.html#edef-FRAMESET">FRAMESET 
+  in <ABBR class=initialism title="World Wide Web Consortium">W3C</ABBR> HTML 
+  4.01 Specification</A> 
+  <LI><A 
+  href="http://www.blooberry.com/indexdot/html/tagpages/f/frameset.htm">FRAMESET 
+  in <CITE>Index DOT Html</CITE></A> </LI></UL>
+<DIV class=leaderboard>
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-2290041319472908";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_channel ="";
+google_color_border = ["336699","DFF2FD"];
+google_color_bg = ["FFFFFF","DFF2FD"];
+google_color_link = ["0000FF","0000CC"];
+google_color_url = "008000";
+google_color_text = "000000";
+//--></SCRIPT>
+
+<SCRIPT src="FRAMESET - Frameset_files/show_ads.js" 
+type=text/javascript>
+</SCRIPT>
+</DIV>
+<DIV class=footer>
+<ADDRESS>Maintained by <A href="http://htmlhelp.com/~liam/">Liam Quinn</A> 
+&lt;<A href="mailto:liam@htmlhelp.com">liam@htmlhelp.com</A>&gt;</ADDRESS>
+<P class=toolbar><A href="http://htmlhelp.com/"><IMG height=40 
+alt="Web Design Group ~" src="FRAMESET - Frameset_files/wdglogo-small.gif" 
+width=105></A> <A href="http://htmlhelp.com/reference/html40/" 
+rel=Start>HTML&nbsp;4.0&nbsp;Reference</A>&nbsp;~ <A 
+href="http://htmlhelp.com/reference/html40/olist.html">Elements&nbsp;by&nbsp;Function</A>&nbsp;~ 
+<A 
+href="http://htmlhelp.com/reference/html40/alist.html">Elements&nbsp;Alphabetically</A></P>
+<P class=copyright><A href="http://htmlhelp.com/copyright.html">Copyright ©</A> 
+1998-2006 Liam Quinn. All rights reserved.</P></DIV></BODY></HTML>

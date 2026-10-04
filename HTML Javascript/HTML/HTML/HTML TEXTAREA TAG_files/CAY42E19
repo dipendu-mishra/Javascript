@@ -1,0 +1,121 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0673)http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-3440800076797949&dt=1193827305640&lmt=1193827305&alternate_ad_url=http%3A%2F%2Fwww.w3schools.com%2Fbanners%2Fbannerframe.asp%3Fadpartner%3Daspall2&format=728x90_as&output=html&correlator=1193827305640&channel=6605717322&url=http%3A%2F%2Fwww.w3schools.com%2Ftags%2Ftag_textarea.asp&color_bg=F1F1F1&color_text=000000&color_link=900B09&color_url=008000&color_border=808080&ad_type=text&ref=http%3A%2F%2Fwww.google.co.in%2Fsearch%3Fhl%3Den%26q%3DTEXTAREA%2BTAG%26meta%3D&ga_vid=510085923.1193827306&ga_sid=1193827306&ga_hid=1746629137&flash=9&u_h=768&u_w=1024&u_ah=740&u_aw=1024&u_cd=32&u_tz=330&u_his=7&u_java=true -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<STYLE>A:link {
+	CURSOR: hand; COLOR: #900b09
+}
+A:visited {
+	CURSOR: hand; COLOR: #900b09
+}
+A:hover {
+	CURSOR: hand; COLOR: #900b09
+}
+A:active {
+	CURSOR: hand; COLOR: #900b09
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TABLE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT-FAMILY: verdana,arial,sans-serif; HEIGHT: 100%; BACKGROUND-COLOR: transparent
+}
+#aus {
+	WIDTH: 728px; HEIGHT: 90px
+}
+#ads {
+	LEFT: 1px; WIDTH: 726px; POSITION: absolute; TOP: 1px
+}
+#ads UL {
+	WIDTH: 100%; LIST-STYLE-TYPE: none
+}
+#ads UL LI {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 363px; CURSOR: hand; HEIGHT: 70px
+}
+.ad {
+	MARGIN: 0px 2px
+}
+.adt {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; LINE-HEIGHT: 12px
+}
+.adb {
+	DISPLAY: block; FONT-SIZE: 10px; COLOR: #000000; LINE-HEIGHT: 12px
+}
+.adu {
+	FONT-SIZE: 10px; OVERFLOW: hidden; COLOR: #008000; LINE-HEIGHT: 12px; WHITE-SPACE: nowrap
+}
+#att {
+	LEFT: 635px; POSITION: absolute; TOP: 71px
+}
+#att UL {
+	WIDTH: 92px; LIST-STYLE-TYPE: none; HEIGHT: 18px
+}
+#att UL LI {
+	FLOAT: left
+}
+#abgf {
+	WIDTH: 74px; HEIGHT: 18px; BACKGROUND-COLOR: #808080
+}
+#abgt {
+	WIDTH: 18px; POSITION: relative; HEIGHT: 18px
+}
+#abgi {
+	LEFT: 648px; POSITION: absolute; TOP: 73px
+}
+#aubg {
+	BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; BORDER-LEFT: #808080 1px solid; WIDTH: 726px; BORDER-BOTTOM: #808080 1px solid; HEIGHT: 88px; BACKGROUND-COLOR: #f1f1f1
+}
+</STYLE>
+
+<SCRIPT>function ss(w,id) {window.status = w;a = document.getElementById(id);if (a) {bi = a.href.indexOf("&nm="); if (bi < 1) {a.href += "&nm=1";return true;}c = a.href.substring(0, bi+4); d = a.href.substring(bi+4, a.href.length);ei = d.indexOf("&");if (ei < 0) {f = d;r = '';} else {f = d.substring(0, ei);r = d.substring(ei, d.length); }var g = parseInt(f);  g++;a.href= c+g+r; }return true;}function st(id) {var a = document.getElementById(id);if (a) {a.myt = (new Date()).getTime();}}function su(id) {var a = document.getElementById(id);var b = (new Date()).getTime();if (a && a.myt && b) {var t = b - a.myt;var bi = a.href.indexOf("&clkt=");if (bi > 0) {var c = a.href.substring(0, bi+6); var d = a.href.substring(bi+6, a.href.length);var ei = d.indexOf("&");var r = '';if (ei >= 0)r = d.substring(ei, d.length);a.href = c + t + r; } else {a.href += "&clkt=" + t;}}return true;}function cs(){window.status='';} function jcc(a) {pha=document.getElementById(a); nc=pha.href.indexOf('&jca='); if(nc>=1) return; jca=(6560)-(679)-(579); if (a=='aw0') {jca+=(2194);} else if (a=='aw1') {jca+=(4525);} else {jca=0;} phb=pha.href+'&jca='+jca; pha.href=phb;} function ha(a){  pha=document.getElementById(a); nhi=pha.href.indexOf("&nh=");if(nhi < 1) {phb=pha.href+"&nh=1";} pha.href=phb;su(a); jcc(a); }function ca(a) {  pha=document.getElementById(a); nci=pha.href.indexOf("&nc=");if(nci < 1) {phb=pha.href+"&nc=1";} pha.href=phb;su(a); jcc(a); top.location.href=document.getElementById(a).href;}function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p = "";r = "";g = e.target;if (g) {t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h)r = h.id;}} else {h = e.srcElement;f = h.parentNode;if (f)p = f.id;t = h.id;}if (t==a || p==a || r==a)return true;pha=document.getElementById(a); nbi=pha.href.indexOf("&nb=");if(nbi < 1) {phb=pha.href+"&nb=1";} pha.href=phb;su(a); jcc(a); top.location.href=document.getElementById(a).href;}}</SCRIPT>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY>
+<DIV id=aus>
+<DIV id=aubg></DIV>
+<DIV id=ads>
+<UL>
+  <LI onmousedown="st('aw0')" id=taw0 onmouseover="ss('','aw0')" 
+  onfocus="ss('','aw0')" onclick=ga(this,event)>
+  <DIV class=ad><A class=adt onmousedown="st('aw0')" id=aw0 
+  onmouseover="return ss('','aw0')" onfocus="ss('','aw0')" onclick="ha('aw0')" 
+  href="http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BOI9h0lkoR4OrNaXesQKQt4jnBKzAhDbA0P6MA8CNtwGAtRgQARgBIOfo-gEoAjgAUIW1leP9_____wFg5arpg-QOoAH42bb_A6oBCjY2MDU3MTczMjKyARF3d3cudzNzY2hvb2xzLmNvbboBCTcyOHg5MF9hc8gBAdoBLmh0dHA6Ly93d3cudzNzY2hvb2xzLmNvbS90YWdzL3RhZ190ZXh0YXJlYS5hc3CoAwHIAwfoA6YD6AMf&amp;num=1&amp;adurl=http://www.raisonance.com/smartcard/ProxiSPY.php&amp;client=ca-pub-3440800076797949&amp;clkt=-1&amp;nm=0" 
+  target=_top><SPAN>ProxiSPY</SPAN></A>
+  <DIV class=adb>Contactless card Communication analyzer. </DIV>
+  <DIV class=adu>www.raisonance.com</DIV></DIV></LI>
+  <LI onmousedown="st('aw1')" id=taw1 onmouseover="ss('','aw1')" 
+  onfocus="ss('','aw1')" onclick=ga(this,event)>
+  <DIV class=ad><A class=adt onmousedown="st('aw1')" id=aw1 
+  onmouseover="return ss('','aw1')" onfocus="ss('','aw1')" onclick="ha('aw1')" 
+  href="http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=B5dql0lkoR4OrNaXesQKQt4jnBOLFrjOO0qG6A8CNtwGAn0kQAhgCIOfo-gEoAjgAUJXu0vIHYOWq6YPkDqoBCjY2MDU3MTczMjKyARF3d3cudzNzY2hvb2xzLmNvbboBCTcyOHg5MF9hc8gBAdoBLmh0dHA6Ly93d3cudzNzY2hvb2xzLmNvbS90YWdzL3RhZ190ZXh0YXJlYS5hc3CoAwHIAwfoA6YD6AMf&amp;num=2&amp;adurl=http://www.OR-Live.com/index.cfm%3FgoogleID%3Dwlg_1904&amp;client=ca-pub-3440800076797949&amp;clkt=-1&amp;nm=0" 
+  target=_top><SPAN>Gore tag device</SPAN></A>
+  <DIV class=adb>Minimally Invasive Treatment Option For Patients With Aortic 
+  Aneurysms </DIV>
+  <DIV class=adu>www.OR-Live.com</DIV></DIV></LI></UL></DIV>
+<DIV id=att>
+<UL>
+  <LI id=abgt></LI>
+  <LI id=abgf></LI></UL></DIV>
+<SCRIPT>var sc=['abgt',18,18,'#808080',false,false];</SCRIPT>
+
+<SCRIPT src="CAY42E19_files/graphics.js"></SCRIPT>
+
+<DIV id=abgi><A 
+href="http://pagead2.googlesyndication.com/pagead/pageclick?type=5&amp;redir_url=http%3A//services.google.com/feedback/abg%3Furl%3Dhttp%3A//www.w3schools.com/tags/tag_textarea.asp%26hl%3Den%26client%3Dca-pub-3440800076797949%26adU%3Dwww.raisonance.com%26adT%3DProxiSPY%26adU%3Dwww.OR-Live.com%26adT%3DGore%2Btag%2Bdevice%26done%3D1%26gl%3DIN" 
+target=_blank><SPAN 
+style="DISPLAY: inline-block; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://pagead2.googlesyndication.com/pagead/abglogo/abg-en-100c-ffffff.png'); WIDTH: 78px; HEIGHT: 16px"><IMG 
+style="FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=0)" height=16 
+alt="Ads by Google" src="CAY42E19_files/abg-en-100c-ffffff.png" width=78 
+border=0></SPAN></A></DIV></DIV></BODY></HTML>

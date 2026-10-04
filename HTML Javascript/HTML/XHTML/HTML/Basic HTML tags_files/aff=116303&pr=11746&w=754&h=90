@@ -1,0 +1,183 @@
+	
+	var oc_bannerExt = '';	
+	var oc_newPage = 0;
+	var oc_bannerLink = '';
+	
+	
+	var oc_urlToTrack = document.URL;
+	var oc_protEndPos = oc_urlToTrack.indexOf("//")+2;
+	var oc_quePos = oc_urlToTrack.indexOf("?");
+	oc_quePos = oc_quePos==-1?oc_urlToTrack.indexOf("&"):oc_quePos;
+	var oc_firstSlash = oc_urlToTrack.indexOf("/",oc_protEndPos+1);
+	var oc_secondSlash = oc_firstSlash>=0?oc_urlToTrack.indexOf("/",oc_firstSlash+1):-1;
+	if (oc_quePos==-1)
+	{
+		if (oc_secondSlash>=0)
+		{
+			oc_urlToTrack = oc_urlToTrack.substring(0,oc_secondSlash);
+		}
+		else if (oc_firstSlash>=0)
+		{
+			oc_urlToTrack = oc_urlToTrack.substring(0,oc_firstSlash);
+		}
+	}
+	else
+	{
+		oc_urlToTrack = oc_urlToTrack.substring(0,oc_quePos);
+	}
+	
+	var fullDomain = oc_urlToTrack.substring(oc_protEndPos,oc_firstSlash);
+	var chCount;
+	var dotCount = 0;
+	for (chCount=0;chCount<fullDomain.length;++chCount)
+	{
+		if (fullDomain.charAt(chCount)=='.')
+			dotCount++;
+	}
+	if (dotCount>1)
+	{
+		oc_urlToTrack = oc_urlToTrack.substr(oc_urlToTrack.indexOf('.')+1);
+	}
+	else
+	{
+		oc_urlToTrack = oc_urlToTrack.substr(oc_protEndPos);
+	}
+	
+	function TrimString(sInString) {
+		sInString = sInString.replace( /^\s+/g, "" );// strip leading
+  		return sInString.replace( /\s+$/g, "" );// strip trailing
+	}
+	
+	
+	
+	function oc_getVarString()
+	{
+		var oc_vars = '';
+		var oc_tmp = document.getElementById('jstag').getAttribute('src').split("?");
+		//document.location.href.split("?");	
+		
+		if ( oc_tmp.length > 1 ) {		
+			var oc_url = oc_tmp[1].split('&');
+			for( var oc_i = 0 ;oc_i < oc_url.length ; oc_i++ ) {
+				var oc_param = oc_url[oc_i].split('=');				
+				if (oc_param[0]=='xt') oc_bannerExt=oc_param[1];
+				if (oc_param[0]=='newPage') oc_newPage=oc_param[1];
+				if (oc_param[0]=='link') oc_bannerLink=oc_param[1];
+				if (oc_i==0)
+					oc_vars = oc_vars + oc_param[0] + '=' + oc_param[1]+escape('&srcurl='+escape(oc_urlToTrack));
+				else
+					oc_vars = oc_vars + '&' + oc_param[0] + '=' + oc_param[1];		
+			}							
+		}		
+		return oc_vars;
+	}
+	var oc_flash_vars = oc_getVarString();
+	
+	var oc_linkArr = oc_bannerLink.split('link%3D');
+	oc_bannerLink = unescape(oc_linkArr[0])+'&link='+oc_linkArr[1];
+	 
+	//****************************************
+	//				Flash detect
+	//****************************************
+	
+	var oc_flashinstalled = 0;
+	var oc_flashversion = 0;
+	oc_MSDetect = "false";
+	if (navigator.plugins && navigator.plugins.length)
+	{
+		oc_x = navigator.plugins["Shockwave Flash"];
+		if (oc_x)
+		{
+			oc_flashinstalled = 2;
+			if (oc_x.description)
+			{
+				oc_y = oc_x.description;
+				oc_flashversion = oc_y.charAt(oc_y.indexOf('.')-1);
+			}
+		}
+		else
+			oc_flashinstalled = 1;
+		if (navigator.plugins["Shockwave Flash 2.0"])
+		{
+			oc_flashinstalled = 2;
+			oc_flashversion = 2;
+		}
+	}
+	else if (navigator.mimeTypes && navigator.mimeTypes.length)
+	{
+		oc_x = navigator.mimeTypes['application/x-shockwave-flash'];
+		if (oc_x && oc_x.enabledPlugin)
+			oc_flashinstalled = 2;
+		else
+			oc_flashinstalled = 1;
+	}
+	else
+		oc_MSDetect = "true";
+
+	//VB PORTION
+
+	document.write('<SCRIPT LANGUAGE=VBScript\> \n');
+	document.write('	on error resume next\n');
+	document.write('		If oc_MSDetect = "true" Then\n');
+	document.write('			For oc_j = 2 to 6\n');
+	document.write('				If Not(IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash." & oc_j))) Then\n');
+	document.write('\n');
+	document.write('				Else\n');
+	document.write('					oc_flashinstalled = 2\n');
+	document.write('					oc_flashversion = oc_j\n');
+	document.write('				End If\n');
+	document.write('			Next\n');
+	document.write('			If oc_flashinstalled = 0 Then\n');
+	document.write('				oc_flashinstalled = 1\n');
+	document.write('			End If\n');
+	document.write('		End If\n');
+	document.write('</SCRIPT\> \n');
+	
+	//********************************************
+	//		END FLASH DETECT
+	//********************************************
+	
+	
+	//********************************************
+	//		Support old puppets which call DOFSCOMMAND
+	//********************************************
+	function ODDBANNER_DoFSCommand(){}
+	
+	//track impressions
+	var oc_randomNumber = Math.round(Math.random()*10000000);
+	
+	
+	var oc_banObj = '<div id="oc_banner"><img src="http://banner-a.oddcast.com/track/affId=116303/bannerId=163/promoId=11746/doc='+(oc_urlToTrack)+'/track.txt?rnd='+oc_randomNumber+'" width="0" height="0"/>';	
+	if (TrimString(oc_bannerExt)=='swf')
+	{
+		
+		if (oc_flashinstalled == 2 && oc_flashversion>=6)
+		//flash 6 or later installed
+		{	
+			
+			oc_banObj += '<object id="ODDBANNER" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="754" height="90">';
+			oc_banObj += '<param name="movie" value="http://banner-a.oddcast.com/ccs2/banners/163.swf" />';
+			oc_banObj += '<PARAM NAME="scale" VALUE="noborder"> ';
+			oc_banObj += '<param name="quality" value="high" />';
+			oc_banObj += '<param name="bgcolor" value="#ffffff" />';
+			oc_banObj += '<param name="wmode" value="transparent" />';
+			oc_banObj += '<param name="FLASHVARS" value="'+oc_flash_vars+'&media=http%3A%2F%2Fbanner-a.oddcast.com%2Fccs2%2Fbanners%2F163%2F">';
+			oc_banObj += '<embed src="http://banner-a.oddcast.com/ccs2/banners/163.swf" quality="high" bgcolor="#ffffff" width="754" height="90" flashvars="'+oc_flash_vars+'&media=http%3A%2F%2Fbanner-a.oddcast.com%2Fccs2%2Fbanners%2F163%2F" swLiveConnect=true wmode="transparent" name="ODDBANNER" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />';
+			oc_banObj += '</object>';
+		}
+		else								
+		//flash is not installed or earlier than flash 6 is installed
+		{
+			oc_banObj += '<a href="'+oc_bannerLink+'" target="'+(oc_newPage==1?'_blank':'_self')+'"><img src="http://banner-a.oddcast.com/ccs2/banners/thumb_163.jpg" width="754" height="90"/></a>';
+		}
+	}
+	else 
+	//an image banner (gif/jpg)
+	{
+		oc_banObj += '<a href="'+oc_bannerLink+'" target="'+(oc_newPage==1?'_blank':'_self')+'"><img src="http://banner-a.oddcast.com/ccs2/banners/163.'+oc_bannerExt+'" width="754" height="90"/></a>';	
+	}
+	
+	
+	oc_banObj += '</div>';	
+	document.write(oc_banObj);
+	

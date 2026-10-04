@@ -1,0 +1,20 @@
+<html>
+<style>
+    body * {
+      margin: 10px;
+      border: 1px solid blue;
+    }
+  </style>
+  <body>
+  <form onclick="console.log('form click')">FORM
+    <div onclick="console.log('div click')"  >DIV
+      <p onclick="console.log('p click');event.stopPropagation();" >P</p>
+    </div>
+    
+  
+  </form>
+</body>
+</html>
+<script type="text/javascript">
+
+</script>

@@ -1,0 +1,33 @@
+BODY {
+	MARGIN: 0em; COLOR: #000033; FONT-FAMILY: Arial, Helvetica, Swiss, sans-serif
+}
+TD {
+	COLOR: #000033; FONT-FAMILY: Arial, Helvetica, Swiss, sans-serif
+}
+A:link {
+	FONT-WEIGHT: bold; COLOR: #0000cc; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-WEIGHT: bold; COLOR: #660099; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff9900; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+TABLE.nav {
+	FONT-SIZE: 10px; WIDTH: 60px; BACKGROUND-COLOR: #ffffff; align: center
+}
+TH.nav-pas {
+	BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; WIDTH: 60px; BORDER-BOTTOM: #000099 1px solid; BACKGROUND-COLOR: #99ccff
+}
+TH.nav-act {
+	BORDER-RIGHT: #996600 1px solid; BORDER-TOP: #996600 1px solid; BORDER-LEFT: #996600 1px solid; WIDTH: 60px; BORDER-BOTTOM: #996600 1px solid; BACKGROUND-COLOR: #ffffcc
+}
+TH.nav-sm {
+	BORDER-RIGHT: #990099 1px solid; BORDER-TOP: #990099 1px solid; BORDER-LEFT: #990099 1px solid; WIDTH: 60px; BORDER-BOTTOM: #990099 1px solid; BACKGROUND-COLOR: #ffccff
+}
+TABLE.navb {
+	FONT-SIZE: 10px; MARGIN: 0px auto; BACKGROUND-COLOR: #ffffff
+}

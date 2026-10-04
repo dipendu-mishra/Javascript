@@ -1,0 +1,7 @@
+$('#accept').click(function() {
+	if ($('#submitbtn').is(':disabled')==true) {
+    	$('#submitbtn').removeAttr('disabled');
+    } else {
+    	$('#submitbtn').attr('size', '10');
+    }
+});

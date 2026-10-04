@@ -1,0 +1,16 @@
+<html>
+<script type="text/javascript">
+function getvalue(objselect)
+{
+return objselect.options[objselect.selectedIndex].value
+	
+}
+</script>
+<form name="form1">
+Songs:  <select NAME="songs" SIZE=1>
+<option VALUE="Liquid">Liquid</option>
+<option VALUE="Solid">Solid</option>
+<option VALUE="Gas">Gas</option>
+<p><input type=button value="Show Selected" onClick="alert(getvalue(this.form.songs))"></p>
+</form>
+</html>

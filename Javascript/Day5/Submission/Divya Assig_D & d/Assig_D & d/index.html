@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Draggable</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css"></style>
+</head>
+<body>
+	<section>
+		<div class="choice">
+			<p draggable ="true">Good Morning</p>
+			<p draggable ="true">see you soon</p>
+			<p draggable ="true">Hello</p>
+			<p draggable ="true">Have a nice day</p>
+			<p draggable ="true">Hi</p>
+			<p draggable ="true">Good afternoon</p>
+					
+		</div>
+		<div class="choice">
+			<p draggable ="true">Goodbye</p>
+			<p draggable ="true">bye</p>
+			<p draggable ="true">Good evening</p>
+			<p draggable ="true">see you tomorrow</p>
+			<p draggable ="true">How are you </p>
+			<p draggable ="true">Good night</p>
+
+		</div>
+	
+		<div class="choice"></div>
+		<div class="choice"></div>
+	</section>
+</body>
+<script src="index.js">
+	<script type="text/javascript">
+	var p=document.getElementsByTagName('p')
+	var choice =document.getElementsByClassName('choice');
+	var dragItem=null;
+
+	for(var i of p){
+		i.addEventLISTENER('dragstart', dragSstart);
+		i.addEventLISTENER('dragend', dragEnd);
+	}
+
+	function dragStart(argument) {
+		dragItem=this;
+		setTimeout(()=>this.style.display="none",0);
+	}
+
+	function dragEnd(argument) {
+		setTimeout(()=>this.style.display="none",0);
+		dragItem=null;
+	}
+
+	for(j of choice){
+		j.addEventListener('dragover', dragOver);
+		j.addEventListener('dragenter', dragOver);
+		j.addEventListener('dragleave', dragOver);
+		j.addEventListener('drop', Drop);
+	}
+
+function Drop(){
+
+	this.append(dragItem);
+
+}
+function dragOver(e){
+	e.preventDefault();
+	this.style.border = "2px dotted cyan";
+
+}
+
+function dragEnter(e)
+{
+    e.preventDefault();
+}
+
+function dragLeave(e)
+{
+	this.style.border = "2px dotted cyan";
+}
+</script>

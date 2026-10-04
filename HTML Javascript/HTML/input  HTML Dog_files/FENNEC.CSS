@@ -1,0 +1,84 @@
+BODY {
+	FONT-SIZE: 12pt; MARGIN: 0px
+}
+ {
+	BORDER-TOP-WIDTH: 0px! important; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px! important; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px! important; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: static; BORDER-RIGHT-WIDTH: 0px! important
+}
+#content {
+	BORDER-TOP-WIDTH: 0px! important; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px! important; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px! important; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: static; BORDER-RIGHT-WIDTH: 0px! important
+}
+#logo {
+	BORDER-TOP-WIDTH: 0px! important; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px! important; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px! important; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: static; BORDER-RIGHT-WIDTH: 0px! important
+}
+#yai SPAN {
+	BORDER-TOP-WIDTH: 0px! important; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px! important; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px! important; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: static; BORDER-RIGHT-WIDTH: 0px! important
+}
+#yai A {
+	BORDER-TOP-WIDTH: 0px! important; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px! important; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px! important; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: static; BORDER-RIGHT-WIDTH: 0px! important
+}
+#intro {
+	BORDER-TOP-WIDTH: 0px! important; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px! important; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px! important; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: static; BORDER-RIGHT-WIDTH: 0px! important
+}
+#ai2 {
+	BORDER-TOP-WIDTH: 0px! important; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px! important; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px! important; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: static; BORDER-RIGHT-WIDTH: 0px! important
+}
+#footer {
+	BORDER-TOP-WIDTH: 0px! important; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px! important; BACKGROUND: white; BORDER-BOTTOM-WIDTH: 0px! important; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: static; BORDER-RIGHT-WIDTH: 0px! important
+}
+CODE {
+	FONT-SIZE: 0.8em
+}
+#footer {
+	MARGIN-TOP: 3em
+}
+A {
+	FONT-WEIGHT: bold; COLOR: black! important
+}
+#yai SPAN {
+	COLOR: #8b2! important
+}
+#yai A {
+	COLOR: #8b2! important
+}
+FORM {
+	DISPLAY: none
+}
+#nav {
+	DISPLAY: none
+}
+#ads {
+	DISPLAY: none
+}
+#related {
+	DISPLAY: none
+}
+#footer A {
+	DISPLAY: none
+}
+P {
+	FONT: 1em "Times New Roman", Times, serif
+}
+LI {
+	FONT: 1em "Times New Roman", Times, serif
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yai {
+	FONT: 0.7em arial, helvetica, sans-serif
+}
+PRE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 1em; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#logo {
+	PADDING-RIGHT: 12pt; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 24pt; FONT: 7pt arial, helvetica, sans-serif; WIDTH: 80pt; PADDING-TOP: 0px
+}
+#logo IMG {
+	WIDTH: 100%; HEIGHT: 100%
+}
+H1 {
+	CLEAR: none; MARGIN: 0px 0px 12pt 92pt
+}
+#intro P {
+	CLEAR: left
+}

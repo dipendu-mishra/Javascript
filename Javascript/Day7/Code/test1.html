@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  
+<body>
+    <!--setting styles for our document-->
+    <style>
+        p {
+            color: green;
+        }
+    </style>
+  
+    <p>GeeksForGeeks</p>
+  
+    <div>
+  
+        <p id="gfg">Click the button to get the
+          node name of the parent node.</p>
+        <!--here 'p' element is inside 'div' element 
+        meaning that 'div' is the parent of 'p' element here-->
+  
+    </div>
+  
+    <button onclick="myParentNode()">Try it</button>
+  
+    <p id="text"></p>
+  
+    <script>
+        function myParentNode() {
+            var geek = document.parentElement;
+            console.log(geek);
+            /*appending parent node to the 'p' element with id named text*/
+            //document.getElementById("text").innerHTML = geek; 
+        }
+    </script>
+  
+</body>
+  
+</html>

@@ -1,0 +1,21 @@
+<html>
+<script type="text/javascript">
+function imageMouseOver(currentObject)
+{
+     alert(currentObject)// Object if type HTMlElement
+    currentObject.width='400';
+    currentObject.height='200';
+//onmouseout="OrteliusWorldMap.width='150';OrteliusWorldMap.height='100';" />
+}
+function imageMouseLeave(currentObject)
+{
+    currentObject.width='200';
+    currentObject.height='100';
+}
+</script>
+<body>
+<img src="google.jpg" height=100 width=200 border=3 name="image"
+onmouseover="image.width='400';image.height='200';" onmouseleave="imageMouseLeave(this)">
+</body>
+
+</html>

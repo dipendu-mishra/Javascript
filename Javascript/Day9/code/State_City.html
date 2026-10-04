@@ -1,0 +1,93 @@
+<html>
+<head><h3>Billing Address</h3>
+    
+        
+</head>
+    <body onload="onloadDisplay()">
+        <div class="c">
+        <div id="content">
+    <form>
+        <label for="name">Enter Full Name</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="address">Enter Address</label><br>
+        <input type="text" id="address" name="address"><br><br>
+        <label for="phno">Enter Phone Number</label><br>
+        <input type="text" id="phno" name="phno"><br><br>
+        <span><input class="nm" type="submit" value="Submit">
+            </span><br><br>
+            <input type="checkbox" id="check" name="check"><label for="check">Different Shipping Address</label>
+        </form>
+        <br>
+            <form id="1">
+                <!-- <label for="address">Shipping Address</label><br><br>
+                <input type="text" id="address" name="address"><br><br>
+                             -->
+            </form>
+                
+                    
+            
+        </div>
+        <div id="content2" class="tt">
+            <br>
+            <form>
+                <label for="city">City</label><br>
+                <select name="college" id="city">                 
+                    
+                  </select><br>
+                <label for="state">State</label><br>
+                <select name="college" id="state">
+                   
+                  </select><br>
+                <label for="state">Pin Code</label><br>
+                <select name="pin" id="pin">
+                   
+                </select>
+                    
+                        
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        
+            <form id=2>
+                <!-- <label for="city">City</label><br>
+                <input type="text" id="city" name="city"><br>
+                <label for="state">State</label><br>
+                <input type="state" id="state" name="state"><br>
+                <label for="state">Pin Code</label><br>
+                <input type="pin" id="pin" name="pin"><br>
+                     -->
+                        
+            </form>
+        </div>
+    </div>
+ </body>     
+ <script>
+
+let state_city=[
+  { state: 'Karnataka', cities: ['Bangalore','Mangalore','Mysore'] },
+  { state: 'Tamilnadu', cities: ['Chennai','Vellore'] },
+  { state: 'WB', cities: ['Kolkata','Duragour'] },
+  { state: 'Kerala', cities: ['Kannur','Kochi'] },  
+]
+      var state=document.getElementById("state") 
+      var city=document.getElementById("city")    
+      var pin=document.getElementById("pin")
+      //console.log(re.value)
+      function onloadDisplay()
+      {
+          let states=state_city.map((element)=>{
+              return element.state;
+      })
+      state. childNodes[0]
+        
+      
+ </script>           
+</html>

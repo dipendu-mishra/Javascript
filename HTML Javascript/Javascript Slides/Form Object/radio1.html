@@ -1,0 +1,23 @@
+<html>
+<script type="text/javascript">
+function getvalue(objradio)
+{
+var value=null
+for(var i=0;i<objradio.length;i++)
+{
+if(objradio[i].checked)
+{
+value=objradio[i].value
+break
+}
+}
+return value	
+}
+</script>
+<form name="form1">
+<p><input type=radio name="songs" value="liquid">Liquid</p>
+<p><input type=radio name="songs" value="solid">Solid</p>
+<p><input type=radio name="songs" value="gas">Gas</p>
+<p><input type=button value="Show Selected" onClick="alert(getvalue(this.form.songs))"></p>
+</form>
+</html>

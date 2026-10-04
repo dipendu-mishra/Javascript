@@ -1,0 +1,442 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0074)http://www.comptechdoc.org/independent/web/cgi/javamanual/javaobjects.html -->
+<HTML><HEAD><TITLE>JavaScript Objects</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+<META 
+content="This section does not describe the handling of objects in JavaScript since it is assumed the reader possesses object oriented knowledge.  It provides information about the creation of JavaScript objects, templates, constructors, and more." 
+name=description>
+<META content="JavaScript Objects" name=keywords><LINK 
+href="Page7_files/style.css" type=text/css rel=stylesheet><!-- Background white, links blue (unvisited), navy (visited), red (active) --></HEAD>
+<BODY>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width="100%">
+      <HR class=firsthr>
+
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 valign="top">
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=150><BR>
+            <DIV class=center>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Computer Tech Home Page' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/index.html" 
+                  target=_top>Computer Technology Documentation Home</A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Platform Independent Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/index.html" 
+                  target=_top>Independent Section</A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Web Technologies Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/index.html" 
+                  target=_top>Web Technologies</A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To CGI Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/cgi/index.html" 
+                  target=_top>CGI Section</A> </DIV>
+                  <H3>JavaScript</H3>
+                  <HR>
+
+                  <OL>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/">Introduction</A> 
+
+                    <H3>The Language</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javastart.html">Starting</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javavariables.html">Variables</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaoperators.html">Operators</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaloops.html">Control 
+                    and Loops</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javafunctions.html">Functions</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaprefunct.html">Predefined 
+                    Functions</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaevents.html">Events</A> 
+
+                    <H3>Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaobjects.html">Object 
+                    Creation and Use</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaobjheir.html">Object 
+                    Hierarchy</A> 
+                    <H3>Independent Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaarray.html">Array 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javadate.html">Date 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javamath.html">Math 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javanumber.html">Number 
+                    and Boolean Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javastring.html">String 
+                    Object</A> 
+                    <H3>Main Object</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javanavigator.html">Navigator 
+                    Object</A> 
+                    <H3>Navigator Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javawindow.html">Window 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javamimetype.html">MimeType 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaplugin.html">Plugin 
+                    Object</A> 
+                    <H3>Window Sub Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javadocument.html">Document 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javalocation.html">Location 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javahistory.html">History 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaframe.html">Frame 
+                    Object</A> 
+                    <H3>Document Sub Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaanchor.html">Anchor 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaapplet.html">Applet 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaarea.html">Area 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaform.html">Form 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaimage.html">Image 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javalayer.html">Layer 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javalink.html">Link 
+                    Object</A> 
+                    <H3>Form Sub Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javabutton.html">Button 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacheckbox.html">Checkbox 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javafileupload.html">FileUpload 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javahidden.html">Hidden 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaoption.html">Option 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javapassword.html">Password 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaradio.html">Radio 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javareset.html">Reset 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaselect.html">Select 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javasubmit.html">Submit 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javatext.html">Text 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javatextarea.html">Textarea 
+                    Object</A> 
+                    <H3>More</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacookie.html">Handling 
+                    Cookies</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javastyle.html">Style 
+                    Attributes</A> 
+                    <H3>Examples</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javasimpleexamples.html">Simple 
+                    Examples</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javahforms.html">Handling 
+                    Form Input</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaihit.html">Individual 
+                    Hit Counter</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacredirect.html">Redirecting 
+                    based on Cookies</A> 
+                    <H3>Appendices</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaterms.html">Terms</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacredits.html">Credits</A> 
+                    </LI></OL><BR>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To CGI Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/cgi/index.html" 
+                  target=_top><IMG height=35 alt=CGI 
+                  src="Page7_files/bluecgibutton.gif" width=120></A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Web Technologies Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/index.html" 
+                  target=_top><IMG height=35 alt="Web Tech" 
+                  src="Page7_files/bluewebtechbutton.gif" width=120></A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Platform Independent Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/index.html" 
+                  target=_top><IMG height=35 alt=Independent 
+                  src="Page7_files/blueindependentbutton.gif" width=120></A> 
+                  </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Computer Tech Home Page' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/index.html" target=_top><IMG 
+                  height=35 alt=Home src="Page7_files/bluehomebutton.gif" 
+                  width=120></A> </DIV></TD></TR></TBODY></TABLE></DIV></TD>
+          <TD vAlign=top align=left>
+            <TABLE width="96%" align=center>
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=top><!--Begin TechTutorials.info Banner code -->
+                        <DIV style="TEXT-ALIGN: center"><IFRAME 
+                        style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px" 
+                        align=center marginWidth=0 marginHeight=0 
+                        src="Page7_files/bandisplay.htm" frameBorder=0 width=468 
+                        scrolling=no height=60></IFRAME></DIV><!--End TechTutorials.info Banner code -->
+                        <H1>JavaScript Objects</H1>
+                        <P>This section does not describe the handling of 
+                        objects in JavaScript since it is assumed the reader 
+                        possesses object oriented knowledge. It provides 
+                        information about the creation of JavaScript objects, 
+                        templates, constructors, and more. </P>
+                        <H3>Object Creation</H3>
+                        <P>Generally objects may be created using the following 
+                        syntax: </P>
+                        <P class=indent>name = new Object() </P>
+                        <P>For instance Array, Date, Number, Boolean, and String 
+                        objects can be created this way as in the example below. 
+                        Most objects may be created this way except for the Math 
+                        object which cannot be instantiated (an instance of it 
+                        may not be created). </P><PRE class=indent>ratings = new Array(6,9,8,4,5,7,8,10)
+var home = new String("Residence")
+var futdate = new Date()
+var num1 = new Number()
+</PRE>
+                        <P>String objects may also be created as follows: </P>
+                        <P class=indent>var string = "This is a test." </P>
+                        <H3>Object Template</H3>
+                        <P>Objects are created using templates. Templates to 
+                        objects are like cookie cutters to cookies. Cookie 
+                        cutters are used to create instances of cookies and 
+                        object templates are used to create instances of 
+                        objects. For now, the template is shown. The following 
+                        creates an object, olist. </P><PRE class=indent>function olist(elements)
+{
+   this.elements = elements
+   this.listitems = new Array(elements)
+   this.getItem = list_getItem
+   this.setItem = list_setItem
+}
+</PRE>
+                        <P>The methods list_setItem and list_getItem are written 
+                        as follows: </P><PRE class=indent>function list_getItem(element)
+{
+   return this.listitems(element)
+}
+
+function list_setItem(element, stringval)
+{
+   this.listitems(element) - stringval
+}
+</PRE></TD>
+                      <TD vAlign=top>
+                        <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-0057014352875780";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_channel ="2584929872";
+google_color_border = ["336699","000000","B4D0DC","A8DDA0"];
+google_color_bg = ["FFFFFF","F0F0F0","ECF8FF","EBFFED"];
+google_color_link = ["0000FF","0000FF","0000CC","0000CC"];
+google_color_url = "008000";
+google_color_text = ["000000","000000","6F6F6F","6F6F6F"];
+//--></SCRIPT>
+
+                        <SCRIPT src="Page7_files/show_ads.js" 
+                        type=text/javascript>
+</SCRIPT>
+                        <BR>
+                        <HR>
+                        <BR><!-- Begin GlobalSpec Search Box -->
+                        <SCRIPT language=JavaScript><!--
+	function gsDoAffiliateSearchBoxSubmitVert2(aform) {
+		var searchterm = aform.query.value;
+		if (searchterm == "") {
+			alert("Please enter a search term");
+			return false;
+		}
+		return true;
+	}
+	function gsSearchModeKeyDownVert2(evt) {
+		evt = (evt) ? evt : event;
+		var charCode = (evt.charCode) ? evt.charCode : ((evt.which) ? evt.which : evt.keyCode);
+		if ((charCode == 13) || (charCode == 3)) {
+			document.gsSearchBoxFormVert.submit();
+			return false;
+		}
+		return true;
+	}
+	//-->
+</SCRIPT>
+
+                        <TABLE 
+                        style="PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; WIDTH: 160px; PADDING-TOP: 1px; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 90px" 
+                        cellSpacing=0 cellPadding=1 bgColor=white border=0>
+                          <FORM name=gsSearchBoxFormVert 
+                          onsubmit="return gsDoAffiliateSearchBoxSubmitVert2(this);" 
+                          action=http://affiliates.globalspec.com/affiliate/search 
+                          method=get target=_blank>
+                          <TBODY>
+                          <TR>
+                            <TD vAlign=top align=middle><IMG height=30 
+                              alt="GlobalSpec - The Engineering Search Engine" 
+                              src="Page7_files/engineeringweb_drop.gif" 
+                              width=120 border=0></TD></TD>
+                          <TR>
+                            <TD vAlign=top align=left><INPUT type=hidden 
+                              value=total name=show> <INPUT type=hidden 
+                              value=searchbox name=source> <INPUT type=hidden 
+                              value=affiliate name=frmtrk> <INPUT type=hidden 
+                              value=1393 name=kbid> <INPUT type=hidden 
+                              value=?img=65&amp;kbid=1393 name=img> <INPUT 
+                              type=hidden value=DropVert051103 name=version> 
+                              <INPUT 
+                              style="FONT-SIZE: 10px; WIDTH: 135px; HEIGHT: 20px" 
+                              size=31 name=query> <INPUT 
+                              style="WIDTH: 15px; HEIGHT: 15px" type=image 
+                              alt="Find It!" src="Page7_files/SearchBoxGo.gif" 
+                              align=absMiddle border=0 name=Submit> </TD></TR>
+                          <TR>
+                            <TD vAlign=top align=left><SELECT 
+                              onkeydown="return gsSearchModeKeyDownVert2(event)" 
+                              style="FONT-SIZE: 10px; WIDTH: 155px; HEIGHT: 20px" 
+                              name=SearchMode> <OPTION value=Products 
+                                selected>Products &amp; Suppliers</OPTION> 
+                                <OPTION value=Services>Service 
+                                Providers</OPTION> <OPTION value=Suppliers>A 
+                                Company by Name</OPTION> <OPTION 
+                                value=SearchEngineTotal>THE ENGINEERING 
+                                WEB</OPTION> <OPTION value=SearchEngineTotal>All 
+                                Sites</OPTION> <OPTION 
+                                value=SearchEngineAppNotes>Application 
+                                Notes</OPTION> <OPTION 
+                                value=SearchEngineMaterials>Material 
+                                Properties</OPTION> <OPTION 
+                                value=SearchEnginePartNumbers>Part Numbers 
+                                (Beta)</OPTION> <OPTION 
+                                value=SearchEnginePatents>Patents</OPTION> 
+                                <OPTION 
+                                value=SearchEngineStandards>Standards</OPTION> 
+                                <OPTION value=SearchEngineCompanySites>Supplier 
+                                Web Sites</OPTION></SELECT> 
+                        </TD></TR></FORM></TBODY></TABLE><SPAN 
+                        style="POSITION: absolute"><IMG 
+                        src="Page7_files/1pxlclr.gif"></SPAN> <!-- End GlobalSpec Search Box --></TD></TR></TBODY></TABLE>
+                  <H3>Creating the Object</H3><PRE class=indent>var list1 = new olist(10)
+</PRE>
+                  <H3>Changing the Object</H3><PRE class=indent>list1.setItem(0,"This is the first item in the list")
+list1.setItem(1,"This is the second item in the list")
+list1.setItem(2,"This is the third item in the list")
+</PRE>
+                  <H3>The Prototype property</H3>
+                  <P>The prototype property can be used to create new properties 
+                  of created objects (whether they are user defined or system 
+                  defined) as follows: </P><PRE class=indent>list1.prototype.type = "1"
+</PRE>
+                  <H3>The Function Constructor</H3>
+                  <P>Creation: </P>
+                  <P class=indent>minus2 = new Function("x","return x-2") </P>
+                  <P>Usage: </P>
+                  <P class=indent>y = minus2(10) </P>
+                  <P>The value of y is now 8. </P>
+                  <H3>Object use</H3>
+                  <P>When writing JavaScript, you are embedding the JavaScript 
+                  in an object. These objects may have functions. An example 
+                  function is the alert() function. It may be called as follows: 
+                  </P>
+                  <P class=indent>alert("An error occurred!") </P>
+                  <P>However, the window object is the highest level JavaScript 
+                  object, therefore the following code does the same thing: </P>
+                  <P class=indent>window.alert("An error occurred!") </P>
+                  <P>The following code using the "this" object declaration will 
+                  perform the same: </P>
+                  <P class=indent>this.alert("An error occurred!") </P>
+                  <H3>Object and Property Reference</H3>
+                  <P>Objects and their properties are normally referenced using 
+                  a dot between each object or its property or method. as 
+                  follows: </P>
+                  <P class=indent>document.write("This is a test.") </P>
+                  <P>However, a method called array notation, may be used. Array 
+                  notation is required when the first character of a property 
+                  name is a digit since the dot method may not be used in this 
+                  case. The above example in array notation is: </P>
+                  <P class=indent>document ["write"] ("This is a test.") </P>
+                  <H3>Levels of Objects</H3>
+                  <P>JavaScript has basically three types of objects which are: 
+                  </P>
+                  <UL>
+                    <LI>Top level objects 
+                    <LI>Objects that are properties of other objects 
+                    <LI>Objects that are not properties of other objects 
+</LI></UL><!--Begin TechTutorials.info Banner code -->
+                  <DIV style="TEXT-ALIGN: center"><IFRAME 
+                  style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px" 
+                  align=center marginWidth=0 marginHeight=0 
+                  src="Page7_files/CAJ60BVD." frameBorder=0 width=468 
+                  scrolling=no height=60></IFRAME></DIV><!--End TechTutorials.info Banner code --></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TR></TBODY></TABLE></BODY></HTML>

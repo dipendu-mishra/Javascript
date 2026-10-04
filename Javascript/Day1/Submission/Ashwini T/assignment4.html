@@ -1,0 +1,39 @@
+<!-- Check the given number is Palindrome Number or not -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Palindrome Number</title>
+</head>
+<body>
+      <h3>Check the given number is Palindrome Number or not</h3>
+
+      <!-- js code -->
+      <script>
+            // take input from user
+            let n = +prompt("Enter number to be checked","number");
+            document.write("Given number = "+n);
+            let temp = n;
+            // initialize sum
+            let revNum = 0;
+
+            while(n>0){
+                  let rem = n%10;
+                  revNum = (revNum*10)+rem;
+                  n = parseInt(n/10);
+            }
+            document.write("<br>Reversed number = "+revNum);
+
+            // check num is palindrome or not 
+            if(temp == revNum){
+                  document.write("<br><h4>Given number is palindrome number</h4>");
+            }
+            else  
+                   document.write("<br><h4>Given number is not palindrome number</h4>");
+
+      </script>
+</body>
+</html>

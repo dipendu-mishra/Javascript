@@ -1,0 +1,39 @@
+<html>
+<body>
+    <div id="wrapper-div">
+    <div id="child-one" >
+      <h1>
+        Child One
+      </h1>
+    </div>
+    <div id="child-two" >
+      <h1>
+        Child Two
+      </h1>
+    </div>
+  
+  </div>
+  <div id="p1">Click here.....or.....else in document</div>
+</body>
+<script type="text/javascript">
+
+    const  x= function ()  
+     {
+        document.getElementById("p1").innerHTML = "Clicked in document";
+        document.getElementById("p1").style.background="pink";
+     }
+    
+    document.addEventListener("mouseover", x);   
+    
+    // Anonymous Function
+    let mydiv=document.getElementById("p1");  
+    mydiv.addEventListener('click',function ()
+    {
+        alert('clicked in div');
+    });
+    
+    
+    
+    </script>
+
+</html>

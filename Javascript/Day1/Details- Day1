@@ -1,0 +1,107 @@
+Datetype:
+
+String, Number, Float, Int, Char, Date 
+
+char c;
+c='A';
+c=34; ASCII
+
+A=65
+Z=90
+a=97
+z=122
+0-9=
+c="ABC";
+variable= var or let
+Const , PI=3.14
+ID, Eanme, 
+Aadhar
+
+var & let
+
+var x=10;
+var x=20;
+
+let x=10;
+let x=20;
+
+let x;
+x=23;
+x=x+5;
+...
+...
+x="JS";
+...
+
+
+..
+
+
+x=x*5;
+
+
+
+
+
+ES6 Version, 2015 onwards 
+
+
+Operatorrs:
+
+Arith :+ ,- ,%, /
+Logical : AND , OR , NOT 
+    Precendence: 
+     
+     X=25,Z=40,Y=30
+
+    (x==20 AND y!=30) OR Z==40
+     (F AND F) OR Z==40
+     F OR T
+      
+
+Assignment
+Conditional Op:
+
+
+Type Casting
+
+Explicit 
+Implicit
+
+int x=34;
+float z=x;
+
+C language
+
+float z=34.56777;
+
+
+
+
+int x=(int)z;
+
+var x=30;
+var y=4;
+
+var z=(float)10/(float)4;
+
+ var z=10.0/4.0;
+
+
+
+
+
+
+
+float y=x*100000;
+
+Type Safe Langugae
+
+
+if-else
+
+if-else if -else
+
+switch
+
+switch()

@@ -1,0 +1,48 @@
+<!-- Display the common and unique data from an given two arrays:
+Input:
+array1: [ 2,5,23,56,77,67,34]
+array2: [3, 2 ,78, 54,34, 99 ] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Array</title>
+</head>
+<body>
+      <h3>Display the common and unique data from an given two arrays</h3>
+
+      <!-- js code -->
+      <script>
+            // initialise array
+            let array1 = [ 2,5,23,56,77,67,34];
+            let array2 = [3, 2 ,78, 54,34, 99 ];
+
+            // declare empty array
+            let common = [];
+            let unique = [];
+
+            // compare both array elements
+            var flag=false;
+            for (let i = 0; i < array1.length; i++) {
+                  flag=false;
+                  for (let j = 0; j < array2.length; j++)
+                   {
+                        // check for common ele
+                        if(array1[i] == array2[j])
+                        {
+                              // push common ele in common array
+                              common.push(array1[i]);
+                              flag=true;
+                        }                                     
+                   }
+                   if(flag==false)
+                     unique.push(array1[i]);
+            }            
+            // display result
+            document.write(array1+"<br>"+array2+"<br>Common values : "+common+"<br>Unique values : "+unique);
+      </script>
+</body>
+</html>

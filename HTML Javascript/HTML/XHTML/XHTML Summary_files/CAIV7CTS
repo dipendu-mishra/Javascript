@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0664)http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-3440800076797949&dt=1193647041453&lmt=1193647041&alternate_ad_url=http%3A%2F%2Fwww.w3schools.com%2Fbanners%2Fbannerframe.asp%3Fadpartner%3Daspall2&format=728x90_as&output=html&correlator=1193647041453&channel=6605717322&url=http%3A%2F%2Fwww.w3schools.com%2Fxhtml%2Fxhtml_summary.asp&color_bg=F1F1F1&color_text=000000&color_link=900B09&color_url=008000&color_border=808080&ad_type=text&ref=http%3A%2F%2Fwww.w3schools.com%2Fxhtml%2Fxhtml_eventattributes.asp&ga_vid=1280943370.1193647041&ga_sid=1193647041&ga_hid=1025096373&flash=9&u_h=768&u_w=1024&u_ah=740&u_aw=1024&u_cd=32&u_tz=330&u_his=14&u_java=true -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<STYLE>.ch {
+	CURSOR: hand
+}
+#abg {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 11px; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px; FONT-FAMILY: arial,sans-serif; WHITE-SPACE: nowrap; HEIGHT: 100%
+}
+.bb {
+	OVERFLOW: hidden; WIDTH: 100%
+}
+.ad {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 18px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; WIDTH: 706px; PADDING-TOP: 0px; FONT-FAMILY: arial,sans-serif; WORD-WRAP: break-word
+}
+.ad .adt {
+	FONT-WEIGHT: bold; FONT-SIZE: 26px; COLOR: #900b09; TEXT-DECORATION: none
+}
+.ad .adu {
+	COLOR: #008000; TEXT-DECORATION: underline
+}
+</STYLE>
+
+<SCRIPT><!--
+function ss(w,id) {window.status = w;a = document.getElementById(id);if (a) {bi = a.href.indexOf("&nm="); if (bi < 1) {a.href += "&nm=1";return true;}c = a.href.substring(0, bi+4); d = a.href.substring(bi+4, a.href.length);ei = d.indexOf("&");if (ei < 0) {f = d;r = '';} else {f = d.substring(0, ei);r = d.substring(ei, d.length); }var g = parseInt(f);  g++;a.href= c+g+r; }return true;}function st(id) {var a = document.getElementById(id);if (a) {a.myt = (new Date()).getTime();}}function su(id) {var a = document.getElementById(id);var b = (new Date()).getTime();if (a && a.myt && b) {var t = b - a.myt;var bi = a.href.indexOf("&clkt=");if (bi > 0) {var c = a.href.substring(0, bi+6); var d = a.href.substring(bi+6, a.href.length);var ei = d.indexOf("&");var r = '';if (ei >= 0)r = d.substring(ei, d.length);a.href = c + t + r; } else {a.href += "&clkt=" + t;}}return true;}function cs(){window.status='';} function jcc(a) {pha=document.getElementById(a); nc=pha.href.indexOf('&jca='); if(nc>=1) return; sv=String.fromCharCode(51,50,51,56,53,55,51,52,50); sv=sv.slice(4,8); jca=(-1936)+parseInt(sv); if (a=='aw0') {jca+=(4720);} else {jca=0;} phb=pha.href+'&jca='+jca; pha.href=phb;} function ha(a){  pha=document.getElementById(a); nhi=pha.href.indexOf("&nh=");if(nhi < 1) {phb=pha.href+"&nh=1";} pha.href=phb;su(a); jcc(a); }function ca(a) {  pha=document.getElementById(a); nci=pha.href.indexOf("&nc=");if(nci < 1) {phb=pha.href+"&nc=1";} pha.href=phb;su(a); jcc(a); top.location.href=document.getElementById(a).href;}function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p = "";r = "";g = e.target;if (g) {t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h)r = h.id;}} else {h = e.srcElement;f = h.parentNode;if (f)p = f.id;t = h.id;}if (t==a || p==a || r==a)return true;pha=document.getElementById(a); nbi=pha.href.indexOf("&nb=");if(nbi < 1) {phb=pha.href+"&nb=1";} pha.href=phb;su(a); jcc(a); top.location.href=document.getElementById(a).href;}}//--></SCRIPT>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY text=#000000 bgColor=#808080>
+<TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" bgColor=#f1f1f1 
+border=0>
+  <TBODY>
+  <TR>
+    <TD width=1 bgColor=#808080 height="100%" rowSpan=6><IMG height=1 alt="" 
+      width=1></TD>
+    <TD bgColor=#808080 height=1><IMG height=1 alt="" width=1></TD>
+    <TD width=1 bgColor=#808080 height="100%" rowSpan=6><IMG height=1 alt="" 
+      width=1></TD></TR>
+  <TR>
+    <TD height=2><IMG height=1 alt="" width=1></TD></TR>
+  <TR>
+    <TD height="100%">
+      <TABLE height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class=ch onmousedown="st('aw0')" id=taw0 
+          onmouseover="return ss('go to ephox.com/EditLive!','aw0')" 
+          onfocus="ss('go to ephox.com/EditLive!','aw0')" onclick=ga(this,event) 
+          onmouseout=cs() vAlign=center height="100%">
+            <DIV class=ad><A class=adt onmousedown="st('aw0')" id=aw0 
+            onmouseover="return ss('go to ephox.com/EditLive!','aw0')" 
+            onfocus="ss('go to ephox.com/EditLive!','aw0')" onclick="ha('aw0')" 
+            onmouseout=cs() 
+            href="http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=Bo9jOqpklR6z7NI7GrAP40tTjBaHpjjq18OWgA-ORrPgEABABGAEg5-j6ATgAUILp3c74_____wFg5arpg-QOoAHahbn_A6oBCjY2MDU3MTczMjKyARF3d3cudzNzY2hvb2xzLmNvbboBCTcyOHg5MF9hc8gBAdoBMGh0dHA6Ly93d3cudzNzY2hvb2xzLmNvbS94aHRtbC94aHRtbF9zdW1tYXJ5LmFzcIACAZgC9APAAgGoAwHIAwfoA6YD6AMf&amp;num=1&amp;adurl=http://ephox.com/products/editLive/&amp;client=ca-pub-3440800076797949&amp;clkt=-1&amp;nm=0" 
+            target=_top>Online HTML Editor</A> - As easy as Word, powerful 
+            features. <BR>ROI in months. Free trial. <SPAN class=adu 
+            dir=ltr>ephox.com/EditLive!</SPAN></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD height=2><IMG height=1 alt="" width=1></TD></TR>
+  <TR>
+    <TD vAlign=bottom bgColor=#808080 height=13>
+      <DIV class=bb>
+      <TABLE dir=ltr cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD align=right><A id=abg 
+            href="http://services.google.com/feedback/abg?url=http://www.w3schools.com/xhtml/xhtml_summary.asp&amp;hl=en&amp;client=ca-pub-3440800076797949&amp;adU=ephox.com/EditLive!&amp;adT=Online+HTML+Editor&amp;done=1" 
+            target=_blank>Ads by Google</A></TD></TR></TBODY></TABLE></DIV></TD></TR>
+  <TR>
+    <TD bgColor=#808080 height=1><IMG height=1 alt="" 
+width=1></TD></TR></TBODY></TABLE></BODY></HTML>

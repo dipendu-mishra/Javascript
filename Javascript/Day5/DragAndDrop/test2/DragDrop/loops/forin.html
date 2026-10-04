@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script type="text/javascript">
+
+// Understand the difference between for-in & for-of loop   
+
+const student = {
+    name: 'Monica',
+    class: 7,
+    age: 12
+}
+for ( let key in student ) 
+{       
+    console.log(key)
+    console.log(student[key])
+    //console.log(`${key} => ${student[key]}`);
+}
+console.log("Student List:")
+const students=[
+    { name:"Tom",roll:101},
+    { name:"Jack",roll:102},
+    { name:"Harry",roll:103},
+    { name:"Smith",roll:104}];
+for(stud of students)
+{
+  console.log(stud.name+" "+stud.roll);
+}
+
+</script>

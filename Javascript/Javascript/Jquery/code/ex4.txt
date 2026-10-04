@@ -1,0 +1,8 @@
+$(document).ready(function(){
+    
+	$("tr:odd").addClass("oddcolor");
+    $("tr:even").addClass("evencolor");
+    $("tr:first").addClass("heading");
+    $("tr:last").addClass("end");
+});
+

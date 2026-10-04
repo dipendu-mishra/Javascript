@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+<script type="text/javascript">
+function validate()
+{
+var TheForm;
+TheForm = document.RegistrationForm;
+
+if (TheForm.firstname.value.length == 0) {
+	alert("Please enter your first name.");
+	TheForm.firstname.focus();
+}
+
+else if (TheForm.lastname.value.length == 0) {
+	TheForm.lastname.value = prompt("Please enter your last name.");
+	if (TheForm.lastname.value.length != 0)
+	TheForm.addr1.focus();
+}
+else if (TheForm.addr1.value.length == 0) {
+	alert("Please enter your address.");
+	TheForm.addr1.focus();
+}
+else if (TheForm.city.value.length == 0) {
+	alert("Please enter the city.");
+	TheForm.city.focus();
+}
+else if (TheForm.state.value.length != 2) {
+	alert("Please enter the 2-letter state abbreviation.");
+	TheForm.state.focus();
+}
+else if (TheForm.zip.value.length < 5) {
+	alert("Please enter a valid zip code.");
+	TheForm.zip.focus();
+}
+else if (TheForm.code.value.length != 3 ||
+	isNaN(TheForm.code.value)) {
+	alert("Please enter a valid area code.");
+	TheForm.code.focus();
+	TheForm.code.select(	);
+}
+else if (TheForm.phone.value.length != 7 ||
+	isNaN(TheForm.phone.value)) {
+	alert("Please enter a valid phone number.");
+	TheForm.phone.focus();
+	TheForm.phone.select();
+}
+
+}
+</script>
+</HEAD>
+<H1 Align=Center>Computer Technology Documentation Project</H1>
+<H2 Align=Center>Member Registration</H2>
+<HR SIZE=5 WIDTH=90%>
+
+<TABLE>
+<TD>
+</TD>
+<TD>
+<PRE>
+<FORM NAME="RegistrationForm">
+<B>First Name:	</B><INPUT TYPE=TEXT NAME="firstname">
+<B>Last Name:	</B><INPUT TYPE=TEXT NAME="lastname">
+<B>Address1:	</B><INPUT TYPE=TEXT NAME="addr1">
+<B>Address2:	</B><INPUT TYPE=TEXT NAME="addr2">
+<B>City:		</B><INPUT TYPE=TEXT NAME="city">
+<B>State:		</B><SELECT NAME="state" SIZE=0>
+				<OPTION VALUE="0">--
+				<OPTION VALUE="1">AL
+				<OPTION VALUE="2">AK
+				<OPTION VALUE="3">AR
+				<OPTION VALUE="4">AS
+				<OPTION VALUE="5">AZ
+				<OPTION VALUE="6">CA
+				<OPTION VALUE="7">CO
+				<OPTION VALUE="8">CT
+				<OPTION VALUE="9">DC
+				<OPTION VALUE="10">DE
+				<OPTION VALUE="11">FL
+				<OPTION VALUE="12">FM
+				<OPTION VALUE="13">GA
+				<OPTION VALUE="14">GU
+				<OPTION VALUE="15">HI
+				<OPTION VALUE="16">ID
+				<OPTION VALUE="17">IA
+				<OPTION VALUE="18">IL
+				<OPTION VALUE="19">IN
+				<OPTION VALUE="20">KS
+				<OPTION VALUE="21">KY
+				<OPTION VALUE="22">LA
+				<OPTION VALUE="23">MA
+				<OPTION VALUE="24">MD
+				<OPTION VALUE="25">ME
+				<OPTION VALUE="26">MH
+				<OPTION VALUE="26">MI
+				<OPTION VALUE="28">MN
+				<OPTION VALUE="29">MO
+				<OPTION VALUE="30">MP
+				<OPTION VALUE="31">MS
+				<OPTION VALUE="32">MT
+				<OPTION VALUE="33">NC
+				<OPTION VALUE="34">ND
+				<OPTION VALUE="35">NE
+				<OPTION VALUE="36">NH
+				<OPTION VALUE="37">NJ
+				<OPTION VALUE="38">NM
+				<OPTION VALUE="39">NV
+				<OPTION VALUE="40">NY
+				<OPTION VALUE="41">OH
+				<OPTION VALUE="42">OK
+				<OPTION VALUE="43">OR
+				<OPTION VALUE="44">PA
+				<OPTION VALUE="45">PR
+				<OPTION VALUE="46">PW
+				<OPTION VALUE="47">RI
+				<OPTION VALUE="48">SC
+				<OPTION VALUE="49">SD
+				<OPTION VALUE="50">TN
+				<OPTION VALUE="51">TX
+				<OPTION VALUE="52">UT
+				<OPTION VALUE="53">VA
+				<OPTION VALUE="54">VI
+				<OPTION VALUE="55">VT
+				<OPTION VALUE="56">WA
+				<OPTION VALUE="57">WI
+				<OPTION VALUE="58">WV
+				<OPTION VALUE="59">WY
+</SELECT>
+<B>Zip:		</B><INPUT TYPE=TEXT NAME="zip" MAXLENGTH=10 SIZE=10>
+<B>Area Code/Phone:</B><INPUT TYPE=TEXT NAME="code" MAXLENGTH=3 SIZE=3>
+<INPUT TYPE=TEXT NAME="phone" MAXLENGTH=7 SIZE=7>
+
+
+<INPUT TYPE="BUTTON" NAME="cmdSubmit" VALUE="Submit" onClick="validate()"> <INPUT TYPE="RESET"
+ VALUE="Clear">
+</PRE>
+
+</FORM>
+</TD>
+</TABLE>
+</HTML>
+

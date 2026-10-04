@@ -1,0 +1,25 @@
+<html>
+<script type="text/javascript">
+function getvalue(objselect)
+{
+var list=" "
+for(var i=0;i<objselect.length;i++)
+{
+if(objselect.options[i].selected)
+{
+list+=objselect.options[i].text+"<p>"
+}
+}
+selwindow=window.open("text1.html","Selections","height=200,width=400")
+selwindow.document.write("<h2>You have picked the following songs:</h2<p><p>")
+selwindow.document.write(list+"<input type=button value='ok' onclick=window.alert('ok')"><input type=button value='Cancel'>")	
+}
+</script>
+<form name="form1">
+Songs:  <select NAME="songs" SIZE=5 MULTIPLE>
+<option VALUE="Liquid">Liquid</option>
+<option VALUE="Solid">Solid</option>
+<option VALUE="Gas">Gas</option>
+<p><input type=button value="Show Selected" onClick="getvalue(this.form.songs)"></p>
+</form>
+</html>

@@ -1,0 +1,54 @@
+A.gt {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+A.gt:hover {
+	TEXT-DECORATION: none
+}
+A.gt:visited {
+	TEXT-DECORATION: none
+}
+A.gt:link {
+	TEXT-DECORATION: none
+}
+A.gt:active {
+	TEXT-DECORATION: none
+}
+#navitile {
+	FONT-SIZE: 8px; Z-INDEX: 1000; LEFT: 0px; MARGIN-LEFT: 0px; WIDTH: 820px; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: arial,verdana,helvetica; WHITE-SPACE: nowrap; POSITION: absolute; TOP: 0px; HEIGHT: 22px
+}
+#navitoolbarcontainer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8px; Z-INDEX: 1000; LEFT: 0px; BACKGROUND-IMAGE: url(/icom_includes/toolbars/globaltoolbar/img/background_end_fixed.png); PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; ; WIDTH: expression('101.7%'); PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: arial,verdana,helvetica; WHITE-SPACE: nowrap; POSITION: absolute; TOP: 0px; HEIGHT: 22px; min-width: 830px
+}
+#navitoolbarcontainer A {
+	COLOR: #fff
+}
+#heightcontainer {
+	BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 99%; POSITION: relative; HEIGHT: 35px
+}
+#globalform {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#lightgrey {
+	BACKGROUND-IMAGE: url(/icom_includes/toolbars/globaltoolbar/img/background_end_fixed.png); COLOR: #fff; TEXT-INDENT: 5px; TEXT-ALIGN: left
+}
+#lightgrey .inputglobal {
+	MARGIN-TOP: 0px; FONT-SIZE: 9px; ; FONT-SIZE: expression('8px'); MARGIN-LEFT: 2px; BACKGROUND-REPEAT: no-repeat; TEXT-ALIGN: left
+}
+#lightgrey .inputglobal:hover {
+	MARGIN-TOP: 0px; FONT-SIZE: 9px; BACKGROUND-COLOR: #ccc; TEXT-ALIGN: left
+}
+#lightgrey A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 0px; FONT-FAMILY: sans-serif; POSITION: relative; TOP: 1px; ; TOP: expression('-2px'); TEXT-DECORATION: none
+}
+#lightgrey A:link {
+	FONT-SIZE: 10px; COLOR: #fff; TEXT-DECORATION: none
+}
+#lightgrey A:visited {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #fff; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+#lightgrey A:active {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #fff; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+#lightgrey A:hover {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #fcf2ca; PADDING-TOP: 0px; TEXT-DECORATION: none
+}

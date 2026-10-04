@@ -1,0 +1,650 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0073)http://www.comptechdoc.org/independent/web/cgi/javamanual/javaevents.html -->
+<HTML><HEAD><TITLE>JavaScript Events</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+<META 
+content="JavaScript Events are items that transpire based on an action.  A document event is the loading of an HTML document.  A form event is the clicking on a button.  Events are objects with properties." 
+name=description>
+<META content="JavaScript Events" name=keywords><LINK 
+href="Page6_files/style.css" type=text/css rel=stylesheet>
+<SCRIPT language=JavaScript>
+<!--
+function nameDefined(ckie,nme)
+{
+   var splitValues
+   var i
+   for (i=0;i<ckie.length;++i)
+   {
+      splitValues=ckie[i].split("=")
+      if (splitValues[0]==nme) return true
+   }
+   return false
+}
+function delBlanks(strng)
+{
+   var result=""
+   var i
+   var chrn
+   for (i=0;i<strng.length;++i) {
+      chrn=strng.charAt(i)
+      if (chrn!=" ") result += chrn
+   }
+   return result
+}
+function getCookieValue(ckie,nme)
+{
+   var splitValues
+   var i
+   for(i=0;i<ckie.length;++i) {
+      splitValues=ckie[i].split("=")
+      if(splitValues[0]==nme) return splitValues[1]
+   }
+   return ""
+}
+function testCookie(cname, cvalue) {  //Tests to see if the cookie 
+   var cookie=document.cookie        //with the name and value 
+   var chkdCookie=delBlanks(cookie)  //are on the client computer
+   var nvpair=chkdCookie.split(";")
+   if(nameDefined(nvpair,cname))  //See if the name is in any pair
+   {   
+      tvalue=getCookieValue(nvpair,cname)  //Gets the value of the cookie
+      if (tvalue == cvalue) return true
+	   else return false
+   }
+   else return false
+}
+function redirectLink() {
+   if (testCookie("javahere", "yes")) {
+      window.location="javahere.html"
+   }
+   else{
+		var futdate = new Date()
+		var expdate = futdate.getTime()
+		expdate += 3600000  //expires in 1 hour
+		futdate.setTime(expdate)
+		var newCookie="javahere=yes; path=/;"
+		newCookie += " expires=" + futdate.toGMTString()
+		window.document.cookie=newCookie
+      window.location="javanot.html"
+   }
+}
+//-->
+</SCRIPT>
+<!-- Background white, links blue (unvisited), navy (visited), red (active) --></HEAD>
+<BODY>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width="100%">
+      <HR class=firsthr>
+
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 valign="top">
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=150><BR>
+            <DIV class=center>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Computer Tech Home Page' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/index.html" 
+                  target=_top>Computer Technology Documentation Home</A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Platform Independent Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/index.html" 
+                  target=_top>Independent Section</A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Web Technologies Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/index.html" 
+                  target=_top>Web Technologies</A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To CGI Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/cgi/index.html" 
+                  target=_top>CGI Section</A> </DIV>
+                  <H3>JavaScript</H3>
+                  <HR>
+
+                  <OL>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/">Introduction</A> 
+
+                    <H3>The Language</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javastart.html">Starting</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javavariables.html">Variables</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaoperators.html">Operators</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaloops.html">Control 
+                    and Loops</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javafunctions.html">Functions</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaprefunct.html">Predefined 
+                    Functions</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaevents.html">Events</A> 
+
+                    <H3>Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaobjects.html">Object 
+                    Creation and Use</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaobjheir.html">Object 
+                    Hierarchy</A> 
+                    <H3>Independent Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaarray.html">Array 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javadate.html">Date 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javamath.html">Math 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javanumber.html">Number 
+                    and Boolean Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javastring.html">String 
+                    Object</A> 
+                    <H3>Main Object</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javanavigator.html">Navigator 
+                    Object</A> 
+                    <H3>Navigator Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javawindow.html">Window 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javamimetype.html">MimeType 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaplugin.html">Plugin 
+                    Object</A> 
+                    <H3>Window Sub Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javadocument.html">Document 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javalocation.html">Location 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javahistory.html">History 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaframe.html">Frame 
+                    Object</A> 
+                    <H3>Document Sub Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaanchor.html">Anchor 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaapplet.html">Applet 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaarea.html">Area 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaform.html">Form 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaimage.html">Image 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javalayer.html">Layer 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javalink.html">Link 
+                    Object</A> 
+                    <H3>Form Sub Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javabutton.html">Button 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacheckbox.html">Checkbox 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javafileupload.html">FileUpload 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javahidden.html">Hidden 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaoption.html">Option 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javapassword.html">Password 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaradio.html">Radio 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javareset.html">Reset 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaselect.html">Select 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javasubmit.html">Submit 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javatext.html">Text 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javatextarea.html">Textarea 
+                    Object</A> 
+                    <H3>More</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacookie.html">Handling 
+                    Cookies</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javastyle.html">Style 
+                    Attributes</A> 
+                    <H3>Examples</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javasimpleexamples.html">Simple 
+                    Examples</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javahforms.html">Handling 
+                    Form Input</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaihit.html">Individual 
+                    Hit Counter</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacredirect.html">Redirecting 
+                    based on Cookies</A> 
+                    <H3>Appendices</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaterms.html">Terms</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacredits.html">Credits</A> 
+                    </LI></OL><BR>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To CGI Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/cgi/index.html" 
+                  target=_top><IMG height=35 alt=CGI 
+                  src="Page6_files/bluecgibutton.gif" width=120></A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Web Technologies Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/index.html" 
+                  target=_top><IMG height=35 alt="Web Tech" 
+                  src="Page6_files/bluewebtechbutton.gif" width=120></A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Platform Independent Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/index.html" 
+                  target=_top><IMG height=35 alt=Independent 
+                  src="Page6_files/blueindependentbutton.gif" width=120></A> 
+                  </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Computer Tech Home Page' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/index.html" target=_top><IMG 
+                  height=35 alt=Home src="Page6_files/bluehomebutton.gif" 
+                  width=120></A> </DIV></TD></TR></TBODY></TABLE></DIV></TD>
+          <TD vAlign=top align=left>
+            <TABLE width="96%" align=center>
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=top><!--Begin TechTutorials.info Banner code -->
+                        <DIV style="TEXT-ALIGN: center"><IFRAME 
+                        style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px" 
+                        align=center marginWidth=0 marginHeight=0 
+                        src="Page6_files/bandisplay.htm" frameBorder=0 width=468 
+                        scrolling=no height=60></IFRAME></DIV><!--End TechTutorials.info Banner code -->
+                        <H1>JavaScript Events</H1>
+                        <P>JavaScript Events are items that transpire based on 
+                        an action. A document event is the loading of an HTML 
+                        document. A form event is the clicking on a button. 
+                        Events are objects with properties. </P>
+                        <H3>Event Properties</H3>
+                        <UL>
+                          <LI>x -Mouse x coordinate when the event happened. 
+                          <LI>y -Mouse y coordinate when the event happened. 
+                          </LI></UL>
+                        <P>JavaScript defines five types of events which are 
+                        form, image, image map, link, and window events. Events 
+                        are associated with HTML tags. The definitions of the 
+                        events described below are as follows: </P>
+                        <H3>Form Events</H3>
+                        <UL>
+                          <LI>blur - The input focus was lost. 
+                          <LI>change - An element lost the focus since it was 
+                          changed. 
+                          <LI>focus - The input focus was obtained. 
+                          <LI>reset - The user reset the object, usually a form. 
+
+                          <LI>select - Some text is selected 
+                          <LI>submit - The user submitted an object, usually a 
+                          form. </LI></UL>
+                        <H3>Image Events</H3>
+                        <UL>
+                          <LI>abort - A user action caused an abort. 
+                          <LI>error - An error occurred. 
+                          <LI>load - The object was loaded. </LI></UL>
+                        <H3>Image Map Events</H3>
+                        <UL>
+                          <LI>mouseOut - The mouse is moved from on top a link. 
+                          <LI>mouseOver - The mouse is moved over a link. 
+                        </LI></UL>
+                        <H3>Link Events</H3>
+                        <UL>
+                          <LI>click - An object was clicked. 
+                          <LI>mouseOut - The mouse is moved from on top a link. 
+                          <LI>mouseOver - The mouse is moved over a link. 
+                        </LI></UL>
+                        <H3>Window Events</H3>
+                        <UL>
+                          <LI>blur - The input focus was lost. 
+                          <LI>error - An error occurred. 
+                          <LI>focus - The input focus was obtained. 
+                          <LI>load - The object was loaded. 
+                          <LI>unload - The object was exited. </LI></UL></TD>
+                      <TD vAlign=top>
+                        <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-0057014352875780";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_channel ="2584929872";
+google_color_border = ["336699","000000","B4D0DC","A8DDA0"];
+google_color_bg = ["FFFFFF","F0F0F0","ECF8FF","EBFFED"];
+google_color_link = ["0000FF","0000FF","0000CC","0000CC"];
+google_color_url = "008000";
+google_color_text = ["000000","000000","6F6F6F","6F6F6F"];
+//--></SCRIPT>
+
+                        <SCRIPT src="Page6_files/show_ads.js" 
+                        type=text/javascript>
+</SCRIPT>
+                        <BR>
+                        <HR>
+                        <BR><!-- Begin GlobalSpec Search Box -->
+                        <SCRIPT language=JavaScript><!--
+	function gsDoAffiliateSearchBoxSubmitVert2(aform) {
+		var searchterm = aform.query.value;
+		if (searchterm == "") {
+			alert("Please enter a search term");
+			return false;
+		}
+		return true;
+	}
+	function gsSearchModeKeyDownVert2(evt) {
+		evt = (evt) ? evt : event;
+		var charCode = (evt.charCode) ? evt.charCode : ((evt.which) ? evt.which : evt.keyCode);
+		if ((charCode == 13) || (charCode == 3)) {
+			document.gsSearchBoxFormVert.submit();
+			return false;
+		}
+		return true;
+	}
+	//-->
+</SCRIPT>
+
+                        <TABLE 
+                        style="PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; WIDTH: 160px; PADDING-TOP: 1px; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 90px" 
+                        cellSpacing=0 cellPadding=1 bgColor=white border=0>
+                          <FORM name=gsSearchBoxFormVert 
+                          onsubmit="return gsDoAffiliateSearchBoxSubmitVert2(this);" 
+                          action=http://affiliates.globalspec.com/affiliate/search 
+                          method=get target=_blank>
+                          <TBODY>
+                          <TR>
+                            <TD vAlign=top align=middle><IMG height=30 
+                              alt="GlobalSpec - The Engineering Search Engine" 
+                              src="Page6_files/engineeringweb_drop.gif" 
+                              width=120 border=0></TD></TD>
+                          <TR>
+                            <TD vAlign=top align=left><INPUT type=hidden 
+                              value=total name=show> <INPUT type=hidden 
+                              value=searchbox name=source> <INPUT type=hidden 
+                              value=affiliate name=frmtrk> <INPUT type=hidden 
+                              value=1393 name=kbid> <INPUT type=hidden 
+                              value=?img=65&amp;kbid=1393 name=img> <INPUT 
+                              type=hidden value=DropVert051103 name=version> 
+                              <INPUT 
+                              style="FONT-SIZE: 10px; WIDTH: 135px; HEIGHT: 20px" 
+                              size=31 name=query> <INPUT 
+                              style="WIDTH: 15px; HEIGHT: 15px" type=image 
+                              alt="Find It!" src="Page6_files/SearchBoxGo.gif" 
+                              align=absMiddle border=0 name=Submit> </TD></TR>
+                          <TR>
+                            <TD vAlign=top align=left><SELECT 
+                              onkeydown="return gsSearchModeKeyDownVert2(event)" 
+                              style="FONT-SIZE: 10px; WIDTH: 155px; HEIGHT: 20px" 
+                              name=SearchMode> <OPTION value=Products 
+                                selected>Products &amp; Suppliers</OPTION> 
+                                <OPTION value=Services>Service 
+                                Providers</OPTION> <OPTION value=Suppliers>A 
+                                Company by Name</OPTION> <OPTION 
+                                value=SearchEngineTotal>THE ENGINEERING 
+                                WEB</OPTION> <OPTION value=SearchEngineTotal>All 
+                                Sites</OPTION> <OPTION 
+                                value=SearchEngineAppNotes>Application 
+                                Notes</OPTION> <OPTION 
+                                value=SearchEngineMaterials>Material 
+                                Properties</OPTION> <OPTION 
+                                value=SearchEnginePartNumbers>Part Numbers 
+                                (Beta)</OPTION> <OPTION 
+                                value=SearchEnginePatents>Patents</OPTION> 
+                                <OPTION 
+                                value=SearchEngineStandards>Standards</OPTION> 
+                                <OPTION value=SearchEngineCompanySites>Supplier 
+                                Web Sites</OPTION></SELECT> 
+                        </TD></TR></FORM></TBODY></TABLE><SPAN 
+                        style="POSITION: absolute"><IMG 
+                        src="Page6_files/1pxlclr.gif"></SPAN> <!-- End GlobalSpec Search Box --></TD></TR></TBODY></TABLE>
+                  <H2>Event Association</H2>
+                  <P>Events are associated with HTML tags. The definitions of 
+                  the events described below are as follows: </P>
+                  <UL>
+                    <LI>abort - A user action caused an abort of an image or 
+                    document load. 
+                    <LI>blur - A frame set, document, or form object such as a 
+                    text field loses the focus for input. 
+                    <LI>click - Happens when a link or image map is clicked on 
+                    <LI>change - Happens when a form field is changed by the 
+                    user and it loses the focus. 
+                    <LI>error - An error happened loading a image or document. 
+                    <LI>focus - A frame set, document, or form object such as a 
+                    text field gets the focus for input. 
+                    <LI>load - The event happens when an image or HTML page has 
+                    completed the load process in the browser. 
+                    <LI>mouseOut - The event happens when the mouse is moved 
+                    from on top of a link or image map 
+                    <LI>mouseOver - The event happens when the mouse is placed 
+                    on a link or image map. 
+                    <LI>reset - The user reset the object which is usually a 
+                    form. 
+                    <LI>submit - The user submitted an object which is usually a 
+                    form. 
+                    <LI>unload - The object such as a framesed or HTML document 
+                    was exited by the user. </LI></UL>
+                  <P>The events for each HTML tag are as follows: </P>
+                  <UL>
+                    <LI>&lt;A&gt; 
+                    <UL>
+                      <LI>click (onClick) 
+                      <LI>mouseOver (onMouseOver) 
+                      <LI>mouseOut (onMouseOut) </LI></UL>
+                    <LI>&lt;AREA&gt; 
+                    <UL>
+                      <LI>mouseOver (onMouseOver) 
+                      <LI>mouseOut (onMouseOut) </LI></UL>
+                    <LI>&lt;BODY&gt; 
+                    <UL>
+                      <LI>blur (onBlur) 
+                      <LI>error (onError) 
+                      <LI>focus (onFocus) 
+                      <LI>load (onLoad) 
+                      <LI>unload (onUnload) </LI></UL>
+                    <LI>&lt;FORM&gt; 
+                    <UL>
+                      <LI>submit (onSubmit) 
+                      <LI>reset (onReset </LI></UL>
+                    <LI>&lt;FRAME&gt; 
+                    <UL>
+                      <LI>blur (onBlur) 
+                      <LI>focus (onFocus) </LI></UL>
+                    <LI>&lt;FRAMESET&gt; 
+                    <UL>
+                      <LI>blur (onBlur) 
+                      <LI>error (onError) 
+                      <LI>focus (onFocus) 
+                      <LI>load (onLoad) 
+                      <LI>unload (onUnload) </LI></UL>
+                    <LI>&lt;IMG&gt; 
+                    <UL>
+                      <LI>abort (onAbort) 
+                      <LI>error (onError) 
+                      <LI>load (onLoad) </LI></UL>
+                    <LI>&lt;INPUT TYPE = "button"&gt; 
+                    <UL>
+                      <LI>click (onClick) </LI></UL>
+                    <LI>&lt;INPUT TYPE = "checkbox"&gt; 
+                    <UL>
+                      <LI>click (onClick) </LI></UL>
+                    <LI>&lt;INPUT TYPE = "reset"&gt; 
+                    <UL>
+                      <LI>click (onClick) </LI></UL>
+                    <LI>&lt;INPUT TYPE = "submit"&gt; 
+                    <UL>
+                      <LI>click (onClick) </LI></UL>
+                    <LI>&lt;INPUT TYPE = "text"&gt; 
+                    <UL>
+                      <LI>blur (onBlur) 
+                      <LI>focus (onFocus) 
+                      <LI>change (onChange) 
+                      <LI>select (onSelect) </LI></UL>
+                    <LI>&lt;SELECT&gt; 
+                    <UL>
+                      <LI>blur (onBlur) 
+                      <LI>focus (onFocus) 
+                      <LI>change (onChange) </LI></UL>
+                    <LI>&lt;TEXTAREA&gt; 
+                    <UL>
+                      <LI>blur (onBlur) 
+                      <LI>focus (onFocus) 
+                      <LI>change (onChange) 
+                      <LI>select (onSelect) </LI></UL></LI></UL>
+                  <H3>Event Handlers</H3>
+                  <P>Event handlers are created as follows: </P><PRE class=indent>onEvent = "Code to handle the event"
+</PRE>
+                  <P>The following example demonstrates its use: </P>
+                  <P class=indent>&lt;a href="independent/index.html" 
+                  target="_top" onMouseOver="window.status='To Independent 
+                  Technologies Section' ;return true" 
+                  onMouseOut="window.status='';return true"&gt;&lt;img 
+                  SRC="gifs/greenindependentbutton2.gif" ALT="Independent 
+                  Technologies" VSPACE=3 BORDER=0 height=35 
+                  width=120&gt;&lt;/a&gt;&lt;BR&gt; </P>
+                  <P>As you can see, the event handling attribute is included in 
+                  the HTML tag. When multiple statements are included in the 
+                  event handling code, the statements are separated by a 
+                  semicolon. </P>
+                  <P>The following example can be used to redirect a link to 
+                  another location: </P><PRE class=indent>&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;TITLE&gt;Using functions as event handlers&lt;/TITLE&gt;
+&lt;SCRIPT LANGUAGE="JavaScript"&gt;
+&lt;!--
+function nameDefined(ckie,nme)
+{
+   var splitValues
+   var i
+   for (i=0;i&lt;ckie.length;++i)
+   {
+      splitValues=ckie[i].split("=")
+      if (splitValues[0]==nme) return true
+   }
+   return false
+}
+function delBlanks(strng)
+{
+   var result=""
+   var i
+   var chrn
+   for (i=0;i&lt;strng.length;++i) {
+      chrn=strng.charAt(i)
+      if (chrn!=" ") result += chrn
+   }
+   return result
+}
+function getCookieValue(ckie,nme)
+{
+   var splitValues
+   var i
+   for(i=0;i&lt;ckie.length;++i) {
+      splitValues=ckie[i].split("=")
+      if(splitValues[0]==nme) return splitValues[1]
+   }
+   return ""
+}
+function testCookie(cname, cvalue) {  //Tests to see if the cookie 
+   var cookie=document.cookie        //with the name and value 
+   var chkdCookie=delBlanks(cookie)  //are on the client computer
+   var nvpair=chkdCookie.split(";")
+   if(nameDefined(nvpair,cname))  //See if the name is in any pair
+   {   
+      tvalue=getCookieValue(nvpair,cname)  //Gets the value of the cookie
+      if (tvalue == cvalue) return true
+	   else return false
+   }
+   else return false
+}
+function redirectLink() {
+   if (testCookie("javahere", "yes")) {
+      window.location="javahere.html"
+   }
+   else{
+      var futdate = new Date()
+      var expdate = futdate.getTime()
+      expdate += 3600*1000  //expires in 1 hour(milliseconds)
+      futdate.setTime(expdate)
+      var newCookie="javahere=yes; path=/;"
+      newCookie += " expires=" + futdate.toGMTString()
+      window.document.cookie=newCookie
+      window.location="javanot.html"
+   }
+}
+//--&gt;
+&lt;/SCRIPT&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+&lt;H3&gt;Using an event handler to direct a link based on a cookie value&lt;/H3&gt;
+&lt;P&gt;
+&lt;A NAME="Here" onClick="return redirectLink()"&gt;See if you've been here.&lt;/A&gt;
+&lt;/P&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+
+</PRE>
+                  <H3>Using an event handler to direct a link based on a cookie 
+                  value</H3>
+                  <P><A onclick="return redirectLink()" name=Here><U>See if 
+                  you've been here.</U></A> </P><!--Begin TechTutorials.info Banner code -->
+                  <DIV style="TEXT-ALIGN: center"><IFRAME 
+                  style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px" 
+                  align=center marginWidth=0 marginHeight=0 
+                  src="Page6_files/CA18ZMNL." frameBorder=0 width=468 
+                  scrolling=no height=60></IFRAME></DIV><!--End TechTutorials.info Banner code --></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TR></TBODY></TABLE></BODY></HTML>

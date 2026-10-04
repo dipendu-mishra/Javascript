@@ -1,0 +1,24 @@
+<html>
+<script type="text/javascript">
+function seltext()
+{
+	if(document.form1.selectbox.checked)
+	{
+		document.write("hello world")
+	}
+}
+</script>
+<body>
+<form name="form1" method="POST">
+Name <input type=text value="hello" name="text1">
+<br><br>
+<input type=checkbox name="selectbox">Activate the Text Box
+<br><br>
+<input type=submit onClick="seltext()">
+<br><br>
+<input type=file>
+<br>
+<input type=hidden name="hid">
+</form>
+</body>
+</html>

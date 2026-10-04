@@ -1,0 +1,26 @@
+<html>
+<script type="text/javascript">
+function winopen()
+{
+	/*mywin=window.open('','MyName','width=200,height=200');
+	mywin.document.write("this is mywin");
+	mywin.focus();
+	mywin.opener.focus();
+	mywin.opener.document.write("This is parent window");*/
+	//mywin=window.open('','MyName');
+	//mywin.document.write("Hi");
+	//mywin.blur();
+var p=window.createPopup()
+var pbody=p.document.body
+pbody.style.backgroundColor="lime"
+pbody.style.border="solid black 1px"
+pbody.innerHTML="This is a pop-up! Click outside to close."
+p.show(150,150,200,50,document.body)
+}
+</script>
+<body>
+<form>
+<input type="button" value="Open Window" onClick='winopen()'>
+</form>
+</body>
+</html>

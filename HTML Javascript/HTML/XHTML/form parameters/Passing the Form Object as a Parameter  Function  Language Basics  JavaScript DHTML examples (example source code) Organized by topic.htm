@@ -1,0 +1,669 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0090)http://www.java2s.com/Code/JavaScript/Language-Basics/PassingtheFormObjectasaParameter.htm -->
+<HTML><HEAD><TITLE>Passing the Form Object as a Parameter : Function : Language Basics : JavaScript DHTML examples (example source code) Organized by topic</TITLE>
+<META http-equiv=content-type content="text/html; charset=UTF-8">
+<META http-equiv=content-style-type content=text/css>
+<META content="Demo Source and Support Ltd." name=author>
+<META content="2006 Demo Source and Support Ltd." name=copyright>
+<META 
+content=" Passing the Form Object as a Parameter : Function : Language Basics : JavaScript DHTML examples (example source code) Organized by topic " 
+name=description>
+<META 
+content=" Passing the Form Object as a Parameter : Function : Language Basics : JavaScript DHTML examples (example source code) Organized by topic " 
+name=keywords><LINK 
+href="Passing the Form Object as a Parameter  Function  Language Basics  JavaScript DHTML examples (example source code) Organized by topic_files/java2s.css" 
+type=text/css rel=stylesheet><LINK 
+href="http://www.java2s.com/style/favicon.ico" rel="shortcut icon">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY>
+<H1>Passing the Form Object as a Parameter : Function : Language Basics : 
+JavaScript DHTML examples (example source code) Organized by topic
+<H1>
+<TABLE width=1024 border=0>
+  <TBODY>
+  <TR align=left>
+    <TD vAlign=top align=left width=140>
+      <TABLE class=leftBarTable cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD><A 
+            href="http://www.java2s.com/Code/JavaScript/CatalogJavaScript.htm">JavaScript 
+            DHTML</A></TD></TR>
+        <TR>
+          <TD>
+            <TABLE class=leftBarFolderTable>
+              <TBODY>
+              <TR>
+                <TD>1.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Ajax-Layer/CatalogAjax-Layer.htm">Ajax 
+                  Layer</A></TD></TR>
+              <TR>
+                <TD>2.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Data-Type/CatalogData-Type.htm">Data 
+                  Type</A></TD></TR>
+              <TR>
+                <TD>3.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Date-Time/CatalogDate-Time.htm">Date 
+                  Time</A></TD></TR>
+              <TR>
+                <TD>4.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Development/CatalogDevelopment.htm">Development</A></TD></TR>
+              <TR>
+                <TD>5.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Document/CatalogDocument.htm">Document</A></TD></TR>
+              <TR>
+                <TD>6.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Event/CatalogEvent.htm">Event</A></TD></TR>
+              <TR>
+                <TD>7.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Event-onMethod/CatalogEvent-onMethod.htm">Event 
+                  onMethod</A></TD></TR>
+              <TR>
+                <TD>8.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Form-Control/CatalogForm-Control.htm">Form 
+                  Control</A></TD></TR>
+              <TR>
+                <TD>9.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/GUI-Components/CatalogGUI-Components.htm">GUI 
+                  Components</A></TD></TR>
+              <TR>
+                <TD>10.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/HTML/CatalogHTML.htm">HTML</A></TD></TR>
+              <TR>
+                <TD>11.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Javascript-Collections/CatalogJavascript-Collections.htm">Javascript 
+                  Collections</A></TD></TR>
+              <TR>
+                <TD>12.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Javascript-Objects/CatalogJavascript-Objects.htm">Javascript 
+                  Objects</A></TD></TR>
+              <TR>
+                <TD>13.&nbsp;</TD>
+                <TD><B>Language Basics</B></TD></TR>
+              <TR>
+                <TD>14.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Node-Operation/CatalogNode-Operation.htm">Node 
+                  Operation</A></TD></TR>
+              <TR>
+                <TD>15.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Object-Oriented/CatalogObject-Oriented.htm">Object 
+                  Oriented</A></TD></TR>
+              <TR>
+                <TD>16.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Page-Components/CatalogPage-Components.htm">Page 
+                  Components</A></TD></TR>
+              <TR>
+                <TD>17.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Security/CatalogSecurity.htm">Security</A></TD></TR>
+              <TR>
+                <TD>18.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Style-Layout/CatalogStyle-Layout.htm">Style 
+                  Layout</A></TD></TR>
+              <TR>
+                <TD>19.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Table/CatalogTable.htm">Table</A></TD></TR>
+              <TR>
+                <TD>20.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Utilities/CatalogUtilities.htm">Utilities</A></TD></TR>
+              <TR>
+                <TD>21.&nbsp;</TD>
+                <TD><A 
+                  href="http://www.java2s.com/Code/JavaScript/Window-Browser/CatalogWindow-Browser.htm">Window 
+                  Browser</A></TD></TR></TBODY></TABLE>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/Java/CatalogJava.htm">Java</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Tutorial/Java/CatalogJava.htm">Java 
+            Tutorial</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Article/Java/CatalogJava.htm">Java 
+            Articles</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Product/Java/CatalogJava.htm">Java 
+            Products</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/JavaAPI/CatalogJavaAPI.htm">Java by 
+            API</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/CSharp/CatalogCSharp.htm">C# / C 
+            Sharp</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Tutorial/CSharp/CatalogCSharp.htm">C# / 
+            CSharp Tutorial</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/ASP/CatalogASP.htm">ASP.Net</A></TD></TR>
+        <TR>
+          <TD class=leftNewLangCell><A 
+            href="http://www.java2s.com/Tutorial/JavaScript/CatalogJavaScript.htm">JavaScript 
+            Tutorial</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/JavaScriptReference/CatalogJavaScriptReference.htm">JavaScript 
+            Reference</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/HTMLCSS/CatalogHTMLCSS.htm">HTML / 
+            CSS</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/HTMLCSSReference/CatalogHTMLCSSReference.htm">HTML 
+            CSS Reference</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/C/CatalogC.htm">C / 
+ANSI-C</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Tutorial/C/CatalogC.htm">C 
+          Tutorial</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/Cpp/CatalogCpp.htm">C++</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Tutorial/Cpp/CatalogCpp.htm">C++ 
+            Tutorial</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/Php/CatalogPhp.htm">PHP</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/Python/CatalogPython.htm">Python</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/SQLServer/CatalogSQLServer.htm">SQL 
+            Server / T-SQL</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/Oracle/CatalogOracle.htm">Oracle PL 
+            / SQL</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Tutorial/Oracle/CatalogOracle.htm">Oracle 
+            PL/SQL Tutorial</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/PostgreSQL/CatalogPostgreSQL.htm">PostgreSQL</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/SQL/CatalogSQL.htm">SQL / 
+          MySQL</A></TD></TR>
+        <TR>
+          <TD class=leftNewLangCell><A 
+            href="http://www.java2s.com/Tutorial/MySQL/CatalogMySQL.htm">MySQL 
+            Tutorial</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Code/VB/CatalogVB.htm">VB.Net</A></TD></TR>
+        <TR>
+          <TD class=leftLangCell><A 
+            href="http://www.java2s.com/Tutorial/VB/CatalogVB.htm">VB.Net 
+            Tutorial</A></TD></TR></TBODY></TABLE></TD>
+    <TD width=2></TD>
+    <TD vAlign=top>
+      <SCRIPT language=javascript 
+      src="Passing the Form Object as a Parameter  Function  Language Basics  JavaScript DHTML examples (example source code) Organized by topic_files/get.media"></SCRIPT>
+      <NOSCRIPT><A 
+      href="http://media.fastclick.net/w/click.here?sid=24280&amp;m=1&amp;c=1" 
+      target=_blank><IMG height=90 
+      src="Passing the Form Object as a Parameter  Function  Language Basics  JavaScript DHTML examples (example source code) Organized by topic_files/partnership_728x90.jpg" 
+      width=728 border=1></A></NOSCRIPT>
+      <TABLE border=0>
+        <TBODY>
+        <TR>
+          <TD height=3></TD></TR></TBODY></TABLE>
+      <TABLE class=googleBar cellSpacing=0 cellPadding=0 width=800 border=0>
+        <TBODY>
+        <TR>
+          <TD width="60%"><A 
+            href="http://www.java2s.com/Code/JavaScript/CatalogJavaScript.htm">JavaScript 
+            DHTML</A>&nbsp;»&nbsp;<A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/CatalogLanguage-Basics.htm">Language 
+            Basics</A>&nbsp;»&nbsp;<A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/Function.htm">Function</A></TD>
+          <TD align=right width="10%">&nbsp;</TD>
+          <TD vAlign=center noWrap align=right width="30%">
+            <FORM style="MARGIN: 2px" action=http://www.google.com/custom 
+            method=get><INPUT maxLength=255 size=15 name=q><INPUT style="FONT-WEIGHT: normal; FONT-SIZE: 12px; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" type=submit value="Search Language Basics" name=sa><INPUT 
+            type=hidden value=S:http://www.java2s.com name=cof 
+            ;AH:center;AWFID:048d0478e57b2768;?><INPUT type=hidden 
+            value=www.java2s.com/Code/JavaScript/Language-Basics/ 
+            name=domains><INPUT type=hidden CHECKED 
+            value=www.java2s.com/Code/JavaScript/Language-Basics/ 
+            name=sitesearch></FORM></TD></TR></TBODY></TABLE>
+      <TABLE border=0>
+        <TBODY>
+        <TR>
+          <TD height=3></TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width=650 border=0>
+        <TBODY>
+        <TR>
+          <TD align=left>
+            <SCRIPT type=text/javascript><!--
+  google_ad_client = "pub-1130008796007602";
+                               google_ad_width = 300;
+                                                     google_ad_height = 250;
+                                                    google_ad_format = "300x250_as";
+                                         google_ad_type = "text_image";
+                                           google_ad_channel ="";
+                                                   google_color_border = "ffffff";
+                                          google_color_bg = "FFFFFF";
+                                              google_color_link = "003399";
+                                            google_color_url = "75a3ed";
+                                             google_color_text = "000000";
+                                            //--></SCRIPT>
+
+            <SCRIPT 
+            src="Passing the Form Object as a Parameter  Function  Language Basics  JavaScript DHTML examples (example source code) Organized by topic_files/show_ads.js" 
+            type=text/javascript>
+           </SCRIPT>
+          </TD>
+          <TD align=right>
+            <SCRIPT type=text/javascript><!--
+  google_ad_client = "pub-1130008796007602";
+                               google_ad_width = 300;
+                                                     google_ad_height = 250;
+                                                    google_ad_format = "300x250_as";
+                                         google_ad_type = "text_image";
+                                           google_ad_channel ="";
+                                                   google_color_border = "ffffff";
+                                          google_color_bg = "FFFFFF";
+                                              google_color_link = "003399";
+                                            google_color_url = "75a3ed";
+                                             google_color_text = "000000";
+                                            //--></SCRIPT>
+
+            <SCRIPT 
+            src="Passing the Form Object as a Parameter  Function  Language Basics  JavaScript DHTML examples (example source code) Organized by topic_files/show_ads.js" 
+            type=text/javascript>
+           </SCRIPT>
+          </TD></TR></TBODY></TABLE>
+      <TABLE width=800 border=0>
+        <TBODY>
+        <TR>
+          <TD class=codeTitle>Passing the Form Object as a Parameter</TD></TR>
+        <TR>
+          <TD>
+            <TABLE border=0>
+              <TBODY>
+              <TR>
+                <TD height=20></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD>
+            <SCRIPT language=JavaScript>
+var newWindow
+function makeNewWindow() {
+    newWindow = window.open("http://www.java2s.com/Code/JavaScriptDemo/PassingtheFormObjectasaParameter.htm","","toolbar=yes,scrollbars=yes, resizable=yes,HEIGHT=700,WIDTH=800")
+}
+</SCRIPT>
+
+            <FORM><INPUT onclick=makeNewWindow() type=button value="Try this example"> 
+            </FORM></TD></TR>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 cellPadding=3 bgColor=#ffffff border=0>
+              <TBODY>
+              <TR><!-- start source code -->
+                <TD vAlign=top noWrap align=left>
+                  <DIV class=codeShade><CODE><FONT 
+                  color=#ffffff></FONT><BR><FONT color=#ffffff></FONT><BR><FONT 
+                  color=#000000>&lt;</FONT><FONT 
+                  color=#7f0055><B>HTML</B></FONT><FONT 
+                  color=#000000>&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;HEAD&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;TITLE&gt;Beatle&nbsp;Picker&lt;/TITLE&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;</FONT><FONT 
+                  color=#7f0055><B>SCRIPT&nbsp;</B></FONT><FONT 
+                  color=#000000>LANGUAGE=</FONT><FONT 
+                  color=#2a00ff>"JavaScript"</FONT><FONT 
+                  color=#000000>&gt;</FONT><BR><FONT 
+                  color=#7f0055><B>function&nbsp;</B></FONT><FONT 
+                  color=#000000>processData</FONT><FONT 
+                  color=#000000>(</FONT><FONT 
+                  color=#7f0055><B>form</B></FONT><FONT 
+                  color=#000000>)&nbsp;{</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#7f0055><B>for&nbsp;</B></FONT><FONT 
+                  color=#000000>(</FONT><FONT 
+                  color=#000000>var&nbsp;i&nbsp;=&nbsp;</FONT><FONT 
+                  color=#990000>0</FONT><FONT 
+                  color=#000000>;&nbsp;i&nbsp;&lt;&nbsp;</FONT><FONT 
+                  color=#7f0055><B>form</B></FONT><FONT 
+                  color=#000000>.items.length;&nbsp;i++</FONT><FONT 
+                  color=#000000>)&nbsp;{</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#7f0055><B>if&nbsp;</B></FONT><FONT 
+                  color=#000000>(</FONT><FONT 
+                  color=#7f0055><B>form</B></FONT><FONT 
+                  color=#000000>.items</FONT><FONT color=#000000>[</FONT><FONT 
+                  color=#000000>i</FONT><FONT color=#000000>]</FONT><FONT 
+                  color=#000000>.checked</FONT><FONT 
+                  color=#000000>)&nbsp;{</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#7f0055><B>break</B></FONT><BR><FONT 
+                  color=#ffffff></FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#000000>}</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#000000>}</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#000000>var&nbsp;choseItem&nbsp;=&nbsp;</FONT><FONT 
+                  color=#7f0055><B>form</B></FONT><FONT 
+                  color=#000000>.items</FONT><FONT color=#000000>[</FONT><FONT 
+                  color=#000000>i</FONT><FONT color=#000000>]</FONT><FONT 
+                  color=#000000>.value</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#000000>var&nbsp;chosenSong&nbsp;=&nbsp;</FONT><FONT 
+                  color=#7f0055><B>form</B></FONT><FONT 
+                  color=#000000>.song.value</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#000000>alert</FONT><FONT color=#000000>(</FONT><FONT 
+                  color=#2a00ff>"Looking&nbsp;to&nbsp;see&nbsp;if&nbsp;"&nbsp;</FONT><FONT 
+                  color=#000000>+&nbsp;chosenSong&nbsp;+&nbsp;</FONT><FONT 
+                  color=#2a00ff>"&nbsp;was&nbsp;written&nbsp;by&nbsp;"&nbsp;</FONT><FONT 
+                  color=#000000>+&nbsp;choseItem&nbsp;+&nbsp;</FONT><FONT 
+                  color=#2a00ff>"..."</FONT><FONT 
+                  color=#000000>)</FONT><BR><FONT 
+                  color=#000000>}</FONT><BR><FONT 
+                  color=#7f0055><B>function&nbsp;</B></FONT><FONT 
+                  color=#000000>checkSong</FONT><FONT 
+                  color=#000000>(</FONT><FONT 
+                  color=#000000>songTitle</FONT><FONT 
+                  color=#000000>)&nbsp;{</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#000000>var&nbsp;enteredSong&nbsp;=&nbsp;songTitle.value</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;</FONT><FONT 
+                  color=#000000>alert</FONT><FONT color=#000000>(</FONT><FONT 
+                  color=#2a00ff>"Making&nbsp;sure&nbsp;that&nbsp;"&nbsp;</FONT><FONT 
+                  color=#000000>+&nbsp;enteredSong&nbsp;+&nbsp;</FONT><FONT 
+                  color=#2a00ff>"&nbsp;was&nbsp;recorded&nbsp;by&nbsp;the&nbsp;items."</FONT><FONT 
+                  color=#000000>)</FONT><BR><FONT 
+                  color=#000000>}</FONT><BR><FONT 
+                  color=#000000>&lt;/</FONT><FONT 
+                  color=#7f0055><B>SCRIPT</B></FONT><FONT 
+                  color=#000000>&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;/HEAD&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;</FONT><FONT 
+                  color=#7f0055><B>BODY</B></FONT><FONT 
+                  color=#000000>&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;FORM&nbsp;NAME=</FONT><FONT 
+                  color=#2a00ff>"Abbey&nbsp;Road"</FONT><FONT 
+                  color=#000000>&gt;</FONT><BR><FONT 
+                  color=#000000>Choose&nbsp;your&nbsp;favorite&nbsp;Beatle:</FONT><BR><FONT 
+                  color=#000000>&lt;INPUT&nbsp;TYPE=</FONT><FONT 
+                  color=#2a00ff>"radio"&nbsp;</FONT><FONT 
+                  color=#000000>NAME=</FONT><FONT 
+                  color=#2a00ff>"items"&nbsp;</FONT><FONT 
+                  color=#000000>VALUE=</FONT><FONT 
+                  color=#2a00ff>"A"&nbsp;</FONT><FONT 
+                  color=#000000>CHECKED=</FONT><FONT 
+                  color=#2a00ff>"true"</FONT><FONT 
+                  color=#000000>&gt;A</FONT><BR><FONT 
+                  color=#000000>&lt;INPUT&nbsp;TYPE=</FONT><FONT 
+                  color=#2a00ff>"radio"&nbsp;</FONT><FONT 
+                  color=#000000>NAME=</FONT><FONT 
+                  color=#2a00ff>"items"&nbsp;</FONT><FONT 
+                  color=#000000>VALUE=</FONT><FONT color=#2a00ff>"B"</FONT><FONT 
+                  color=#000000>&gt;B</FONT><BR><FONT 
+                  color=#000000>&lt;INPUT&nbsp;TYPE=</FONT><FONT 
+                  color=#2a00ff>"radio"&nbsp;</FONT><FONT 
+                  color=#000000>NAME=</FONT><FONT 
+                  color=#2a00ff>"items"&nbsp;</FONT><FONT 
+                  color=#000000>VALUE=</FONT><FONT color=#2a00ff>"C"</FONT><FONT 
+                  color=#000000>&gt;C</FONT><BR><FONT 
+                  color=#000000>&lt;INPUT&nbsp;TYPE=</FONT><FONT 
+                  color=#2a00ff>"radio"&nbsp;</FONT><FONT 
+                  color=#000000>NAME=</FONT><FONT 
+                  color=#2a00ff>"items"&nbsp;</FONT><FONT 
+                  color=#000000>VALUE=</FONT><FONT color=#2a00ff>"D"</FONT><FONT 
+                  color=#000000>&gt;D</FONT><BR><FONT 
+                  color=#000000>&lt;P&gt;</FONT><BR><FONT 
+                  color=#000000>Enter&nbsp;the&nbsp;name&nbsp;of&nbsp;your&nbsp;favorite&nbsp;items&nbsp;song:&lt;BR&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;INPUT&nbsp;TYPE=</FONT><FONT 
+                  color=#2a00ff>"text"&nbsp;</FONT><FONT 
+                  color=#000000>NAME=</FONT><FONT 
+                  color=#2a00ff>"song"&nbsp;</FONT><FONT 
+                  color=#000000>VALUE=</FONT><FONT 
+                  color=#2a00ff>"value"&nbsp;</FONT><FONT 
+                  color=#000000>onChange=</FONT><FONT 
+                  color=#2a00ff>"checkSong(this)"</FONT><FONT 
+                  color=#000000>&gt;&lt;P&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;INPUT&nbsp;TYPE=</FONT><FONT 
+                  color=#2a00ff>"button"&nbsp;</FONT><FONT 
+                  color=#000000>NAME=</FONT><FONT 
+                  color=#2a00ff>"process"&nbsp;</FONT><FONT 
+                  color=#000000>VALUE=</FONT><FONT 
+                  color=#2a00ff>"Process&nbsp;Request..."&nbsp;</FONT><FONT 
+                  color=#000000>onClick=</FONT><FONT 
+                  color=#2a00ff>"processData(this.form)"</FONT><FONT 
+                  color=#000000>&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;/FORM&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;/</FONT><FONT 
+                  color=#7f0055><B>BODY</B></FONT><FONT 
+                  color=#000000>&gt;</FONT><BR><FONT 
+                  color=#000000>&lt;/</FONT><FONT 
+                  color=#7f0055><B>HTML</B></FONT><FONT 
+                  color=#000000>&gt;</FONT><BR><FONT 
+                  color=#ffffff></FONT><BR><FONT color=#ffffff></FONT><BR><FONT 
+                  color=#ffffff></FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT><BR><FONT 
+                  color=#ffffff>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></CODE></DIV></TD><!-- end source code --></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD></TD></TR>
+        <TR>
+          <TD class=relatedExample>Related examples in the same 
+        category</TD></TR></TBODY></TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width=800 border=0>
+        <TBODY>
+        <TR class=even>
+          <TD>1.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/ShowArguments.htm">Show 
+            Arguments</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>2.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/FunctionThatWrapsDocumentWriteAddingaLineBreak.htm">Function 
+            That Wraps Document.Write, Adding a Line Break</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>3.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/setTimeoutwithapointertoafunction.htm">setTimeout() 
+            with a pointer to a function</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>4.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/DefinefunctioninJavaScript.htm">Define 
+            function in JavaScript</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>5.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/Funcitonwitharguments.htm">Funciton 
+            with arguments</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>6.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/Passvariablestoafunctionandusethesevariablevaluesinthefunction.htm">Pass 
+            variables to a function, and use these variable values in the 
+            function</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>7.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/Functionthatreturnsavalue.htm">Function 
+            that returns a value</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>8.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/Afunctionwithargumentsthatreturnsavalue.htm">A 
+            function with arguments, that returns a value</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>9.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/AFunctionCanBeSetUptoAcceptaVariableNumberofArguments.htm">A 
+            Function Can Be Set Up to Accept a Variable Number of 
+          Arguments</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>10.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/AcceptingEitherOneorNoArguments.htm">Accepting 
+            Either One or No Arguments</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>11.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/FunctionsThatReturnValuesCanBeUsedinExpressions.htm">Functions 
+            That Return Values Can Be Used in Expressions</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>12.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/UsinganArgumentwithaJavaScriptFunction.htm">Using 
+            an Argument with a JavaScript Function</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>13.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/DeclaringaFunctionintheheadBlock.htm">Declaring 
+            a Function in the 'head' Block</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>14.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/PassingbyReferenceVersusPassingbyValue.htm">Passing 
+            by Reference Versus Passing by Value</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>15.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/AFunctionDefinition.htm">A 
+            Function Definition</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>16.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/UsingtheFunctionObject.htm">Using 
+            the Function Object</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>17.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/CallingaFunctionfromanEventHandler.htm">Calling 
+            a Function from an Event Handler</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>18.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/AFunctionsargumentsandcallerProperties.htm">A 
+            Function's arguments and caller Properties</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>19.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/VariableScopeWorkbenchPage.htm">Variable 
+            Scope Workbench Page</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=odd>
+          <TD>20.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/CallingaGeneralizableFunction.htm">Calling 
+            a Generalizable Function</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR>
+        <TR class=even>
+          <TD>21.&nbsp;</TD>
+          <TD align=left><A 
+            href="http://www.java2s.com/Code/JavaScript/Language-Basics/Simplestfunction.htm">Simplest 
+            function</A></TD>
+          <TD width=32></TD>
+          <TD align=right width=200></TD></TR></TBODY></TABLE>
+      <TABLE border=0>
+        <TBODY>
+        <TR>
+          <TD height=30></TD></TR></TBODY></TABLE>
+      <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-1130008796007602";                         
+google_ad_width = 728;                                               
+google_ad_height = 90;                                               
+google_ad_format = "728x90_as";                                    
+google_ad_type = "text_image";                                     
+google_ad_channel = "";                                            
+google_color_border = "ffffff";                                    
+google_color_bg = "ffffff";                                        
+google_color_link = "003399";                                      
+google_color_text = "000000";                                      
+google_color_url = "75a3ed";                                       
+//  -->                                                              
+</SCRIPT>
+
+      <SCRIPT 
+      src="Passing the Form Object as a Parameter  Function  Language Basics  JavaScript DHTML examples (example source code) Organized by topic_files/show_ads.js" 
+      type=text/javascript>     
+</SCRIPT>
+    </TD></TR></TBODY></TABLE></TD></TR></TABLE>
+<CENTER>
+<TABLE border=0>
+  <TBODY>
+  <TR align=left>
+    <TD><A href="http://www.java2s.com/">Home</A> | <A 
+      href="http://www.java2s.com/html/contact.htm">Contact Us</A> </TD></TR>
+  <TR align=left>
+    <TD class=Templatetext>Copyright 2003 - 07 Demo Source and Support. All 
+      rights reserved.</TD></TR>
+  <TR align=left>
+    <TD>All other trademarks are property of their respective 
+  owners.</TD></TR></TBODY></TABLE></CENTER></H1></H1></BODY></HTML>

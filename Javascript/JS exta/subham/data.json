@@ -1,0 +1,29 @@
+{
+   "states":[
+      {
+         
+         "city":"Jabalpur",
+         "state":"MP"
+      },
+      {
+         "city":"Indore",
+         "state":"MP"
+      },
+      {
+         "city":"Chennai",
+         "state":"TN"
+      },
+      {
+         "city":"Pondy",
+         "state":"TN"
+      },
+      {
+         "city":"Shimla",
+         "state":"HP"
+      },
+      {
+         "city":"Bir",
+         "state":"HP"
+      }
+   ]
+}

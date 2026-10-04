@@ -1,0 +1,83 @@
+/* reset css */
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      padding: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+}
+main{
+      border: 1px solid black;
+      padding: 15px;
+}
+form label, table th{
+      font-weight: bolder;
+      font-size: 23px;
+}
+form input, form select{
+      margin: 0 25px 0 10px;
+}
+form{
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+}
+.formContainer button{
+      padding: 7px 28px;
+      font-size: 23px;
+      border-radius: 50px;
+      outline: none;
+      border: none;
+      color: white;
+      background: linear-gradient(rgb(108, 132, 241),deepskyblue);
+      transition: all linear .5s;
+}
+.formContainer button:hover{
+      padding: 10px 32px;
+      background: linear-gradient(deepskyblue,rgb(108, 132, 241));
+}
+/* table css */
+table{
+      background-color: wheat;
+      width: 100%;
+      border: 1px solid black;
+      border-collapse: separate;
+      border-spacing: 30px 15px;
+}
+table th{
+      color: blue;
+      padding: 10px 20px 30px;
+      text-align: center;
+}
+/* border */
+.tableContainer::before{
+      content: "";
+      width: 100%;
+      height: 3px;
+      background-color: black;
+      display: block;
+      position: relative;
+      top: 80px;
+}
+td{
+      background-color: white;
+      color: red;
+      border: 1px solid blue;
+      text-align: center;
+      padding: 5px 0;
+      font-size: 20px;
+      font-weight: bold;
+}
+
+/* editorBox */
+.editorBox{
+      border: 1px solid black;
+      border-top: 3px solid black;
+      padding: 26px;
+      background-color: #9ad9ee;
+      display: none;
+}
+.editorBox div{
+      margin-bottom: 20px;
+}

@@ -1,0 +1,6 @@
+var maxLength = 15;
+$('textarea').keyup(function() {
+    //console.log(this)
+  var textlen = maxLength - $(this).val().length;
+  $('#rchars').text(textlen);
+});

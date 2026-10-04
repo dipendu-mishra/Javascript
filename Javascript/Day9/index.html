@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Drag and Drop</title>
+      <!-- BS cdn -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <!-- internal stylesheet -->
+      <style>
+            @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+
+            /* reset css */
+            * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+            }
+
+            body {
+                  background-color: rgb(255, 252, 238);
+            }
+
+            input {
+                  display: block;
+                  width: 70%;
+                  text-align: center;
+                  padding: 4px 0;
+                  background-color: rgb(211, 229, 230);
+                  font-size: large;
+                  font-weight: bold;
+                  border-radius: 8px;
+                  margin: 0 auto 10px;            }
+
+            .box2 {
+                  width: 80%;
+                  margin: 60px auto;
+            }
+
+            .first1,
+            .second1 {
+                  width: 450px;
+                  margin: auto;
+                  border: 2px solid black;
+                  border-radius: 60px;
+                  padding: 30px;
+                  background-color: rgb(211, 229, 230);
+                  box-shadow: 5px 5px 5px 5px rgb(144, 144, 144);
+                  position: relative;
+            }
+
+            .first1 input,
+            .second1 input {
+                  background-color: white;
+                  border: none;
+                  border-radius: 0px;
+                  width: 90%;
+                  margin-bottom: 25px;
+            }
+
+            .box2 h2 {
+                  position: absolute;
+                  border: 2px solid black;
+                  padding: 0 30px 8px;
+                  border-radius: 50px;
+                  top: -27px;
+                  left: 100px;
+                  background-color: rgb(211, 229, 230);
+                  color: rgb(143, 75, 75);
+                  box-shadow: 5px 5px 5px 5px rgb(144, 144, 144);
+            }
+            h2{
+                  font-family: 'Jacques Francois Shadow', cursive;
+                  font-size: 34px;                  
+            }
+            .hold{
+                  background-color: blueviolet;
+            }
+           .hide{
+                  display: none;
+            } 
+            .drop{
+                  background-color: rgb(224, 163, 82)!important;
+                  border: 2px solid black!important;
+            }
+            .dropDiv{
+                  position: relative;
+                  height: 39px;
+                  width: 380px;
+                  background-color: #adc069;
+            }
+            .fix{
+              font-size: 20px;
+              font-weight: bold;
+              text-align: center;
+              font-family: 'Jacques Francois Shadow', cursive;  
+              color:blueviolet;
+              padding:10px;
+            }
+      </style>
+</head>
+
+<body>
+      <!-- heading -->
+      <h2 class="text-center text-primary my-4">Drag and Drop</h2>
+      <div class="box row">
+            <div class="first col-12 col-md-6">
+                  <!-- draggable elements -->
+                  <input type="text" value="Good morning" draggable="true" class="draggable catg1">
+                  <input type="text" value="See you soon" draggable="true" class="draggable catg2">
+                  <input type="text" value="Hello" draggable="true" class="draggable catg1">
+                  <input type="text" value="Have a nice day" draggable="true" class="draggable catg2">
+                  <input type="text" value="Hi" draggable="true" class="draggable catg1">
+                  <input type="text" value="Good afternoon" draggable="true" class="draggable catg1">
+            </div>
+            <div class="second col-12 col-md-6">
+                  <!-- draggable elements -->
+                  <input type="text" value="Good bye" draggable="true" class="draggable catg2">
+                  <input type="text" value="Bye" draggable="true" class="draggable catg2">
+                  <input type="text" value="Good evening" draggable="true" class="draggable catg1">
+                  <input type="text" value="See you tomorrow" draggable="true" class="draggable catg2">
+                  <input type="text" value="How are you" draggable="true" class="draggable catg1">
+                  <input type="text" value="Good night" draggable="true" class="draggable catg2">
+            </div>
+      </div>
+
+      <!-- dropping elements -->
+      <div class="box2 row">
+            <div class="first1 col-12 col-md-6 mb-4 mb-md-0"">
+                  <h2>greetings</h2>
+                  <!-- draggable elements -->
+                  <div class="mt-4 dropDiv catg1" id="t1"></div>
+                  <div class="mt-4 dropDiv catg1" id="t2"></div>
+                  <div class="mt-4 dropDiv catg1" id="t3"></div>
+                  <div class="mt-4 dropDiv catg1" id="t4"></div>
+                  <div class="mt-4 dropDiv catg1" id="t5"></div>
+                  <div class="mt-4 dropDiv catg1" id="t6"></div>
+                  
+            </div>
+            <div class="second1 col-12 col-md-6 mt-4 mt-md-0">
+                  <h2>farewells</h2>
+                  <!-- draggable elements -->
+                  <div class="mt-4 dropDiv catg2" id="t7"></div>
+                  <div class="mt-4 dropDiv catg2" id="t8"></div>
+                  <div class="mt-4 dropDiv catg2" id="t9"></div>
+                  <div class="mt-4 dropDiv catg2" id="t10"></div>
+                  <div class="mt-4 dropDiv catg2" id="t11"></div>
+                  <div class="mt-4 dropDiv catg2" id="t12"></div>
+            </div>
+      </div>
+</body>
+<!-- ext js file -->
+<script src="./index.js"></script>
+</html>

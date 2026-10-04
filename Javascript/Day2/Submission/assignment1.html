@@ -1,0 +1,53 @@
+<!-- Asignment-1
+Create a function :
+1. Function Name: calculateSimpleInterest()
+2. Three Parameters: P , N , R
+3. Return Interest Amount as number
+
+Checking : Return appropriate message as string to calling environment if
+ following values not satisfied. 
+a)Principal between 1-100000
+b)N: 2-10 Years
+c)R: 5% to 20% -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Simple Interest</title>
+</head>
+<body>
+      <h3>Calculate Simple Interest</h3>
+
+      <!-- js code -->
+      <script>
+            // take input from user
+            let p = +prompt("enter principal amount");
+            if(p<1 || p>100000){
+                  window.alert("Principal should be between 1 to 100000");
+                  p = +prompt("enter principal amount");
+            } 
+            let n = +prompt("enter years");
+            if(n<2 || n>10){
+                  window.alert("Years should be between 2 to 10 years");
+                  n = +prompt("enter years");
+            }
+            let r = +prompt("enter interest rate");
+            if(r<2 || r>20){
+                  window.alert("Rate should be between 2% to 20%");
+                  r = +prompt("enter interest rate");
+            }
+            
+            // function declaration
+            function calculateSimpleInterest(p,n,r){
+                  let result = (p*n*r)/100;
+                  document.write("Simple interest = "+result);
+            }
+
+            // fun call
+            calculateSimpleInterest(p,n,r);
+      </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+/* reset css */
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+}
+.mainDiv{
+      border: 5px solid blue;
+      background-color: #98dcf1d4;
+      margin: 0;
+}
+form input{
+      display: block;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      padding: 8px 15px;
+      outline: none;
+
+}
+.formContainer, .tableContainer{
+      border: 1px solid white;
+      padding: 20px;
+}
+table{
+      width: 100%;
+      border: 1px solid white;
+      border-collapse: collapse;
+      overflow-x: scroll;
+}
+th,td{
+      padding: 6px 15px;
+      border: 1px solid white;
+}
+table tr:nth-child(odd){
+      background-color: white!important;
+}
+.tableContainer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.anchor{
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-right: 15px;
+}

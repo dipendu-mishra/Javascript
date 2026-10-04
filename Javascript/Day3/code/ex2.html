@@ -1,0 +1,74 @@
+<html>
+<script type="text/javascript">
+
+
+            var string1 = "akc";  // String Literals
+            var string2 = "afc";
+            var result = string1.localeCompare(string2); // -1, 0, 1
+            //console.log(result,typeof result)       
+            var x=Number(string1[0])-Number(string2[0]);      // NaN
+            
+            console.log(x)
+
+            // Null is a object Type where Undefined is a type of undefined
+            // 1. What is the value ?
+            // 2. what is the type  ?
+            let  val1=null; // null or empty value but type is object
+            let  val2;  // undefined type , value is null or empty                   
+            let str1;   
+            console.log(typeof str1,str1);// value is undefine and type is also undefined
+            str1="JAVA";
+            console.log(typeof str1,str1);
+            str1=null;
+            console.log(typeof str1,str1);            
+            if(str1==null) 
+            console.log("String is null");
+            if(str1==undefined) // change to str1===undefined and check the output
+            console.log("String is undefined");
+
+
+function addBonus(empdet,amt,dept)
+{
+   for (var i = 0; i < empdet.length; i++) 
+    {       
+        if(empdet[i][2].localeCompare(dept)==0)
+           empdet[i][3]=empdet[i][3]+amt;
+    }
+    //console.log(empdet);
+}
+let empDetails = [
+  [1001,"John","IT",12000 ],
+  [1002,"Tom","IT",13000],
+  [1003,"Rohit","HR", 15000]
+];
+console.log(empDetails);
+// addBonus(empDetails,3450,"IT");
+// console.log(empDetails);
+
+// function addHonour(name,gender)
+// {
+//     if(gender.localeCompare("male"))
+//        name="Mr."+name;
+//     else if(gender.localeCompare("female"))
+//        name="Ms."+name;
+//     console.log(name,typeof name)
+
+// }
+// console.log(name,typeof name);
+// addHonour(name,"male");
+// console.log(name,typeof name);
+
+
+
+            // let fname="Cat";            
+            // let chars=['R','a','t'];
+            // console.log(fname.length)            
+            // for(let i=0;i<fname.length;i++)
+            // {
+            //     fname[i]=chars[i];// Wrong Operation                
+            //     console.log(typeof fname[i],chars[i],typeof fname);
+            // }
+        
+
+</script>
+</html>

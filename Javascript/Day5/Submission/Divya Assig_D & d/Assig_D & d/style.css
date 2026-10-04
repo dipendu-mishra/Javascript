@@ -1,0 +1,33 @@
+body{
+	background-color: darkblue;
+}
+
+section{
+	width: 1000px;
+	height: 360px;
+	margin: 100px auto;
+	display: flex;
+	justify-content: space-around;
+
+}
+h1{
+	text-align: center;
+}
+
+div{
+	width: 200px;
+	height: 400px;
+	padding: 20px;
+	margin: 10px;
+	background: #fafafa;
+	box-sizing: border-box;
+}
+
+p{
+	background: lightblue;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}

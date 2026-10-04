@@ -1,0 +1,131 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0667)http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-3440800076797949&dt=1193827372468&lmt=1193827372&alternate_ad_url=http%3A%2F%2Fwww.w3schools.com%2Fbanners%2Fbannerframe.asp%3Fadpartner%3Daspall2&format=728x90_as&output=html&correlator=1193827372468&channel=6605717322&url=http%3A%2F%2Fwww.w3schools.com%2Ftags%2Ftag_label.asp&color_bg=F1F1F1&color_text=000000&color_link=900B09&color_url=008000&color_border=808080&ad_type=text&ref=http%3A%2F%2Fwww.google.co.in%2Fsearch%3Fhl%3Den%26q%3DLABEL%2BTAG%26meta%3D&ga_vid=2141733522.1193827372&ga_sid=1193827372&ga_hid=87585570&flash=9&u_h=768&u_w=1024&u_ah=740&u_aw=1024&u_cd=32&u_tz=330&u_his=10&u_java=true -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<STYLE>A:link {
+	CURSOR: hand; COLOR: #900b09
+}
+A:visited {
+	CURSOR: hand; COLOR: #900b09
+}
+A:hover {
+	CURSOR: hand; COLOR: #900b09
+}
+A:active {
+	CURSOR: hand; COLOR: #900b09
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TABLE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT-FAMILY: verdana,arial,sans-serif; HEIGHT: 100%; BACKGROUND-COLOR: transparent
+}
+#aus {
+	WIDTH: 728px; HEIGHT: 90px
+}
+#ads {
+	LEFT: 1px; WIDTH: 726px; POSITION: absolute; TOP: 1px
+}
+#ads UL {
+	WIDTH: 100%; LIST-STYLE-TYPE: none
+}
+#ads UL LI {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 242px; CURSOR: hand; HEIGHT: 70px
+}
+.ad {
+	MARGIN: 0px 2px
+}
+.adt {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; LINE-HEIGHT: 12px
+}
+.adb {
+	DISPLAY: block; FONT-SIZE: 10px; COLOR: #000000; LINE-HEIGHT: 12px
+}
+.adu {
+	FONT-SIZE: 10px; OVERFLOW: hidden; COLOR: #008000; LINE-HEIGHT: 12px; WHITE-SPACE: nowrap
+}
+#att {
+	LEFT: 635px; POSITION: absolute; TOP: 71px
+}
+#att UL {
+	WIDTH: 92px; LIST-STYLE-TYPE: none; HEIGHT: 18px
+}
+#att UL LI {
+	FLOAT: left
+}
+#abgf {
+	WIDTH: 74px; HEIGHT: 18px; BACKGROUND-COLOR: #808080
+}
+#abgt {
+	WIDTH: 18px; POSITION: relative; HEIGHT: 18px
+}
+#abgi {
+	LEFT: 648px; POSITION: absolute; TOP: 73px
+}
+#aubg {
+	BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; BORDER-LEFT: #808080 1px solid; WIDTH: 726px; BORDER-BOTTOM: #808080 1px solid; HEIGHT: 88px; BACKGROUND-COLOR: #f1f1f1
+}
+</STYLE>
+
+<SCRIPT>function ss(w,id) {window.status = w;a = document.getElementById(id);if (a) {bi = a.href.indexOf("&nm="); if (bi < 1) {a.href += "&nm=1";return true;}c = a.href.substring(0, bi+4); d = a.href.substring(bi+4, a.href.length);ei = d.indexOf("&");if (ei < 0) {f = d;r = '';} else {f = d.substring(0, ei);r = d.substring(ei, d.length); }var g = parseInt(f);  g++;a.href= c+g+r; }return true;}function st(a) {return true;}function cs(){window.status='';} function jcc(a) {pha=document.getElementById(a); nc=pha.href.indexOf('&jca='); if(nc>=1) return; jca=(745)+(4464)-(316); if (a=='aw0') {jca+=(-1493);} else if (a=='aw1') {jca+=(-3562);} else if (a=='aw2') {jca+=(181);} else {jca=0;} phb=pha.href+'&jca='+jca; pha.href=phb;} function ha(a){  pha=document.getElementById(a); nhi=pha.href.indexOf("&nh=");if(nhi < 1) {phb=pha.href+"&nh=1";} pha.href=phb; jcc(a); }function ca(a) {  pha=document.getElementById(a); nci=pha.href.indexOf("&nc=");if(nci < 1) {phb=pha.href+"&nc=1";} pha.href=phb; jcc(a); top.location.href=document.getElementById(a).href;}function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p = "";r = "";g = e.target;if (g) {t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h)r = h.id;}} else {h = e.srcElement;f = h.parentNode;if (f)p = f.id;t = h.id;}if (t==a || p==a || r==a)return true;pha=document.getElementById(a); nbi=pha.href.indexOf("&nb=");if(nbi < 1) {phb=pha.href+"&nb=1";} pha.href=phb; jcc(a); top.location.href=document.getElementById(a).href;}}</SCRIPT>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY>
+<DIV id=aus>
+<DIV id=aubg></DIV>
+<DIV id=ads>
+<UL>
+  <LI onmousedown="st('aw0')" id=taw0 onmouseover="ss('','aw0')" 
+  onfocus="ss('','aw0')" onclick=ga(this,event)>
+  <DIV class=ad><A class=adt onmousedown="st('aw0')" id=aw0 
+  onmouseover="return ss('','aw0')" onfocus="ss('','aw0')" onclick="ha('aw0')" 
+  href="http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BYkJTFFooR4-fCJzOsALN8I3nBNW1oBuP7s2kAcCNtwHgmBcQARgBIOfo-gEoAzgAULOSsaoEYOWq6YPkDqoBCjY2MDU3MTczMjKyARF3d3cudzNzY2hvb2xzLmNvbboBCTcyOHg5MF9hc8gBAdoBK2h0dHA6Ly93d3cudzNzY2hvb2xzLmNvbS90YWdzL3RhZ19sYWJlbC5hc3CoAwHIAwfoA6YD6AOVBA&amp;num=1&amp;adurl=http://www.digibadge.com/flash.asp&amp;client=ca-pub-3440800076797949&amp;nm=0" 
+  target=_top><SPAN>Digital Badge $25</SPAN></A>
+  <DIV class=adb>Scrolling Digital LED Name Tag For Retail, Restaurants, Trade 
+  Shows </DIV>
+  <DIV class=adu>www.digibadge.com</DIV></DIV></LI>
+  <LI onmousedown="st('aw1')" id=taw1 onmouseover="ss('','aw1')" 
+  onfocus="ss('','aw1')" onclick=ga(this,event)>
+  <DIV class=ad><A class=adt onmousedown="st('aw1')" id=aw1 
+  onmouseover="return ss('','aw1')" onfocus="ss('','aw1')" onclick="ha('aw1')" 
+  href="http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=Bwtk_FFooR4-fCJzOsALN8I3nBOybyByAmc7yA8CNtwHAuAIQAhgCIOfo-gEoAzgAUJjY6PD5_____wFg5arpg-QOoAGKvqf-A6oBCjY2MDU3MTczMjKyARF3d3cudzNzY2hvb2xzLmNvbboBCTcyOHg5MF9hc8gBAdoBK2h0dHA6Ly93d3cudzNzY2hvb2xzLmNvbS90YWdzL3RhZ19sYWJlbC5hc3CAAgGoAwHIAwfoA6YD6AOVBA&amp;num=2&amp;adurl=http://www.anaspec.com/products/productcategory.asp%3Fid%3D344%26_kk%3Ddia%2520tag%26_kt%3D2af3f389-a58f-479c-bf38-cd3ca92aba87&amp;client=ca-pub-3440800076797949&amp;nm=0" 
+  target=_top><SPAN>DiA - Detection Reagents</SPAN></A>
+  <DIV class=adb>Premium Quality, Trusted Results Integrated Proteomics 
+  Solutions </DIV>
+  <DIV class=adu>www.anaspec.com</DIV></DIV></LI>
+  <LI onmousedown="st('aw2')" id=taw2 onmouseover="ss('','aw2')" 
+  onfocus="ss('','aw2')" onclick=ga(this,event)>
+  <DIV class=ad><A class=adt onmousedown="st('aw2')" id=aw2 
+  onmouseover="return ss('','aw2')" onfocus="ss('','aw2')" onclick="ha('aw2')" 
+  href="http://pagead2.googlesyndication.com/pagead/iclk?sa=l&amp;ai=BYCnNFFooR4-fCJzOsALN8I3nBLexjzD_9pTrA8CNtwHw75EBEAMYAyDn6PoBKAM4AFDx-KD4BWDlqumD5A6qAQo2NjA1NzE3MzIysgERd3d3Lnczc2Nob29scy5jb226AQk3Mjh4OTBfYXPIAQHaAStodHRwOi8vd3d3Lnczc2Nob29scy5jb20vdGFncy90YWdfbGFiZWwuYXNwqQIGS5PWhkpbPsgCv9mYAagDAcgDB-gDpgPoA5UE&amp;num=3&amp;adurl=http://www.dwaar.com/%3Fq%3Dgarments%2520delhi&amp;client=ca-pub-3440800076797949&amp;nm=0" 
+  target=_top><SPAN>Garment Stores in Delhi</SPAN></A>
+  <DIV class=adb>Find Thousands of Garment Stores Search Anything in India. 
+  Start Now </DIV>
+  <DIV class=adu>www.dwaar.com</DIV></DIV></LI></UL></DIV>
+<DIV id=att>
+<UL>
+  <LI id=abgt></LI>
+  <LI id=abgf></LI></UL></DIV>
+<SCRIPT>var sc=['abgt',18,18,'#808080',false,false];</SCRIPT>
+
+<SCRIPT src="CARQR67F_files/graphics.js"></SCRIPT>
+
+<DIV id=abgi><A 
+href="http://pagead2.googlesyndication.com/pagead/pageclick?type=5&amp;redir_url=http%3A//services.google.com/feedback/abg%3Furl%3Dhttp%3A//www.w3schools.com/tags/tag_label.asp%26hl%3Den%26client%3Dca-pub-3440800076797949%26adU%3Dwww.digibadge.com%26adT%3DDigital%2BBadge%2B%252425%26adU%3Dwww.anaspec.com%26adT%3DDiA%2B-%2BDetection%2BReagents%26adU%3Dwww.dwaar.com%26adT%3DGarment%2BStores%2Bin%2BDelhi%26done%3D1%26gl%3DIN" 
+target=_blank><SPAN 
+style="DISPLAY: inline-block; FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://pagead2.googlesyndication.com/pagead/abglogo/abg-en-100c-ffffff.png'); WIDTH: 78px; HEIGHT: 16px"><IMG 
+style="FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=0)" height=16 
+alt="Ads by Google" src="CARQR67F_files/abg-en-100c-ffffff.png" width=78 
+border=0></SPAN></A></DIV></DIV></BODY></HTML>

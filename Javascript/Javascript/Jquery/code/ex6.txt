@@ -1,0 +1,5 @@
+function new_element()
+{
+   $("#header ul").append('<li><a href="http://javatpoint.com">Java</a></li>');
+ }
+   

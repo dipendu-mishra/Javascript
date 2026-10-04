@@ -1,0 +1,51 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="fomr1" id="form1">
+      <div class="phone">
+     Mobile No: <input type="text" name="t0" id="t0" size=10>     
+     </div>
+     <input type=button value="+" onclick="addMore()">
+    </form>
+</body>
+<script src="code.js"></script>
+</html>
+
+let newid=1;
+function addMore()
+{
+  let getPhoneDIV=document.querySelector(".phone");
+  let newph=document.createElement("input");
+  newph.setAttribute("type","text");
+  newph.setAttribute("size","10");
+  newph.setAttribute("id",`t${newid}`);
+  getPhoneDIV.appendChild(document.createElement("br"));
+  getPhoneDIV.appendChild(document.createTextNode("Mobile No :"));
+  getPhoneDIV.appendChild(newph);
+
+  let newbut=document.createElement("input");
+  newbut.setAttribute("type","button");
+  newbut.setAttribute("id",`b${newid}`);
+  newbut.setAttribute("value","-");
+  newbut.addEventListener('click',remove);
+ 
+  getPhoneDIV.appendChild(newbut);
+  newid++;
+}
+function remove(e)
+{
+    console.log(e,event.target);
+    console.log(e.target.id)
+
+    e.target.remove(this);
+    let textboxid="t"+e.target.id.substr(1);
+    console.log(textboxid);
+    let ele=document.getElementById(textboxid);
+    let pele=document.getElementById(textboxid).parentNode;
+    pele.removeChild(ele);  
+   
+}

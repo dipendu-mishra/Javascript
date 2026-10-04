@@ -1,0 +1,30 @@
+<!-- Display the Fibanacci Series -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fibanacci Series</title>
+</head>
+<body>
+      <h3>Fibanacci Series</h3>
+
+      <!-- js code -->
+      <script>
+            // take input from user
+            let n = +prompt("Enter limit to display fibonacci series", "range");
+            // initialize n1 and n2
+            let n1 = 0;
+            let n2 = 1;
+            for (let i = 0; i < n; i++) {
+                  // display n1
+                  document.write(n1+"<br>");
+                  let next_num = n1 + n2;
+                  n1 = n2;
+                  n2 = next_num;              
+            }
+      </script>
+</body>
+</html>

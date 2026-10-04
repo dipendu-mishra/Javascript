@@ -1,0 +1,25 @@
+<html>
+<script type="text/javascript">
+const arr1=[100,200,300];
+console.log("Old Length:"+arr1.length);
+arr1[20]=400; // As index is not existing ,adding few empty fields 
+console.log("New Length:"+arr1.length);
+console.log(arr1);
+/*for(let i=0;i<arr1.length;i++)
+{
+    if(arr1[i]!=undefined)
+       document.write(arr1[i]+"<br>")
+}*/
+
+// Alternative  loop : For-In
+// No need to mention lower,upper bound and condition,
+// More efficient
+
+for ( x in arr1)
+{
+    if(x!=undefined)
+    document.write(x+"<br>")
+}
+
+</script>
+</html>

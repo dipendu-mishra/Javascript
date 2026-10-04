@@ -1,0 +1,70 @@
+<html>
+<script type="text/javascript">
+function addValues()
+{
+  let t1=document.getElementById("t1");
+  let t2=document.getElementById("t2");
+  console.log(t1,t2);
+  let v1=t1.value;
+  let v2=t2.value;
+  let z=eval();
+  console.log(z);
+  let d1=document.getElementById("p1");
+  //d1.innerHTML="Result:"+z;
+  let z1=Number(v1)+Number(v2);
+
+  //console.log("Result is:"+z1);
+  let t3=document.getElementById("t3");
+  t3.value=z1;
+  // console.log(`Sum  of ${v1}and ${v2} is ${z1}`);
+
+  // let dd="abc";
+  // let code=dd.charCodeAt(2);
+
+  // console.log(dd[2]);
+
+  // console.log(String.fromCharCode(65));
+
+}
+
+// function addBonus(empdet,amt,dept)
+// {
+//    for (var i = 0; i < empdet.length; i++) 
+//     {       
+        
+//         if(empdet[i][2].localeCompare(dept)==0)
+//            empdet[i][3]=empdet[i][3]+amt;
+//         document.write(empdet[i]+"<br>");
+//         console.log(empdet[i]);
+// }
+//     }
+    
+// let empDetails = [
+//   [1001,"John","IT",12000 ],
+//   [1002,"Tom","IT",13000,800],
+//   [1003,"Rohit","HR", 15000]
+// ];
+// //document.write(empDetails+"<br>");
+// //console.log(empDetails);
+// addBonus(empDetails,3450,"IT");
+// //document.write(empDetails+"<br");
+// //console.log(empDetails)
+
+// // let x=[11,22,33];
+// // for(value in x)
+// // {
+// //     document.write(value);
+// // }
+
+</script>
+<body>
+<form method="" action="">
+  Val1:<input type=text id="t1" placeholder="enter first value here" size=10>
+  Val2:<input type=text id="t2" placeholder="enter first value here" size=10>
+  <input type="button" value="Add" onclick="addValues()">
+  <div id="p1">....</div>
+  <input type=text size=10 id="t3" ></input>
+</form>
+
+</body>
+</html>

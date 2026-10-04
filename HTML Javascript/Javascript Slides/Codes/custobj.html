@@ -1,0 +1,19 @@
+<html>
+<script type="text/javascript">
+function f1(var1,var2)
+{
+this.var3=var1
+this.var4=var2
+this.show1=show
+}
+
+function show()
+{
+document.write(this.var3+"<br>")
+document.write(this.var4+"<br>")
+}
+
+obj=new f1(10,9)
+obj.show1()
+</script>
+</html>

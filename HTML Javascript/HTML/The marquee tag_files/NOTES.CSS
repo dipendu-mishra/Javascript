@@ -1,0 +1,69 @@
+BODY {
+	FONT-SIZE: 12pt; BACKGROUND: #fffff0; FONT-FAMILY: verdana,helvetica,arial; TEXT-DECORATION: none; text: #300000
+}
+P {
+	FONT-SIZE: 12pt; MARGIN: 10px 60px; FONT-FAMILY: verdana,helvetica,arial; TEXT-ALIGN: left
+}
+P.WARN {
+	FONT-SIZE: 12pt; BACKGROUND: #ffc0c0; MARGIN: 12px 60px; FONT-FAMILY: verdana,helvetica,arial; TEXT-ALIGN: left
+}
+TD {
+	FONT-SIZE: 10pt; FONT-FAMILY: verdana,helvetica,arial; TEXT-ALIGN: left
+}
+P.CENTRE {
+	TEXT-ALIGN: center
+}
+H1 {
+	FONT-SIZE: 24pt; TEXT-ALIGN: center
+}
+H2 {
+	FONT-SIZE: 20pt; TEXT-ALIGN: left
+}
+H2 {
+	FONT-SIZE: 16pt; TEXT-ALIGN: left
+}
+TABLE {
+	MARGIN: 10px 60px
+}
+OL {
+	MARGIN: 10px 60px
+}
+UL {
+	MARGIN: 10px 60px
+}
+P.insert {
+	BORDER-RIGHT: red 2px solid; BORDER-TOP: red 2px solid; DISPLAY: block; FONT-SIZE: 16pt; BORDER-LEFT: red 2px solid; WIDTH: 40%; COLOR: #00ff00; BORDER-BOTTOM: red 2px solid; TEXT-ALIGN: center
+}
+PRE {
+	FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: courier
+}
+PRE.progclass {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 10pt; BACKGROUND: #ffffaf; PADDING-BOTTOM: 5px; MARGIN: 10px 60px; BORDER-LEFT: black 1px solid; COLOR: #000000; PADDING-TOP: 5px; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: courier
+}
+PRE.dataclass {
+	BORDER-RIGHT: blue 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: blue 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 10pt; BACKGROUND: cyan; PADDING-BOTTOM: 5px; MARGIN: 10px 60px; BORDER-LEFT: blue 1px solid; COLOR: #000000; PADDING-TOP: 5px; BORDER-BOTTOM: blue 1px solid; FONT-FAMILY: courier
+}
+DIV.xclass {
+	BORDER-RIGHT: red 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: red 1px solid; PADDING-LEFT: 5px; BACKGROUND: #7fff7f; PADDING-BOTTOM: 5px; MARGIN: 10px 60px; BORDER-LEFT: red 1px solid; COLOR: #000000; PADDING-TOP: 5px; BORDER-BOTTOM: red 1px solid
+}
+DIV.display {
+	DISPLAY: block; HEIGHT: 400px
+}
+DIV.tip {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BACKGROUND: #ffe0e0; BORDER-LEFT: black 1px solid; COLOR: #000000; BORDER-BOTTOM: black 1px solid
+}
+TT {
+	FONT-SIZE: 13pt; FONT-FAMILY: courier
+}
+CODE {
+	FONT-SIZE: 13pt; FONT-FAMILY: courier
+}
+A {
+	TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #00af00
+}
+A:visited {
+	COLOR: #004f00
+}

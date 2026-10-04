@@ -1,0 +1,28 @@
+<html>
+<script type="text/javascript">
+function checkfields()
+{
+	var num=document.form1.elements.length
+	var flag=true
+	for(var i=0;i<num;i++)
+	{
+	if((document.form1.elements[i].value==null||
+	  document.form1.elements[i].value==""))
+	{
+	flag=false
+	alert ("The " +document.form1.elements[i].name+" field is blank.")
+	break
+	}
+	}
+	return flag
+}
+</script>
+<form name="form1" onSubmit="return checkfields()">
+<h2>Online Registration</h2>
+<p>UserName<br>
+<input type=text size=25 maxlength=256 name="Username"><br>
+PassWord<br>
+<input type=text size=25 maxlength=256 name="Password" ><br>
+<input type=submit value="Register"></p>
+</form>
+</html>

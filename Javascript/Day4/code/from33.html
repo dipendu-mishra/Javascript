@@ -1,0 +1,48 @@
+<html>
+<body>
+    <div id="wrapper-div">
+    <div id="child-one" >
+      <h1>
+        Child One
+      </h1>
+    </div>
+    <div id="child-two" >
+      <h1>
+        Child Two
+      </h1>
+    </div>
+  
+  </div>
+  <div id="p1">Click here.....or.....else in document</div>
+  <a href="http://google.com" id="link1" >Go to Google</a>
+</body>
+<script type="text/javascript">
+    const  x= function ()  
+     {
+        document.getElementById("p1").innerHTML = "Clicked in document";
+        document.getElementById("p1").style.background="pink";
+     }    
+     
+    document.addEventListener("mouseover", x);  
+    
+    // Anonymous Function
+    let mydiv=document.getElementById("p1");  
+    mydiv.addEventListener('click',function ()
+    {
+        console.log('Single clicked');
+    });
+    mydiv.addEventListener('dblclick',function ()
+    {
+        console.log('double clicked');
+    });    
+    let link1=document.getElementById("link1"); 
+    console.log(link1)
+    link1.addEventListener('click',function()
+    {
+        event.preventDefault();
+        console.log(event.target.href);
+         if(event.target.href=="")
+              event.preventDefault();        
+    });    
+    </script>
+</html>

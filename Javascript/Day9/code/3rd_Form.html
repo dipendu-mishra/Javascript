@@ -1,0 +1,216 @@
+<html>
+<head><h3>Billing Address</h3>
+    <style>
+    
+        #address{
+            height: 75px;
+        }
+        #content{
+            background: oldlace;
+            border-style: solid;
+            border-color: black;
+            margin-left: 10px;
+            padding-top: 10px;
+            padding-left:10px;
+            float:left;
+            height:30em;
+            width:25em;
+            border-right: none;
+            
+            
+            
+        }
+        #content2{
+            background: oldlace;
+            border-style: solid;
+            border-color: black;
+            margin-right:10px;
+            padding-top: 10px;
+            padding-left:10px;
+            float:left;
+            height:30em;
+            width:15em;
+            border-left: none;
+            
+            
+        }
+        .c{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+           
+        }
+        h3{
+            margin-left: 17em;
+            
+        }
+        
+        </style>
+</head>
+    <body onload="onloadDisplay()">
+        <div class="c">
+        <div id="content">
+    <form>
+        <label for="name">Enter Full Name</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="address">Enter Address</label><br>
+        <input type="text" id="address" name="address"><br><br>
+        <label for="phno">Enter Phone Number</label><br>
+        <input type="text" id="phno" name="phno"><br><br>
+        <span><input class="nm" type="submit" value="Submit">
+            </span><br><br>
+            <input type="checkbox" id="check" name="check"><label for="check">Different Shipping Address</label>
+        </form>
+        <br>
+            <form id="1">
+                <!-- <label for="address">Shipping Address</label><br><br>
+                <input type="text" id="address" name="address"><br><br>
+                             -->
+            </form>
+                
+                    
+            
+        </div>
+        <div id="content2" class="tt">
+            <br>
+            <form>
+                <label for="city">City</label><br>
+                <select name="college" id="city">                 
+                    
+                  </select><br>
+                <label for="state">State</label><br>
+                <select name="college" id="state">
+                   
+                  </select><br>
+                <label for="state">Pin Code</label><br>
+                <select name="pin" id="pin">
+                   
+                </select>
+                    
+                        
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+        
+            <form id=2>
+                <!-- <label for="city">City</label><br>
+                <input type="text" id="city" name="city"><br>
+                <label for="state">State</label><br>
+                <input type="state" id="state" name="state"><br>
+                <label for="state">Pin Code</label><br>
+                <input type="pin" id="pin" name="pin"><br>
+                     -->
+                        
+            </form>
+        </div>
+    </div>
+ </body>     
+ <script>
+
+let state_city=[
+  { state: 'Karnataka', cities: ['Bangalore','Mangalore','Mysore'] },
+  { state: 'Tamilnadu', cities: ['Chennai','Vellore'] },
+  { state: 'WB', cities: ['Kolkata','Duragour'] },
+  { state: 'Kerala', cities: ['Kannur','Kochi'] },  
+]
+      var state=document.getElementById("state") 
+      var city=document.getElementById("city")    
+      var pin=document.getElementById("pin")
+      //console.log(re.value)
+      function onloadDisplay()
+      {
+          let states=state_city.map((element)=>{
+              return element.state;
+      })
+      state. childNodes[0]
+        
+      
+    //       for(let val of err){
+    //           var op=document.createElement("option")
+    //           op.value=val
+    //           op.text=val
+    //           we.appendChild(op)
+    //       }
+    //       if(we.value=="jabalpur"){
+    //           console.log(we.value)
+    //           err=["482008","450045"]
+    //           for(let val of err){
+    //               var op=document.createElement("option")
+    //               op.value=val
+    //               op.text=val
+    //               qw.appendChild(op)
+
+    //           }
+    //       }
+    //   }
+    //   else if(re.value=="UP"){
+    //     err=["Allahbad","agra"]
+    //       for(let val of err){
+    //           var op=document.createElement("option")
+    //           op.value=val
+    //           op.text=val
+    //           we.appendChild(op);
+    //   }
+    // }
+    // else if(re.value=="TN"){
+    //     err=["tamil nadu","pondi"]
+    //       for(let val of err){
+    //           var op=document.createElement("option")
+    //           op.value=val
+    //           op.text=val
+    //           we.appendChild(op);
+    //   }
+    // }
+      
+
+    //  flag=0
+    //  var aa = document.getElementById("check")
+    //  if(aa.checked==true){
+    //      flag=flag+1
+         
+         
+
+    //  }
+    //  if(flag>0){
+    //      display()
+    //  }
+
+      }
+      
+     function display(){
+        
+          let io=document.getElementById("2")
+          let ji=document.createElement("p")
+          ji.innerHTML="City"
+          let ko=document.createElement("input")
+          ko.setAttribute("type","text")
+          ko.innerHTML="<br>"
+          let hj=document.createElement("p")
+          hj.innerHTML="State"
+          let gh=document.createElement("input")
+          gh.setAttribute("type","text")
+          gh.innerHTML="<br>"
+        let yy = document.getElementById("1")
+         let yu = document.createElement("p")
+         yu.innerHTML="Shipping Address"
+         yy.innerHTML="<br>"
+         let ii=document.createElement("input")
+         ii.setAttribute("type","text ")
+         ii.setAttribute("height","70px")
+         yy.appendChild(yu)
+         yy.appendChild(ii)
+         io.appendChild(ji)
+         io.appendChild(ko)
+         io.appendChild(hj)
+         io.appendChild(gh)
+     }
+ </script>           
+</html>

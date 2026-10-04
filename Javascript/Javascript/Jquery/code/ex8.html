@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();    
+  });
+
+  let i=1;
+  $(".check").click(()=>{
+    if($(".check").is(":checked"))
+       $("#d1").css("display", "none");
+    else
+    {
+       $("#d1").css("display", "inline");
+       $("#b1").attr("value", `${i++} Times :  Go Next`);
+    }
+       
+   
+  })
+
+
+});
+</script>
+</head>
+<body>
+
+<button>Toggle between hiding and showing the paragraphs</button>
+
+<p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+<input type=checkbox class="check"><span id="t1">Show</span><br>
+<div id="d1"><input type=button id="b1" value="Go Next"></div>
+</body>
+</html>
+

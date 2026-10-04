@@ -1,0 +1,22 @@
+<html>
+<script type="text/javascript">
+function showhelp()
+{
+helpwin=window.open("","Help","height=200,width=400")
+helpwin.document.write("<body><h2>Help on Registration</h2>")
+helpwin.document.write("1. Please enter ur product info")
+helpwin.document.write("<form>")
+helpwin.document.write("<input type=button value='OK' onClick='window.close()'>")
+helpwin.document.write("<input type=button value='yes' onClick='window.close()'>")
+helpwin.document.write("<input type=button value='No' onClick='window.close()'>")
+helpwin.document.write("</form>")-->
+}
+</script>
+</head>
+<body>
+<form name="form1">
+Product Name <input type=text name="pname"><br><br>
+<input type=button value="Help" onClick="showhelp()">
+</form>
+</body>
+</html>

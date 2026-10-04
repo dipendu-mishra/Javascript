@@ -1,0 +1,50 @@
+<html>
+<script type="text/javascript">
+
+let txt = "Rohit is a good coder. He is also good on leading the team.";
+let sln = txt.length;
+
+//Both indexOf(), and lastIndexOf() return -1 if the text is not found.
+// Both accepts standing position as second parameter
+let pos = str.indexOf("good");
+let lpos = str.lastIndexOf("good");
+
+//let pos = str.indexOf("good",12);
+//let spos = str.lastIndexOf("good",12);
+
+//Searching for a String in a String
+pos = str.search("good"); // not accept position as indexof where indexof not work for regular expression
+
+//Extracting String Parts
+//slice(start, end)
+//substring(start, end) 
+//substr(start, length)
+var res = str.slice(7, 13);
+var res = str.slice(-12, -6);
+var res = str.slice(7);
+var res = str.slice(-12);
+
+var text2 = str1.toUpperCase(); 
+
+var text = "Hello" + " " + "World!";
+var text = "Hello".concat(" ", "World!");
+var str = "       Hello World!        ";
+alert(str.trim());
+
+//Extracting String Characters
+//There are 3 methods for extracting string characters:
+//charAt(position)
+//charCodeAt(position)
+
+//Converting a String to an Array
+
+
+var txt = "a,b,c,d,e";   // String
+txt.split(",");          // Split on commas
+txt.split(" ");          // Split on spaces
+txt.split("|");          // Split on pipe
+
+</script>
+</html>
+
+

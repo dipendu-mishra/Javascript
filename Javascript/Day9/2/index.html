@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DOM manipulation</title>
+      <!-- BS cdn -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+      <!-- ext stylesheet -->
+      <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+      <div class="mainDiv row">
+            <div class="col-md-4 col-12 formContainer">
+                  <!-- take user details -->
+                  <form id="form1" onsubmit="event.preventDefault();formSubmit();" autocomplete="off">
+                        <div class="mb-3">
+                              <label class="mb-2 for=" fullName">Full Name</label>
+                              <input type="text" name="fullName" id="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                              <label class="mb-2 for=" empCode">Emp code </label>
+                              <input type="number" name="empCode" id="empCode" required>
+                        </div>
+                        <div class="mb-3">
+                              <label class="mb-2 for=" salary">Salary</label>
+                              <input type="number" name="salary" id="salary" required>
+                        </div>
+                        <div class="mb-3">
+                              <label class="mb-2 for=" city">City</label>
+                              <input type="text" name="city" id="city" required>
+                        </div>
+                        <div class="mb-3">
+                              <button type="submit" class="btn btn-success">Submit</button>
+                              <button type="reset" class="btn btn-danger mx-3" onclick="resetForm()">Reset</button>
+                        </div>
+                  </form>
+            </div>
+            <div class="col-md-8 col-12 tableContainer">
+                  <!-- display user data in table -->
+                  <table id="myTable">
+                        <tr>
+                              <th>Full Name</th>
+                              <th>Emp Code</th>
+                              <th>Salary</th>
+                              <th>City</th>
+                              <th>Operation</th>
+                        </tr>
+                  </table>
+            </div>
+      </div>
+      <!-- ext js file -->
+      <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script type="text/javascript">
+let ccal=function (v1,v2,oper)
+{
+ console.log("Comm Cal:")  
+ 
+   return (v1+v2);
+}
+let scal=function (v1,v2,oper)
+{
+    console.log("Sc Cal:")  
+    
+      return (v1+v2);
+}
+function call(abc,v1,v2,oper)
+{
+    return abc(v1,v2,oper);  
+}
+
+let result=call(ccal,20,30,"+");
+let result=call(function (v1,v2,oper)
+{
+ console.log("Comm Cal:");
+ 
+   return (v1+v2);
+},20,30,"+");
+
+let result=call((v1,v2,oper)=>
+{
+ console.log("Comm Cal:")  
+ 
+   return (v1+v2);
+},20,30,"+");
+
+let x=[1,2,3];
+x.forEach(element => {    
+    let z=x*element;
+    console.log(element+" "+z);
+});
+
+let result1=call(scal,20,30,"+")
+console.log(result+" "+result1);
+</script>

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            function splitOddEven(numbers) 
+            {
+                    let numbers=[2,34,55,66,7,777,8,88]
+                    let odd = [];
+                    let even = [];
+
+                    for (let i=numbers.length-1; i>=0; i--) 
+                    {
+                        if (numbers[i] % 2 === 0) 
+                        {
+                            even.push(numbers[i]);
+                        } 
+                        else 
+                        {
+                            odd.push(numbers[i]);
+                        }
+                    }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h3>Split Odd Even</h3>
+
+        Enter Numbers: <input id="n"><br/>
+        
+
+        <button onclick="splitOddEven()">Split</button>
+
+        <p id="result"></p>
+    </body>
+</html>

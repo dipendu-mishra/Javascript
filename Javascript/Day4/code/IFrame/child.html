@@ -1,0 +1,15 @@
+<html>
+<script type="text/javascript">
+function closeMe()
+{
+   
+   parent.document.getElementById('iF1').src="";
+}
+
+</script>
+<body bgcolor="yellow" onunload="alert('unloading child');" >
+    I am child page
+    <button onclick="closeMe()">Unload Me</button>
+</body>
+
+</html>

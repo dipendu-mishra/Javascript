@@ -1,0 +1,584 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0073)http://www.comptechdoc.org/independent/web/cgi/javamanual/javawindow.html -->
+<HTML><HEAD><TITLE>JavaScript Window Object</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+<META 
+content="The JavaScript Window Object is the highest level JavaScript object which corresponds to the web browser window." 
+name=description>
+<META content="JavaScript Window Object" name=keywords><LINK 
+href="Page14_files/style.css" type=text/css rel=stylesheet><!-- Background white, links blue (unvisited), navy (visited), red (active) --></HEAD>
+<BODY>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD vAlign=top width="100%">
+      <HR class=firsthr>
+
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0 valign="top">
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=150><BR>
+            <DIV class=center>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Computer Tech Home Page' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/index.html" 
+                  target=_top>Computer Technology Documentation Home</A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Platform Independent Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/index.html" 
+                  target=_top>Independent Section</A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Web Technologies Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/index.html" 
+                  target=_top>Web Technologies</A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To CGI Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/cgi/index.html" 
+                  target=_top>CGI Section</A> </DIV>
+                  <H3>JavaScript</H3>
+                  <HR>
+
+                  <OL>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/">Introduction</A> 
+
+                    <H3>The Language</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javastart.html">Starting</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javavariables.html">Variables</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaoperators.html">Operators</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaloops.html">Control 
+                    and Loops</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javafunctions.html">Functions</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaprefunct.html">Predefined 
+                    Functions</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaevents.html">Events</A> 
+
+                    <H3>Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaobjects.html">Object 
+                    Creation and Use</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaobjheir.html">Object 
+                    Hierarchy</A> 
+                    <H3>Independent Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaarray.html">Array 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javadate.html">Date 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javamath.html">Math 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javanumber.html">Number 
+                    and Boolean Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javastring.html">String 
+                    Object</A> 
+                    <H3>Main Object</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javanavigator.html">Navigator 
+                    Object</A> 
+                    <H3>Navigator Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javawindow.html">Window 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javamimetype.html">MimeType 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaplugin.html">Plugin 
+                    Object</A> 
+                    <H3>Window Sub Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javadocument.html">Document 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javalocation.html">Location 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javahistory.html">History 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaframe.html">Frame 
+                    Object</A> 
+                    <H3>Document Sub Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaanchor.html">Anchor 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaapplet.html">Applet 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaarea.html">Area 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaform.html">Form 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaimage.html">Image 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javalayer.html">Layer 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javalink.html">Link 
+                    Object</A> 
+                    <H3>Form Sub Objects</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javabutton.html">Button 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacheckbox.html">Checkbox 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javafileupload.html">FileUpload 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javahidden.html">Hidden 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaoption.html">Option 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javapassword.html">Password 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaradio.html">Radio 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javareset.html">Reset 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaselect.html">Select 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javasubmit.html">Submit 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javatext.html">Text 
+                    Object</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javatextarea.html">Textarea 
+                    Object</A> 
+                    <H3>More</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacookie.html">Handling 
+                    Cookies</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javastyle.html">Style 
+                    Attributes</A> 
+                    <H3>Examples</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javasimpleexamples.html">Simple 
+                    Examples</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javahforms.html">Handling 
+                    Form Input</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaihit.html">Individual 
+                    Hit Counter</A> 
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacredirect.html">Redirecting 
+                    based on Cookies</A> 
+                    <H3>Appendices</H3>
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javaterms.html">Terms</A> 
+
+                    <LI><A 
+                    href="http://www.comptechdoc.org/independent/web/cgi/javamanual/javacredits.html">Credits</A> 
+                    </LI></OL><BR>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To CGI Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/cgi/index.html" 
+                  target=_top><IMG height=35 alt=CGI 
+                  src="Page14_files/bluecgibutton.gif" width=120></A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Web Technologies Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/web/index.html" 
+                  target=_top><IMG height=35 alt="Web Tech" 
+                  src="Page14_files/bluewebtechbutton.gif" width=120></A> </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Platform Independent Section' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/independent/index.html" 
+                  target=_top><IMG height=35 alt=Independent 
+                  src="Page14_files/blueindependentbutton.gif" width=120></A> 
+                  </DIV>
+                  <DIV class=center><A 
+                  onmouseover="window.status='To Computer Tech Home Page' ;return true" 
+                  onmouseout="window.status='';return true" 
+                  href="http://www.comptechdoc.org/index.html" target=_top><IMG 
+                  height=35 alt=Home src="Page14_files/bluehomebutton.gif" 
+                  width=120></A> </DIV></TD></TR></TBODY></TABLE></DIV></TD>
+          <TD vAlign=top align=left>
+            <TABLE width="96%" align=center>
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=top><!--Begin TechTutorials.info Banner code -->
+                        <DIV style="TEXT-ALIGN: center"><IFRAME 
+                        style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px" 
+                        align=center marginWidth=0 marginHeight=0 
+                        src="Page14_files/bandisplay.htm" frameBorder=0 
+                        width=468 scrolling=no height=60></IFRAME></DIV><!--End TechTutorials.info Banner code -->
+                        <H1>JavaScript Window Object</H1>
+                        <P>The JavaScript Window Object is the highest level 
+                        JavaScript object which corresponds to the web browser 
+                        window. </P>
+                        <H3>Window object Properties</H3>
+                        <UL>
+                          <LI>clientInformation 
+                          <LI>closed - A boolean value that indicates whether 
+                          the window is closed. 
+                          <LI>defaultStatus - This is the default message that 
+                          is loaded into the status bar when the window loads. 
+                          <P class=indent>window.defaultStatus = "Click on a 
+                          link on the left to navigate this website." </P>
+                          <LI>event 
+                          <LI>external 
+                          <LI>lastModified 
+                          <LI>length - The number of frames that the window 
+                          contains. 
+                          <LI>name The window name. 
+                          <LI>navigator 
+                          <LI>offscreenBuffering 
+                          <LI>opener The object that caused the window to open. 
+                          <LI>status - The status bar is the bar on the lower 
+                          left side of the browser and is used to display 
+                          temporary messages. The below example will write a 
+                          message to the status bar 
+                          <P class=indent>window.status = "This message will 
+                          display in the window status bar." </P>
+                          <P>The window status bar will not always work when 
+                          written to immediately when the page loads. Normally 
+                          it is used when an event happens such as when the user 
+                          clicks on something or moves the mouse over an item or 
+                          area on the page. The following code will display a 
+                          status bar message when the mouse is moved over the 
+                          home button.<BR></P>
+                          <P class=indent>&lt;a href="../../../../index.html" 
+                          target="_top" onMouseOver="window.status='This will 
+                          take you to the Home Page' ;return true" 
+                          onMouseOut="window.status='Hey! You are not holding 
+                          the mouse on the Home Button!';return true"&gt;&lt;img 
+                          SRC="../../../../gifs/greenhomebutton2.gif" ALT="Home" 
+                          VSPACE=3 BORDER=0 height=35 
+                          width=120&gt;&lt;/a&gt;&lt;BR&gt; </P>
+                          <DIV class=center><A 
+                          onmouseover="window.status='This will take you to the Home Page' ;return true" 
+                          onmouseout="window.status='Hey! You are not holding the mouse on the Home Button!';return true" 
+                          href="http://www.comptechdoc.org/index.html" 
+                          target=_top><IMG height=35 alt=Home 
+                          src="Page14_files/greenhomebutton2.gif" width=120 
+                          vspace=3 border=0></A><BR></DIV></LI></UL>
+                        <H3>Window Object Methods</H3>
+                        <SCRIPT language=JavaScript>
+scrollTo(500,500)
+</SCRIPT>
+                      </TD>
+                      <TD vAlign=top>
+                        <SCRIPT type=text/javascript><!--
+google_ad_client = "pub-0057014352875780";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_channel ="2584929872";
+google_color_border = ["336699","000000","B4D0DC","A8DDA0"];
+google_color_bg = ["FFFFFF","F0F0F0","ECF8FF","EBFFED"];
+google_color_link = ["0000FF","0000FF","0000CC","0000CC"];
+google_color_url = "008000";
+google_color_text = ["000000","000000","6F6F6F","6F6F6F"];
+//--></SCRIPT>
+
+                        <SCRIPT src="Page14_files/show_ads.js" 
+                        type=text/javascript>
+</SCRIPT>
+                        <BR>
+                        <HR>
+                        <BR><!-- Begin GlobalSpec Search Box -->
+                        <SCRIPT language=JavaScript><!--
+	function gsDoAffiliateSearchBoxSubmitVert2(aform) {
+		var searchterm = aform.query.value;
+		if (searchterm == "") {
+			alert("Please enter a search term");
+			return false;
+		}
+		return true;
+	}
+	function gsSearchModeKeyDownVert2(evt) {
+		evt = (evt) ? evt : event;
+		var charCode = (evt.charCode) ? evt.charCode : ((evt.which) ? evt.which : evt.keyCode);
+		if ((charCode == 13) || (charCode == 3)) {
+			document.gsSearchBoxFormVert.submit();
+			return false;
+		}
+		return true;
+	}
+	//-->
+</SCRIPT>
+
+                        <TABLE 
+                        style="PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; WIDTH: 160px; PADDING-TOP: 1px; FONT-FAMILY: Arial,Helvetica,sans-serif; HEIGHT: 90px" 
+                        cellSpacing=0 cellPadding=1 bgColor=white border=0>
+                          <FORM name=gsSearchBoxFormVert 
+                          onsubmit="return gsDoAffiliateSearchBoxSubmitVert2(this);" 
+                          action=http://affiliates.globalspec.com/affiliate/search 
+                          method=get target=_blank>
+                          <TBODY>
+                          <TR>
+                            <TD vAlign=top align=middle><IMG height=30 
+                              alt="GlobalSpec - The Engineering Search Engine" 
+                              src="Page14_files/engineeringweb_drop.gif" 
+                              width=120 border=0></TD></TD>
+                          <TR>
+                            <TD vAlign=top align=left><INPUT type=hidden 
+                              value=total name=show> <INPUT type=hidden 
+                              value=searchbox name=source> <INPUT type=hidden 
+                              value=affiliate name=frmtrk> <INPUT type=hidden 
+                              value=1393 name=kbid> <INPUT type=hidden 
+                              value=?img=65&amp;kbid=1393 name=img> <INPUT 
+                              type=hidden value=DropVert051103 name=version> 
+                              <INPUT 
+                              style="FONT-SIZE: 10px; WIDTH: 135px; HEIGHT: 20px" 
+                              size=31 name=query> <INPUT 
+                              style="WIDTH: 15px; HEIGHT: 15px" type=image 
+                              alt="Find It!" src="Page14_files/SearchBoxGo.gif" 
+                              align=absMiddle border=0 name=Submit> </TD></TR>
+                          <TR>
+                            <TD vAlign=top align=left><SELECT 
+                              onkeydown="return gsSearchModeKeyDownVert2(event)" 
+                              style="FONT-SIZE: 10px; WIDTH: 155px; HEIGHT: 20px" 
+                              name=SearchMode> <OPTION value=Products 
+                                selected>Products &amp; Suppliers</OPTION> 
+                                <OPTION value=Services>Service 
+                                Providers</OPTION> <OPTION value=Suppliers>A 
+                                Company by Name</OPTION> <OPTION 
+                                value=SearchEngineTotal>THE ENGINEERING 
+                                WEB</OPTION> <OPTION value=SearchEngineTotal>All 
+                                Sites</OPTION> <OPTION 
+                                value=SearchEngineAppNotes>Application 
+                                Notes</OPTION> <OPTION 
+                                value=SearchEngineMaterials>Material 
+                                Properties</OPTION> <OPTION 
+                                value=SearchEnginePartNumbers>Part Numbers 
+                                (Beta)</OPTION> <OPTION 
+                                value=SearchEnginePatents>Patents</OPTION> 
+                                <OPTION 
+                                value=SearchEngineStandards>Standards</OPTION> 
+                                <OPTION value=SearchEngineCompanySites>Supplier 
+                                Web Sites</OPTION></SELECT> 
+                        </TD></TR></FORM></TBODY></TABLE><SPAN 
+                        style="POSITION: absolute"><IMG 
+                        src="Page14_files/1pxlclr.gif"></SPAN> <!-- End GlobalSpec Search Box --></TD></TR></TBODY></TABLE>
+                  <UL>
+                    <LI>alert("message") - The string passed to the alert 
+                    function is displayed in an alert dialog box. <PRE class=indent>alert("This is a test")
+</PRE>
+                    <LI>blur() - This function will take the focus away from the 
+                    window. Calling it as follows will perform the function. <PRE class=indent>&lt;script language="JavaScript"&gt;
+blur()
+&lt;/script&gt;
+</PRE>
+                    <LI>clearInterval(interval) - Clear the timeout interval. 
+                    <LI>clearInterval(timeID) - Removes a repetative timeout 
+                    that was set up using the setInterval function. the ID value 
+                    must be passed to the function. 
+                    <LI>clearTimeout(timeID) - Remove a timeout that was set 
+                    using the setTimeout function. 
+                    <LI>close() - This function will close the current window or 
+                    the named window. Normally a form button is provided to 
+                    allow the user to close the window and the function is 
+                    called by the onClick action. Otherwise some other event may 
+                    be used to close the window. 
+                    <P class=indent>window.close() </P>
+                    <LI>confirm("message") The string passed to the confirm 
+                    function is displayed in the confirm dialog box. The dialog 
+                    box returns a true or false value depending on which button 
+                    was clicked. <PRE class=indent>if (confirm("Are you sure?"))
+{
+  document.write("You were sure!") 
+}
+else
+{
+  document.write("You were not sure!") 
+}
+</PRE>
+                    <LI>focus() - This function will give the focus to the 
+                    window. 
+                    <LI>moveBy(x,y) - The window is moved the specified number 
+                    of pixels in the X and Y direction. 
+                    <LI>moveTo(x,y) - The window is moved to the specified X and 
+                    Y pixel location in the browser. 
+                    <LI>open("URLname","Windowname",["options"]) - A new window 
+                    is opened with the name specified by the second parameter. 
+                    The document specified by the first parameter is loaded. The 
+                    options are not required, and may be set to values of yes or 
+                    now as in the below example. Many options are set to default 
+                    values depending on whether others are set. For example, if 
+                    the width and height are specified, the resizable option is 
+                    set as default to no. Also if the toolbar is off, the 
+                    menubar is set to default of no. The options are: 
+                    <UL>
+                      <LI>alwaysRaised - If yes, the created window is raised. 
+                      <LI>directories - The value of yes or no determines if the 
+                      window shows directory buttons or not. 
+                      <LI>height - Specifies the window height in pixels. This 
+                      is set to an integer value, rather than yes or no. 
+                      <LI>left - Specifies the distance in pixels the new window 
+                      will be placed from the left side of the screen. This is 
+                      set to an integer value, rather than yes or no. 
+                      <LI>location - The value of yes or no determines if the 
+                      window has a location displayed on the address line (or 
+                      has an address line) or not. 
+                      <LI>menubar - The value of yes or no determines if the 
+                      window has a menubar or not. 
+                      <LI>outerWidth - Specifies the outer window width in 
+                      pixels. This is set to an integer value, rather than yes 
+                      or no. 
+                      <LI>outerHeight - Specifies the outer window height in 
+                      pixels. This is set to an integer value, rather than yes 
+                      or no. 
+                      <LI>resizable - The value of yes or no determines if the 
+                      window can be resized by the user or not 
+                      <LI>status - The value of yes or no determines if the 
+                      window has a status bar or not. 
+                      <LI>scrollbars - The value of yes or no determines if the 
+                      window has scroll bars or not. 
+                      <LI>toolbar - The value of yes or no determines if the 
+                      window has a toolbar or not. 
+                      <LI>top - Specifies the distance in pixels the new window 
+                      will be placed from the top of the screen. This is set to 
+                      an integer value, rather than yes or no. 
+                      <LI>width - Specifies the window width in pixels. This is 
+                      set to an integer value, rather than yes or no. 
+                      <LI>z-lock - If yes, the created window is in the 
+                      background. </LI></UL>
+                    <P>Example: </P><PRE class=indent>&lt;script language="JavaScript"&gt;
+open("javahere.html","test", "toolbar=no,menubar=no,width=200,height=200,resizable=yes")
+&lt;/script&gt;
+</PRE>
+                    <LI>prompt("message","defaultmessage") - A prompt dialog box 
+                    is displayed with the message passed as the prompt question 
+                    or phrase. The defaultmessage appears in the box, to be 
+                    replaced by user entered text. If no default message string 
+                    is present, no default string is displayed. 
+                    <LI>resizeBy(X,Y) - Adjusts the window size relative to the 
+                    current value. 
+                    <LI>resizeTo(X,Y) - Adjusts the window size to set X and Y 
+                    width and height values. 
+                    <LI>scroll(X,Y) - The window is scrolled to the location 
+                    specified by the X and Y values in pixels. 
+                    <LI>scrollBy(X, Y) 
+                    <LI>scrollTo(X,Y) 
+                    <LI>setInterval(function(),milliseconds,[functargs]) - Cause 
+                    a function to be called periodically based on the time value 
+                    specified. The functargs are arguments passed to the 
+                    function. 
+                    <LI>setTimeout(function(),milliseconds,[functargs]) - Used 
+                    to call a function after the specified time in milliseconds. 
+                    If you put the following code in your HTML body start tag: 
+                    <P class=indent>&lt;body onLoad="timeID = 
+                    setTimeout('showMessage()',4000)"&gt; </P>
+                    <P>And put this code inside your HEAD element: </P><PRE class=indent>&lt;SCRIPT LANGUAGE="JavaScript"&gt;
+function showMessage()
+{
+  alert("It has been 4 seconds since this page loaded.")
+}
+&lt;/SCRIPT&gt;
+</PRE>
+                    <P>Your page will display the alert message four seconds 
+                    after it loads. </P></LI></UL>
+                  <H3>Events</H3>
+                  <UL>
+                    <LI>onafterupdate 
+                    <LI>onBeforeunload 
+                    <LI>onBeforeupdate 
+                    <LI>onBlur 
+                    <LI>onClick 
+                    <LI>ondblclick 
+                    <LI>onError 
+                    <LI>onerrorupdate 
+                    <LI>onFocus 
+                    <LI>onhelp 
+                    <LI>onkeydown 
+                    <LI>onkeypress 
+                    <LI>onkeyup 
+                    <LI>onLoad 
+                    <LI>onmousedown 
+                    <LI>onmousemove 
+                    <LI>onmouseout 
+                    <LI>onmouseover 
+                    <LI>onmouseup 
+                    <LI>onragstart 
+                    <LI>onreadystatechange 
+                    <LI>onresize 
+                    <LI>onrowenter 
+                    <LI>onrowexit 
+                    <LI>onscroll 
+                    <LI>onselectstart 
+                    <LI>onUnload </LI></UL>
+                  <H3>Internal Objects</H3>
+                  <UL>
+                    <LI>Option - object 
+                    <LI>parent - The parent window of the current window. 
+                    <LI>parentWindow 
+                    <LI>screen - object 
+                    <LI>self - The current window. 
+                    <LI>top - The top window in a list of framed windows. 
+                    <LI>window - the current window. </LI></UL>
+                  <H3>Objects</H3>
+                  <UL>
+                    <LI>document - The document currently being displayed in the 
+                    window object. 
+                    <UL>
+                      <LI>Image -object </LI></UL>
+                    <LI>frame - This is the name of a frame that refers to a 
+                    single frame in a frameset. 
+                    <LI>history - The window's history object which is the list 
+                    of URLs that the current window has loaded. Its methods 
+                    include: 
+                    <UL>
+                      <LI>back() - The same as using the back button on the 
+                      browser, causes the previous document to be loaded. 
+                      <LI>forward() - The same effect as using the forward 
+                      button on the browser, the next document in the history 
+                      list is loaded if there is one. 
+                      <LI>go(number) - A numeric value may be passed to this 
+                      function. If the numeric value is 0, the current document 
+                      is reloaded. If it is above 0, the document the correct 
+                      number of entries ahead in the history list is loaded. If 
+                      the value is negative a document the correct number of 
+                      entries back in the history list is loaded. </LI></UL>
+                    <LI>location - The location object of the window. </LI></UL><!--Begin TechTutorials.info Banner code -->
+                  <DIV style="TEXT-ALIGN: center"><IFRAME 
+                  style="BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px" 
+                  align=center marginWidth=0 marginHeight=0 
+                  src="Page14_files/CACBQD25." frameBorder=0 width=468 
+                  scrolling=no height=60></IFRAME></DIV><!--End TechTutorials.info Banner code --></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TR></TBODY></TABLE></BODY></HTML>

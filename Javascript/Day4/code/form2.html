@@ -1,0 +1,37 @@
+<html>
+<script type="text/javascript">
+function checkData(val)
+{
+      // let x=value;
+       //console.log(value,typeof value);
+      //  return;
+       // let x=Number("23");
+        let str=String(val);
+       // console.log(str);
+      //  return;
+        let lastChar=str.slice(-1);    
+        let code=lastChar.charCodeAt(0);
+        console.log(code,lastChar);
+         if((code>=65 && code <=90) || (code>=97 && code <=122) || code==32 )
+          { 
+              document.getElementById("place1").innerHTML="";
+              return true;
+          }
+         else 
+         {   document.getElementById("place1").innerHTML="<font color=red><b>Wrong char<b></font>";
+            
+            let str1=str.slice(0,str.length-1);
+            console.log(str1);
+            document.getElementById("t1").value=str1;
+            return false;
+         }   
+}
+</script>
+<form name="form1"  action="nextpage.html">
+Full Name: <input type="text" id="t1" size="20" 
+onfocus="this.select();" onkeyup="return checkData(this.value)"  value="test" >
+<div id="place1">....</div><br>
+Password: <input type="password" id="p1" size="10" ><br>
+<input type="submit" value="Submit" onclick="return checkAll()" ><input type="reset" value="Clear" ><br>
+</form>
+</html>

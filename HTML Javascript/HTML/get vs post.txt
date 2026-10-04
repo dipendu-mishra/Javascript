@@ -1,0 +1,10 @@
+
+
+GET v/s POST
+1. POST is more safer then GET. Because the URL doesn't expose the data
+2. The URL length has some limitation (Can't be more than 256 characters in some servers. But generally has 4000 (4K) characters limit. And hence you can't send heavy data in GET.
+3. GET request are re-executed when the user presses back button.
+4. Search service will not index anything with ? in URI. ( some modern services may)
+5. Resubmit - POST browser usually alerts the user ( no guarantee though).But GET doesn't
+6. GET can't handle non-ASCII characters
+

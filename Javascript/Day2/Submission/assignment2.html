@@ -1,0 +1,44 @@
+<!-- Create a JavaScript example to display the even and odd 
+values staring from last. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Array</title>
+</head>
+<body>
+      <h3> display the even and odd values staring from last</h3>
+
+      <!-- js code -->
+      <script>
+            // declare empty array
+            let arr = [];
+            let even = [];
+            let odd = [];
+      
+            // take array length from user
+            let len = prompt("enter array length","length");
+
+            // take array ele from user
+            for (let i = 0; i < len; i++) {
+                  arr[i] = prompt("enter array element");   
+                  // check even or odd array element 
+                  if(arr[i]%2 == 0){
+                        // push even ele in even array
+                        even.push(arr[i]);
+                  } 
+                  else
+                        // push odd ele in odd array
+                        odd.push(arr[i]);           
+            }
+
+            // display result
+            document.write("arr = ["+arr+"]");
+            document.write("<br>Even : "+even);
+            document.write("<br>Odd : "+odd);
+      </script>
+</body>
+</html>

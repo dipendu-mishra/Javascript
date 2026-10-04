@@ -1,0 +1,45 @@
+H1 {
+	FONT-SIZE: 18px
+}
+H2 {
+	PADDING-RIGHT: 0px; BORDER-TOP: black 1px dashed; PADDING-LEFT: 0px; FONT-SIZE: 14px; PADDING-BOTTOM: 9px; PADDING-TOP: 9px; BACKGROUND-COLOR: #cccccc
+}
+H3 {
+	FONT-SIZE: 12px
+}
+.code {
+	FONT-SIZE: 12px; FONT-FAMILY: Courier New, Courier, mono; BACKGROUND-COLOR: #dadada
+}
+.codepara {
+	BORDER-RIGHT: #cccccc 1px dashed; BORDER-TOP: #cccccc 1px dashed; DISPLAY: block; FONT-SIZE: 12px; MARGIN-LEFT: 18px; BORDER-LEFT: #cccccc 1px dashed; BORDER-BOTTOM: #cccccc 1px dashed; FONT-FAMILY: Courier New, Courier, mono; BACKGROUND-COLOR: #dadada
+}
+.attention {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.product {
+	FONT-WEIGHT: bold
+}
+.gui {
+	FONT-WEIGHT: bold; FONT-STYLE: italic
+}
+.sbname {
+	FONT-WEIGHT: bold; FONT-STYLE: italic
+}
+.files {
+	FONT-STYLE: italic
+}
+.tableName {
+	FONT-SIZE: 10.5pt; FONT-STYLE: italic; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.fieldName {
+	FONT-WEIGHT: bold; FONT-SIZE: 10.5pt; FONT-STYLE: italic; FONT-FAMILY: "Times New Roman", Times, serif
+}
+.pictureTitle {
+	FONT-STYLE: italic; FONT-FAMILY: Arial, Verdana, Trebuchet MS, Helvetica, sans-serif
+}
+.trigger {
+	FONT-SIZE: 10.5pt; FONT-STYLE: italic; FONT-FAMILY: Courier New, Courier, mono; BACKGROUND-COLOR: #dadada
+}
+BLOCKQUOTE {
+	PADDING-LEFT: 5px; MARGIN-LEFT: 10px; BORDER-LEFT: #000000 2px solid
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script type="text/javascript">
+function f1()
+{
+    console.log("F1");
+}
+function f2()
+{
+    console.log("F2");
+}
+function f3()
+{
+    console.log("F3");
+}
+
+// f1();
+// f2();
+// f3();
+console.log('Good Afternoon')
+setTimeout(() => {
+   f1(); 
+}, 0);
+setTimeout(() => {
+   f3(); 
+}, 3000);
+setTimeout(() => {
+   f2(); 
+}, 1000);
+console.log('Thank you')
+</script>

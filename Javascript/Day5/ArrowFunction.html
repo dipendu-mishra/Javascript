@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+<img src="google.jpg" height="100" width="100" id="img1"  bordercolor="yellow" border=4>
+<div id="d1">Click here to make big</div>
+</body>
+</html>
+<script type="text/javascript">
+    function setBorder (a,b)
+    {
+     console.log(event);
+    //  let imgbox=document.getElementById("img1");
+    //  imgbox.style.borderColor="blue";
+    //alert('test:'+ eval(a+b));
+    document.getElementById("img1").height=a;
+    document.getElementById("img1").width=b;    
+    }
+    function showMsg()
+    {
+        document.getElementById("d1").innerHTML = "Image is Big. Click again to make it small.";
+    }
+    
+    let d=document.getElementById("d1");
+    d.addEventListener("click",showMsg); // not allowed showMsg(), it will call method immediately
+    d.addEventListener("click", function() { setBorder(200,400);});
+    
+    // Can be replaced by arrow function
+     d.addEventListener("click", ()=> { setBorder(200,400);});
+
+    // Can be replaced by arrow function
+    //let a=200;b=400;
+    //d.addEventListener("click", ()=> { setBorder(a,b);});
+
+    // d.addEventListener("click",function() {
+    // document.getElementById("d1").innerHTML = "Image is Big";
+    // });
+    //d.addEventListener("click",()=>setBorder(200,200));
+    
+    </script>

@@ -1,0 +1,23 @@
+<html>
+<script type="text/javascript">
+//Function passing as argumment
+let addFun=function(a,b)
+{
+    return a+b;
+}
+let mulFun=function(a,b)
+{
+    return a*b;
+}
+function show(func,x,y)
+{
+  alert ("Good Evening");
+  let res=func(x,y);
+  alert("Result:"+res);
+}
+</script>
+<button onclick="show(addFun,10,20);">Add Here</button><br>
+<button onclick="show(mulFun,3,4);">Multiply Here</button><br>
+</body>
+
+</html>

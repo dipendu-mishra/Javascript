@@ -1,0 +1,219 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)http://www.quirksmode.org/js/introdh.html -->
+<HTML lang=en><HEAD><TITLE>JavaScript - Introduction to DHTML</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="JavaScript - Introduction to DHTML_files/quirksmode.css" 
+rel=stylesheet><LINK href="contents.html" rel=up>
+<SCRIPT src="JavaScript - Introduction to DHTML_files/quirksmode.js"></SCRIPT>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY>
+<H2>Introduction to DHTML</H2>
+<DIV id=header></DIV>
+<P class=intro>On this page I give an introduction to Dynamic HTML. Although 
+there is no official definition or specification of DHTML, it is very important 
+in web development. This page helps you to understand the most common 
+issues.</P>
+<P class=accent><B>My definition</B>: Dynamic HTML is the changing of the style 
+declarations of an HTML element by means of JavaScript. DHTML = CSS + 
+JavaScript.</P>
+<P>The trick is that the change takes effect immediately in the browser window, 
+so that the user sees a moving image, a change of text colour or whatever you 
+want to do. If you have only a vague idea of what DHTML actually is, I advise 
+you to go to the <A href="http://www.quirksmode.org/js/cross_dhtml.html">DHTML 
+example</A> page first and try the example. When you have seen and used it, you 
+will more easily understand the explanation on this page.</P>
+<P id=toc>First of all I explain the difference between <A class=page 
+href="http://www.quirksmode.org/js/introdh.html#stat">static and dynamic</A> 
+HTML, followed by a bit of DHTML <A class=page 
+href="http://www.quirksmode.org/js/introdh.html#hist">history</A>. Then my 
+definition of a <A class=page 
+href="http://www.quirksmode.org/js/introdh.html#lyr">layer</A>, after which I 
+give the definition <A class=page 
+href="http://www.quirksmode.org/js/introdh.html#dhtml">DHTML = CSS + 
+JavaScript</A> and discuss the important <A class=page 
+href="http://www.quirksmode.org/js/introdh.html#style">style</A> 
+property.<BR>Then for the difficult bits: how to reach a certain <A class=page 
+href="http://www.quirksmode.org/js/introdh.html#element">element</A> on your 
+pages. The two main difficulties are <A class=page 
+href="http://www.quirksmode.org/js/introdh.html#nn4">Netscape 4</A> and the 
+three <A class=page 
+href="http://www.quirksmode.org/js/introdh.html#dom">DOMs</A>.</P><A 
+name=stat></A>
+<H3>Static and dynamic HTML</H3>
+<P>Until the Version 4 browsers were released, we only knew <EM>static 
+HTML</EM>. That means: we put HTML elements (paragraphs, images, etc.) in a 
+specific order in the source code. The browser always showed all elements in 
+this order. Positioning and styling was done by tables, div's and such aids. If 
+we wanted to change the order or the positioning of the elements, we had to 
+rewrite the HTML.</P>
+<P>DHTML, however, gives us the chance to re-organize our pages on the fly. In 
+fact, we can take some elements out of the natural flow of the page, put them 
+somewhere else and change its position again if the user clicks a link.</P>
+<P>The <EM>natural flow</EM> of the page is the page as the browser first shows 
+it. It calculates the tables and paragraphs and other things we put in the page, 
+then displays them in the best possible way, one by one, from the beginning to 
+the end of the HTML document.</P>
+<P>But in the Version 4 and better browsers, we can take, say, an image, and put 
+it somewhere on the page without regard to this natural flow. We can 
+<EM>force</EM> the image to be in the extreme upper left corner of the page, 
+while the rest of the content is still distributed by the natural flow.</P>
+<P>In addition, we can add a link to the page, saying "Move image to the right". 
+As soon as the user clicks this link, a little JavaScript is executed which 
+moves the image, say, 200 pixels to the right. We can do this at once or make 
+the image slowly creep to its new position. In either case, the other elements 
+on the page stay where they are, only the image moves.</P>
+<P>Since HTML elements could move across the page, this technique was called 
+<EM>Dynamic HTML</EM> by marketing people of both major browser vendors.</P><A 
+name=hist></A>
+<H3>History</H3>
+<P>DHTML first came to everyone's attention when the Version 4 browsers were 
+released. Back then it was a buzz-word and although only a few people actually 
+knew what DHTML was or what you could do with it, everyone went into a frenzy of 
+activity writing scripts, doing things etc.</P>
+<P>The problem was that back then the Version 3 browsers still had a 
+considerable market share and they didn't support any DHTML. Therefore it wasn't 
+yet possible to use DHTML in commercial sites: only a minority of the users 
+would be able to see it.</P>
+<P>Besides, people quickly found out that Netscape 4 and Explorer 4 were quite 
+different in their implementation of DHTML. Although, in hindsight, it is clear 
+that Explorer 4 had much the better implementation, Netscape 4 was released 
+slightly earlier and its documentation was far better, so that in the beginning 
+it was <EM>the</EM> standard browser for DHTML. Only later did we find out that 
+Explorer could do many more things and was easier to program too.</P>
+<P>After a few months the hubbub died down and people started declaring DHTML 
+Dead. To me, this revealed a singular lack of vision. The time was not yet ripe, 
+but DHTML itself still showed tons of promise. To use DHTML, you must be certain 
+that about 95% of your users can see and use your DHTML. When Netscape 4 was 
+first released, this was not the case, so commercial sites couldn't (yet) use 
+DHTML. However, now that the Version 3 browsers have disappeared and even the 
+Version 4 browsers are on the way out, the time is more than ripe for giving 
+DHTML a second chance.</P>
+<P>Another problem is the lack of an official definition of DHTML. I think many 
+people overestimate this problem. It's a nuisance for beginning scripters who 
+want to know exactly what DHTML is and for browser vendors who have to decide 
+what their browser should support. The more experienced web developers, however, 
+use DHTML without thinking about such matters, they just want to explore and use 
+the possibilities of the current browsers. To me, this approach is the most 
+likely to lead to interesting results.</P>
+<P>At the moment, the greatest problem is not the coding or the official 
+definition but the <EM>concept</EM>. You can safely move an image across the 
+page in all Version 4+ browsers. But why would you want to do that? Why would 
+you use a DHTML nav bar instead of simple text links? These questions are far 
+more important than the simple-minded call "DHTML Is Dead" or the lack of 
+official specs and the first one to solve them will take the lead in DHTML 
+development.</P><A name=lyr></A>
+<H4>Layer</H4>
+<P>One legacy term comes from the first days of DHTML: the word <EM>layer</EM>. 
+Netscape 4 had its own proprietary layer model <SPAN class=smaller>(see the <A 
+href="http://www.quirksmode.org/js/dom.html">Intermediate DOM</A> page for more 
+info)</SPAN> and since many people first programmed their DHTML for Netscape 4, 
+<EM>layer</EM> has also become to mean a separate part of the page that can be 
+moved independently from all other elements on the page, even though we don't 
+use the &lt;LAYER&gt; tag to put them in the HTML document.</P>
+<P class=accent><B>My definition</B>: A layer is a part of the HTML document 
+(usually marked up by a &lt;DIV&gt; tag) that has a <CODE>position: 
+absolute</CODE> in the style sheet and that can be moved across the page by a 
+DHTML script.</P>
+<P>So if I talk about a layer, I mean this general concept and not Netscape's 
+proprietary layer tag or model.</P><A name=dhtml></A>
+<H3>DHTML = CSS + JavaScript</H3>
+<P>As I said above, DHTML is the changing of the style declarations of an HTML 
+element by means of JavaScript. For instance, if you have a paragraph with a 
+certain text colour, defined by</P><PRE>p {color: #cc0000;}
+</PRE>
+<P>you can do something like</P><PRE>element.style.color = '#00cc00';
+</PRE>
+<P>and as soon as this bit of script is executed the text colour changes from 
+red to green.</P>
+<P>Unfortunately this simple bit of DHTML is not supported by Netscape 4. In 
+fact, Netscape 4 only supports the moving of elements across the page and making 
+them visible or invisible (and a few other things, but these are the most 
+important). So we give an element a position on the page:</P><PRE>div {position: absolute;
+	top: 20px;
+	left: 0px;}
+</PRE>
+<P>and then change its <CODE>left</CODE>:</P><PRE>element.style.left = 200;
+</PRE>
+<P>and the element magically moves to 200 pixels from the left margin of the 
+page.</P><A name=style></A>
+<H3>The style property</H3>
+<P>So generally you first go to the HTML element you want to influence (this 
+requires the browser specific coding I explain <A class=page 
+href="http://www.quirksmode.org/js/introdh.html#dom">below</A>), then change one 
+of the style declarations:</P><PRE>element.style.styleDeclaration
+</PRE>
+<P>If you want to change color, <CODE>styleDeclaration</CODE> is 
+<CODE>color</CODE>, if you want to change the left, it is <CODE>left</CODE>. If 
+you want to change a style declaration with a dash in it, for instance 
+<CODE>z-index</CODE>, remove the dash and make the first letter after the dash a 
+capital: <CODE>zIndex</CODE>. Same for <CODE>margin-left</CODE> =&gt; 
+<CODE>marginLeft</CODE>.</P>
+<P>Please note that the <CODE>style</CODE> property reflects the <EM>inline</EM> 
+styles of the element. This is important if you want to read out the styles of 
+the element. If you try to read out the color of the paragraph:</P><PRE>p#testP {color: #cc0000;}
+
+&lt;p id="testP"&gt;This is the paragraph.&lt;/p&gt;
+
+alert([testP].style.color);
+</PRE>
+<P>you get an empty alert. This is because the P doesn't (yet) have an 
+<EM>inline</EM> color style. The style defined by <CODE>p#testP</CODE> is not 
+readable through the <CODE>style</CODE> property. If you need to find the color 
+nonetheless, use the <A href="http://www.quirksmode.org/dom/getstyles.html">Get 
+styles</A> script.</P>
+<P>Of course, if you define your styles inline, it works fine</P><PRE>&lt;p style="color: #cc0000"&gt;This is the paragraph.&lt;/p&gt;
+
+alert([testP].style.color);
+</PRE>
+<H4>Netscape 4</H4>
+<P>The <CODE>.style</CODE> property is required in all browsers, except for 
+Netscape 4 where it is forbidden.</P><A name=element></A>
+<H3>The correct element</H3>
+<P>So changing the style of a certain HTML element is not very difficult, except 
+that many things simply won't work in Netscape 4. However, you also have to tell 
+the browser which HTML element you want to influence. To do this, you must 
+invoke it by its correct name. Usually you give an element an ID</P><PRE>&lt;DIV ID="tobechanged"&gt;[content of div]&lt;/DIV&gt;
+</PRE>
+<P>and write the DHTML script to call on that ID:</P><PRE>[element with ID=tobechanged].style.left = 200;
+</PRE>
+<P>There are two problems here. One is the proper definition of a layer in 
+Netscape 4, the other is the differences in <A 
+href="http://www.quirksmode.org/js/dom.html">DOM</A> (Document Object Model) 
+between the various browsers.</P><A name=nn4></A>
+<H4>Layers in Netscape 4</H4>
+<P>If you want to change the style of an element in Netscape 4, that element 
+<EM>must</EM> have a <CODE>position</CODE> declaration in the style sheet. If 
+you don't give it a position, Netscape 4 simply does not recognize the element 
+as a layer and throws up error messages.</P>
+<P>For example:</P><PRE>div#tobechanged {position: absolute;
+	top: 20px;
+	left: 0px;}
+</PRE>
+<P>Now the DIV with ID="tobechanged" has a position and Netscape 4 recognizes it 
+as a layer. You can also use <CODE>position: relative</CODE>. This means that 
+the element is positioned by the natural flow of the page, but is nonetheless 
+open to DHTML influence. (This is rarely used, BTW).</P>
+<P>So always take care to give your layers a position.</P><A name=dom></A>
+<H4>DOM</H4>
+<P>Having given the element a position for Netscape 4's sake, we can now invoke 
+the element so that the browser knows what to change. As I said above, ID's are 
+by far the simplest way to identify a unique element. However, the problem is 
+that the various browsers give various names to the same HTML element. 
+Continuing the example above, if we want to change the <CODE>left</CODE> of the 
+DIV with ID="tobechanged", we need three bits of code.</P>
+<P>Netscape 4:</P><PRE>document.layers['tobechanged'].left = 200;
+</PRE>
+<P>Explorer:</P><PRE>document.all['tobechanged'].style.left = 200;
+</PRE>
+<P>W3C DOM:</P><PRE>document.getElementById('tobechanged').style.left = 200;
+</PRE>
+<P>You have to write a script that finds out which DOM the browser uses, and 
+then calls the element in the appropriate way. 
+<P>On the <A href="http://www.quirksmode.org/js/dom.html">Intermediate DOMs</A> 
+page I describe the three DOMs. My <A 
+href="http://www.quirksmode.org/js/dhtmloptions.html">DHTML micro-API</A> solves 
+all DOM problems for you. For a practical application, study the <A 
+href="http://www.quirksmode.org/js/cross_dhtml.html">DHTML example</A>.</P>
+<DIV id=footer><A href="http://www.quirksmode.org/home.html">Home</A> <A 
+href="http://www.quirksmode.org/sitemap.html">Sitemap</A> </DIV></BODY></HTML>

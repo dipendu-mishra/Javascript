@@ -1,0 +1,68 @@
+<html>
+<script type="text/javascript">
+let val1=0,val2=0;
+let operator="";
+let secondValueFlag=false;
+function show(val)
+{ 
+    let textdata=document.getElementById("t1").value;
+    if(isNaN(textdata))
+      {
+          alert("Wrong input.Not a number. Reset it.")
+          return;
+      }
+    if(secondValueFlag==false)
+    {
+    if(textdata!="0")
+        document.getElementById("t1").value=textdata+val;
+    else
+        document.getElementById("t1").value=val;
+    }
+    else if(textdata!="0")
+    {
+        document.getElementById("t1").value=val;
+        secondValueFlag=false;
+    }
+
+}
+function setOperator(oper)
+{
+  val1=document.getElementById("t1").value;
+  if(isNaN(val1))
+      {
+          alert("Wrong input.Not a number. Reset it.")
+          return;
+      }
+  val1=parseFloat(val1);
+  if(oper=="+")
+    {
+        operator="+";
+        secondValueFlag=true;
+    }  
+}
+function calculate()
+{
+    val2=document.getElementById("t1").value;
+    if(isNaN(val2))
+      {
+          alert("Wrong input.Not a number. Reset it.")
+          return;
+      }
+    val2=parseFloat(val2);
+    if(operator=="+" )
+    {
+        let z= val1 + val2;
+        document.getElementById("t1").value=z;
+    }
+}
+</script>
+<form>
+<input type="text" size=10 value="0" id="t1" style="text-align: right" disabled>
+<input type="button" name="one" onclick="show(this.value)" value="1">
+<input type="button" name="two" onclick="show(this.value)" value="2">
+<input type="button" name="three" onclick="show(this.value)" value="3">
+<input type="button" name="+" onclick="setOperator(this.value)" value="+">
+<input type="button" name="=" onclick="calculate()" value="=">
+<input type="reset" name="="  value="C">
+</form>
+</html>

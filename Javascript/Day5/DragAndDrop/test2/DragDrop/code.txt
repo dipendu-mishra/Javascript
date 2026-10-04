@@ -1,0 +1,42 @@
+console.log('Drag & Dop Application');
+const imgBox=document.querySelector('.imgBox');// return single HTMLElement
+const whiteBoxes=document.getElementsByClassName('whiteBox');// return array
+
+imgBox.addEventListener("dragstart",(e)=>{      
+    e.target.className+=' hold';
+    setTimeout(()=>{
+    e.target.className='hide';
+    },0);
+});
+imgBox.addEventListener("dragend",(e)=>{
+   
+    e.target.className='imgBox';
+});
+/*
+imgBox.addEventListener("dragover",()=>{
+    console.log("Drag Over");    
+});
+imgBox.addEventListener("dragleave",()=>{
+    console.log("Drag Leave");    
+});
+imgBox.addEventListener("dragenter",()=>{
+    console.log("Drag enter");    
+});
+imgBox.addEventListener("drag",()=>{
+    console.log("Drag");    
+});
+*/
+for(whiteBox of whiteBoxes)
+{
+    whiteBox.addEventListener("dragover",(e)=>{
+        console.log("Drag over"); 
+        e.preventDefault();
+    });
+    
+    whiteBox.addEventListener("drop",(e)=>{
+       
+        console.log("Drag drop"); 
+        e.target.append(imgBox);
+    });
+
+}

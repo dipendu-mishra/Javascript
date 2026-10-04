@@ -1,0 +1,34 @@
+<html>
+<script type="text/javascript">
+function f1()
+{
+	if(document.form1.elements[0].value=="")
+	{
+		alert(document.form1.elements[0].value)
+		//break
+	}
+}
+</script>
+<body>
+<form name="form1" method="POST" onSubmit="f1()">
+<input type=text name="Username">
+<input type=submit value="Submit">
+</form>
+</body>
+</html>
+
+
+
+<html>
+<script type="text/javascript">
+function f1()
+{
+	document.write("Hello World")
+}
+</script>
+<body>
+<script type="text/javascript">
+f1()
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<script type="text/javascript">
+function selectText(currentobj)
+{
+if(document.form1.selectbox.checked)
+{
+currentobject.select()
+}
+}
+</script>
+<form name="form1" onSubmit="return checkfields()">
+<h2>Online Registration</h2>
+<p>UserName<br>
+<input type=text size=25 maxlength=256 name="Username" onFocus="selectText(this)"><br>
+PassWord<br>
+<input type=text size=25 maxlength=256 name="Password" onFocus="selectText(this)"><br>
+<input type=submit value="Register"></p>
+<input type=checkbox name="selectbox">Activate Field Selection.
+</form>
+</html>

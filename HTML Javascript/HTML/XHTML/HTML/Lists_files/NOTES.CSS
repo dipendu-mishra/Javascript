@@ -1,0 +1,78 @@
+.notesLink {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; FONT-FAMILY: arial, verdana, sans-serif
+}
+.whatisthis:hover {
+	BACKGROUND-COLOR: #ffffff
+}
+.notesLink A:link {
+	COLOR: #7987c6; TEXT-DECORATION: underline
+}
+.notesLink A:visited {
+	COLOR: #7987c6; TEXT-DECORATION: underline
+}
+.notesLink A:hover {
+	COLOR: #3a4887; TEXT-DECORATION: underline
+}
+.notesTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-BOTTOM: 5px; COLOR: #2f4f4f; BORDER-BOTTOM: #4682b4 1px solid; FONT-FAMILY: arial, verdana, sans-serif
+}
+.tableNotes {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, verdana, sans-serif
+}
+.tdAtableNotes {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #eeeeee
+}
+.tdBtableNotes {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: black 2px solid
+}
+.notesName {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FLOAT: left; FONT-FAMILY: arial, verdana, sans-serif
+}
+.notesDate {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FLOAT: left; FONT-FAMILY: arial, verdana, sans-serif
+}
+.notesInvalid {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FLOAT: left; FONT-FAMILY: arial, verdana, sans-serif
+}
+.notesName {
+	COLOR: #191970
+}
+.notesDate {
+	COLOR: #2f4f4f
+}
+.notesInvalid {
+	FLOAT: right
+}
+.notesRight {
+	FLOAT: right
+}
+.notesRejected {
+	COLOR: maroon
+}
+.notesCandidate {
+	COLOR: orange
+}
+.notesApproved {
+	COLOR: green
+}
+.notesDelete {
+	COLOR: red
+}
+.notesAccept {
+	COLOR: purple
+}
+.notesLeft {
+	FLOAT: left
+}
+.notesSelect {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: arial, verdana, sans-serif
+}
+.notesButton1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: arial, verdana, sans-serif
+}
+.notesButton1 {
+	CURSOR: hand; COLOR: #ffffff; BACKGROUND-COLOR: #3c4070
+}
+LABEL {
+	FONT-WEIGHT: bold; CURSOR: hand
+}

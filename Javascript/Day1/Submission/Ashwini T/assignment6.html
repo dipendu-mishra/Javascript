@@ -1,0 +1,50 @@
+<!-- Arithmetic operations -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Arithmetic operations</title>
+</head>
+<body>
+      <h3>Arithmetic operations</h3>
+
+      <!-- js code -->
+      <script>
+            // take input from user
+            let n1 = +prompt("Enter num1","num1");
+            let n2 = +prompt("Enter num2","num2");
+            let op = prompt("Enter operator","operator"); 
+            let result;
+            // document.write("num1 = "+n1+"<br>num2 = "+n2);
+
+            switch(op){
+                  case "+": 
+                        document.write(n1+ " + " +n2+ " = "+(n1+n2));
+                        break;
+                  
+                  case "-":
+                        document.write(n1+ " - " +n2+ " = "+(n1-n2));
+                        break;
+
+                  case "*":
+                        document.write(n1+ " * " +n2+ " = "+(n1*n2));
+                        break;
+
+                  case "/":
+                        document.write(n1+ " / " +n2+ " = "+(n1/n2));
+                        break;
+
+                  case "%":
+                        document.write(n1+ " % " +n2+ " = "+(n1%n2));
+                        break;
+
+                  default:
+                        document.write("Please enter correct operator");
+                        break;
+            }
+      </script>
+</body>
+</html>

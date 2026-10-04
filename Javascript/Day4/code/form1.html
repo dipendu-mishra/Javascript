@@ -1,0 +1,28 @@
+<html>
+<script type="text/javascript">
+function checkAll()
+{  // document.getElementsByName
+    //alert('test');
+    let str1=document.getElementById("t1").value; 
+    let str2=document.getElementById("p1").value;
+    if(str1.trim().localeCompare("")==0 || str2.trim().localeCompare("")==0)
+    {
+        alert("Empty data");
+        document.getElementById("t1").focus();
+        document.getElementById("t1").select();
+        return false;        
+    } 
+    
+    return true;
+}
+
+</script>
+
+<form name="form1"  action="nextpage.html" method="">
+User Name: <input type="text" id="t1"  size="20" placeholder="enter name here"><br>
+Password: <input type="password"  size="10" id="p1" ><br>
+<input type="submit" value="Submit"  onclick="return checkAll()" name="sub1" ><input type="reset" value="Clear" ><br>
+</form>
+
+
+</html>
